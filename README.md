@@ -15,7 +15,7 @@ Aplicação acadêmica de gestão logística com frontend React, Azure Functions
 
 ## Endereços publicados
 
-- **Site no Azure Static Web Apps:** `PREENCHER_APÓS_PUBLICAÇÃO`
+- **Site no Azure Static Web Apps:** <https://polite-mushroom-0b05fa610.3.azurestaticapps.net>
 - **Azure Function App:** `PREENCHER_APÓS_PUBLICAÇÃO`
 - **Repositório público no GitHub:** <https://github.com/laducci/cloudlog-pjbl>
 - **Mock Apidog (opcional):** não utilizado; o projeto possui mocks locais em `src/mockData.js`.
