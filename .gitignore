@@ -1,0 +1,10 @@
+node_modules/
+api/node_modules/
+dist/
+.env
+.env.local
+api/local.settings.json
+.DS_Store
+*.log
+work/
+outputs/*.zip
