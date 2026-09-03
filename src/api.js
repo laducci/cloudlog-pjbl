@@ -2,6 +2,10 @@ import { initialMockDeliveries } from "./mockData";
 
 const useMocks = import.meta.env.VITE_USE_MOCKS !== "false";
 const baseUrl = (import.meta.env.VITE_API_BASE_URL || "http://localhost:7071").replace(/\/$/, "");
+const helloUrl = import.meta.env.VITE_HELLO_URL
+  || (import.meta.env.DEV
+    ? "https://rg-cloudlog-atv1-bqh5arcmf3habeh3.brazilsouth-01.azurewebsites.net/api/helloCloudLog"
+    : "/api/hello");
 let mockDeliveries = structuredClone(initialMockDeliveries);
 
 async function request(path, options = {}) {
@@ -21,6 +25,14 @@ async function request(path, options = {}) {
 }
 
 const wait = (ms = 280) => new Promise((resolve) => setTimeout(resolve, ms));
+
+export async function checkCloudLogFunction(name = "Laura") {
+  const separator = helloUrl.includes("?") ? "&" : "?";
+  const response = await fetch(`${helloUrl}${separator}name=${encodeURIComponent(name)}`);
+  const payload = await response.json().catch(() => ({}));
+  if (!response.ok) throw new Error(payload.message || `Falha na requisição (${response.status}).`);
+  return payload;
+}
 
 export async function listDeliveries(filters = {}) {
   if (!useMocks) {

@@ -47,6 +47,13 @@ nav .chevron { margin-left: auto; }
 .topbar-actions { margin-left: auto; display: flex; align-items: center; gap: 18px; }
 .mode { display: flex; align-items: center; gap: 7px; color: #7f96a9; font-size: 11px; }
 .mode i, .live i, .table-foot i { width: 6px; height: 6px; background: var(--cyan); border-radius: 50%; box-shadow: 0 0 0 4px rgba(25,211,197,.1); }
+.cloud-check { margin: 18px 0; padding: 12px 15px; display: flex; align-items: center; gap: 11px; border: 1px solid rgba(25,211,197,.18); border-radius: 10px; background: rgba(25,211,197,.05); }
+.cloud-check-icon { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 9px; color: var(--cyan); background: rgba(25,211,197,.1); }
+.cloud-check div { display: grid; gap: 3px; }
+.cloud-check strong { color: #dce9f3; font-size: 11px; }
+.cloud-check span { color: #7f96a9; font-size: 10px; }
+.cloud-check.error { border-color: rgba(255,107,115,.22); background: rgba(255,107,115,.06); }
+.cloud-check.error .cloud-check-icon { color: #ff9aa0; background: rgba(255,107,115,.1); }
 .avatar { width: 37px; height: 37px; border: 1px solid rgba(25,211,197,.25); border-radius: 50%; display: grid; place-items: center; background: #102c39; color: #7ce5dc; font: 700 11px "Manrope"; }
 .content { max-width: 1480px; margin: 0 auto; padding: 38px; }
 .hero-row, .page-title { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: 30px; }

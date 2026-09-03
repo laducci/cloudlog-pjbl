@@ -23,6 +23,7 @@ import {
 } from "lucide-react";
 import {
   apiMode,
+  checkCloudLogFunction,
   createDelivery,
   deleteDelivery,
   listDeliveries,
@@ -106,7 +107,7 @@ function MetricCard({ icon: Icon, label, value, detail, tone }) {
   );
 }
 
-function Dashboard({ deliveries, loading, onSeeDeliveries }) {
+function Dashboard({ deliveries, loading, onSeeDeliveries, cloudCheck }) {
   const counts = useMemo(() => ({
     active: deliveries.filter((item) => item.status === "Em rota").length,
     late: deliveries.filter((item) => item.status === "Atrasada").length,
@@ -117,6 +118,13 @@ function Dashboard({ deliveries, loading, onSeeDeliveries }) {
       <section className="hero-row">
         <div><span className="eyebrow">QUINTA-FEIRA, 03 DE SETEMBRO</span><h2>A operação está em movimento.</h2><p>Acompanhe o que precisa de atenção e mantenha as entregas no ritmo certo.</p></div>
         <button className="primary" onClick={onSeeDeliveries}>Gerenciar entregas <ArrowRight size={18} /></button>
+      </section>
+      <section className={`cloud-check ${cloudCheck.status}`} aria-live="polite">
+        <span className="cloud-check-icon"><Cloud size={19} /></span>
+        <div>
+          <strong>GET Azure Functions · {cloudCheck.status === "connected" ? "conectado" : cloudCheck.status === "error" ? "indisponível" : "verificando"}</strong>
+          <span>{cloudCheck.message}</span>
+        </div>
       </section>
       <section className="metrics" aria-label="Indicadores operacionais">
         <MetricCard icon={Truck} label="Em rota" value={loading ? "—" : counts.active} detail="veículos em deslocamento" tone="blue" />
@@ -230,6 +238,7 @@ export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [modal, setModal] = useState(null);
   const [busy, setBusy] = useState(false);
+  const [cloudCheck, setCloudCheck] = useState({ status: "checking", message: "Validando o endpoint /api/hello?name=Laura…" });
 
   const load = async () => {
     setLoading(true); setError("");
@@ -239,6 +248,12 @@ export default function App() {
   };
 
   useEffect(() => { load(); }, []);
+
+  useEffect(() => {
+    checkCloudLogFunction("Laura")
+      .then((result) => setCloudCheck({ status: "connected", message: result.message }))
+      .catch(() => setCloudCheck({ status: "error", message: "Não foi possível validar o endpoint neste momento." }));
+  }, []);
 
   const save = async (form) => {
     setBusy(true); setError("");
@@ -267,7 +282,7 @@ export default function App() {
       <div className="workspace">
         <Header {...meta} onMenu={() => setMenuOpen(true)} />
         {page === "dashboard"
-          ? <Dashboard deliveries={deliveries} loading={loading} onSeeDeliveries={() => setPage("deliveries")} />
+          ? <Dashboard deliveries={deliveries} loading={loading} cloudCheck={cloudCheck} onSeeDeliveries={() => setPage("deliveries")} />
           : <Deliveries deliveries={deliveries} loading={loading} error={error} onRefresh={load} onCreate={() => setModal({})} onEdit={(delivery) => setModal({ delivery })} onDelete={remove} />}
       </div>
       {modal && <DeliveryModal delivery={modal.delivery} onClose={() => setModal(null)} onSave={save} busy={busy} />}
