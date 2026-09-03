@@ -190,7 +190,6 @@ Portfólio: documento DOCX com empresa, missão, visão, valores, BSC, mapa estr
 - Camilla Uber
 - João Davi
 - Laura Guillarducci
-- Manoel Valerio da Silveira Neto
 
 Há uma inconsistência: o documento original de requisitos usa **“Camilla Augusta”**, enquanto atividades posteriores usam **“Camilla Uber”**. Confirmar o nome correto antes da entrega e padronizar todos os arquivos; não escolher por suposição.
 

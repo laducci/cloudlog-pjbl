@@ -5,7 +5,6 @@
 - Camilla Uber — **confirmar sobrenome antes da entrega**
 - João Davi
 - Laura Guillarducci
-- Manoel Valerio da Silveira Neto
 
 ## Objetivo
 
@@ -42,10 +41,6 @@ Criar uma conta Azure for Students com o e-mail institucional, concluir o módul
 
 `INSERIR: conta estudantil e conclusão do módulo`
 
-### Manoel
-
-`INSERIR: conta estudantil e conclusão do módulo`
-
 ## Evidências da Function
 
 `INSERIR: visão geral da Function App`
@@ -57,4 +52,3 @@ Criar uma conta Azure for Students com o e-mail institucional, concluir o módul
 ## Encerramento
 
 Após o envio das evidências, os recursos exclusivos desta atividade foram excluídos para evitar consumo indevido dos créditos estudantis.
-

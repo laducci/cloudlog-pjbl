@@ -5,7 +5,6 @@
 - Camilla Uber — **confirmar sobrenome antes da entrega**
 - João Davi
 - Laura Guillarducci
-- Manoel Valerio da Silveira Neto
 
 ## Objetivo
 
@@ -61,4 +60,3 @@ Integrar o frontend CloudLog ao MongoDB Atlas por meio de quatro Azure Functions
 ## Conclusão
 
 A integração demonstrou as quatro operações de persistência da aplicação CloudLog. O frontend React enviou requisições HTTP às Azure Functions, que validaram os dados e acessaram a coleção `deliveries` no MongoDB Atlas. As credenciais foram mantidas apenas nas configurações protegidas da Function App.
-
