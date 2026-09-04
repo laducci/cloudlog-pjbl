@@ -1,6 +1,10 @@
 const allowedStatuses = new Set(["Pendente", "Em rota", "Atrasada", "Entregue"]);
 
-const json = (status, body) => ({ status, jsonBody: body });
+const json = (status, body) => ({
+  status,
+  headers: { "Content-Type": "application/json; charset=utf-8" },
+  body: JSON.stringify(body),
+});
 
 function validateDelivery(payload, partial = false) {
   const fields = ["code", "customer", "destination", "driver", "status", "eta"];
