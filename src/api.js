@@ -1,7 +1,10 @@
 import { initialMockDeliveries } from "./mockData";
 
 const useMocks = import.meta.env.VITE_USE_MOCKS !== "false";
-const baseUrl = (import.meta.env.VITE_API_BASE_URL || "http://localhost:7071").replace(/\/$/, "");
+const baseUrl = (
+  import.meta.env.VITE_API_BASE_URL
+  || (import.meta.env.DEV ? "http://localhost:7071" : "")
+).replace(/\/$/, "");
 const helloUrl = import.meta.env.VITE_HELLO_URL
   || (import.meta.env.DEV
     ? "https://rg-cloudlog-atv1-bqh5arcmf3habeh3.brazilsouth-01.azurewebsites.net/api/helloCloudLog"
