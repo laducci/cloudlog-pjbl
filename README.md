@@ -71,10 +71,19 @@ Na Function App, registre como configurações de ambiente:
 
 Em CORS, autorize apenas a URL publicada do Azure Static Web Apps e, durante testes locais, `http://localhost:5173`. No frontend publicado, defina `VITE_API_BASE_URL` com a URL da Function App e `VITE_USE_MOCKS=false` antes do build.
 
+## Arquitetura do backend (Vertical Slice + Clean Architecture + SOLID)
+
+Na branch `refactor/vertical-slice-clean-architecture`, o `api/` está organizado em fatias verticais (`api/src/features/<funcionalidade>/`), cada uma com seu caso de uso, handler HTTP e registro da Azure Function. O núcleo (`api/src/domain/`) concentra entidade, regras e portas; `api/src/infrastructure/` traz os adaptadores (MongoDB Atlas, memória, relógio); `api/src/bootstrap/container.js` faz a injeção de dependência.
+
+- Documentação e diagramas (Mermaid + PNG): [`docs/backend/ARQUITETURA_BACKEND.md`](docs/backend/ARQUITETURA_BACKEND.md)
+- Prompts de IAG usados na refatoração: [`docs/backend/PROMPTS_BACKEND.md`](docs/backend/PROMPTS_BACKEND.md)
+- Testes: `cd api && npm test` (unitários + testes de arquitetura)
+
 ## Estrutura
 
 - `src/`: frontend React.
 - `api/`: cinco Azure Functions; quatro formam o CRUD exigido.
+- `api/tests/`: testes unitários e de arquitetura (`node:test`).
 - `docs/`: roteiro e modelos para as três entregas.
 - `GRUPO.md`: integrantes e link do GitHub.
 - `Prompt.md`: prompt de IAG exigido.
