@@ -1,0 +1,35 @@
+---
+title: "Detalhe de uma Fatia Vertical — createDelivery (camadas da Clean Architecture)"
+config:
+  layout: elk
+---
+flowchart TB
+  subgraph slice["features/createDelivery — fatia vertical"]
+    direction TB
+    fn["«Frameworks & Drivers»<br/><b>createDelivery.function.js</b><br/>app.http POST /deliveries"]
+    hd["«Interface Adapter»<br/><b>createDelivery.handler.js</b><br/>makeCreateDeliveryHandler()"]
+    uc["«Application / Use Case»<br/><b>CreateDeliveryUseCase.js</b><br/>execute(input)"]
+    fn --> hd --> uc
+  end
+  az["«framework»<br/>@azure/functions"]
+  sh["«component»<br/>shared/http<br/>readJsonBody · created · toHttpError"]
+  root["«component»<br/>bootstrap/container.js"]
+  en["«Entity»<br/>Delivery · DeliveryStatus"]
+  pW(("DeliveryWriter"))
+  pC(("Clock"))
+  mongo["«Adapter»<br/>MongoDeliveryRepository"]
+
+  fn -.-> az
+  fn -. "injeção do use case" .-> root
+  hd -.-> sh
+  uc -.-> en
+  uc -. "requer" .-> pW
+  uc -. "requer" .-> pC
+  pW --- mongo
+
+  classDef c fill:#E8F0FE,stroke:#1A4E8A,color:#0B2545;
+  classDef p fill:#FFFFFF,stroke:#1A4E8A,color:#0B2545;
+  classDef e fill:#EDEDED,stroke:#666,color:#222;
+  class fn,hd,uc,sh,root,en,mongo c;
+  class pW,pC p;
+  class az e;

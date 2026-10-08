@@ -1,0 +1,66 @@
+---
+title: "Diagrama de Componentes UML — Backend CloudLog (Azure Functions)"
+config:
+  layout: elk
+---
+flowchart TB
+  front["«component»<br/><b>Frontend React</b><br/>Azure Static Web Apps"]
+  atlas[("«database»<br/><b>MongoDB Atlas</b><br/>cloudlog.deliveries")]
+
+  subgraph api["«subsystem» CloudLog API — Azure Function App (Node.js, modelo v4)"]
+    httpApi(("HTTP /api"))
+
+    subgraph features["features/ — Fatias Verticais (cada fatia = function → handler → use case)"]
+      direction LR
+      s1["«slice»<br/><b>createDelivery</b><br/>POST /deliveries<br/>CreateDeliveryUseCase"]
+      s2["«slice»<br/><b>searchDeliveries</b><br/>GET /deliveries<br/>SearchDeliveriesUseCase"]
+      s3["«slice»<br/><b>updateDelivery</b><br/>PUT /deliveries/{id}<br/>UpdateDeliveryUseCase"]
+      s4["«slice»<br/><b>deleteDelivery</b><br/>DELETE /deliveries/{id}<br/>DeleteDeliveryUseCase"]
+      s5["«slice»<br/><b>hello</b><br/>GET /hello<br/>SayHelloUseCase"]
+    end
+
+    sharedHttp["«component»<br/><b>shared/http</b><br/>httpResponse · requestReader · errorMapper"]
+    root["«component»<br/><b>Composition Root</b><br/>bootstrap/container.js"]
+
+    subgraph domain["domain/ — Núcleo: Entidades e Portas"]
+      direction LR
+      entity["«component»<br/><b>Delivery Domain</b><br/>Delivery · DeliveryStatus · Errors"]
+      pW(("Delivery<br/>Writer"))
+      pR(("Delivery<br/>Reader"))
+      pU(("Delivery<br/>Updater"))
+      pD(("Delivery<br/>Remover"))
+      pC(("Clock"))
+    end
+
+    subgraph infra["infrastructure/ — Adaptadores"]
+      direction LR
+      mongoRepo["«component»<br/><b>MongoDeliveryRepository</b><br/>+ MongoConnection"]
+      memRepo["«component»<br/><b>InMemoryDeliveryRepository</b>"]
+      clock["«component»<br/><b>SystemClock</b>"]
+    end
+  end
+
+  front -- "HTTPS/JSON" --> httpApi
+  httpApi --- s1 & s2 & s3 & s4 & s5
+  features -. "«use»" .-> sharedHttp
+  features -. "obtém casos de uso" .-> root
+  root -. "«instantiate»" .-> infra
+
+  s1 -.-> pW
+  s2 -.-> pR
+  s3 -.-> pU
+  s4 -.-> pD
+  s1 & s3 & s5 -.-> pC
+  s1 & s3 -. "«use»" .-> entity
+
+  pW & pR & pU & pD --- mongoRepo
+  pW & pR & pU & pD --- memRepo
+  pC --- clock
+  mongoRepo -- "MongoDB Driver / TLS" --> atlas
+
+  classDef comp fill:#E8F0FE,stroke:#1A4E8A,color:#0B2545;
+  classDef port fill:#FFFFFF,stroke:#1A4E8A,color:#0B2545;
+  classDef ext fill:#EDEDED,stroke:#666,color:#222;
+  class s1,s2,s3,s4,s5,sharedHttp,entity,mongoRepo,memRepo,clock,root comp;
+  class pW,pR,pU,pD,pC,httpApi port;
+  class front,atlas ext;

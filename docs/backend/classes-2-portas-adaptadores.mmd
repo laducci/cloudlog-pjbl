@@ -1,0 +1,84 @@
+---
+title: "Diagrama de Classes 2/2 — Portas, Adaptadores e Composition Root (DIP)"
+config:
+  layout: elk
+  class:
+    hideEmptyMembersBox: true
+---
+classDiagram
+direction BT
+
+class DeliveryWriter {
+  <<interface>>
+  +insert(delivery) Promise~object~
+}
+class DeliveryReader {
+  <<interface>>
+  +search(criteria) Promise~object[]~
+}
+class DeliveryUpdater {
+  <<interface>>
+  +update(id, changes) Promise~object~
+}
+class DeliveryRemover {
+  <<interface>>
+  +remove(id) Promise~boolean~
+}
+class Clock {
+  <<interface>>
+  +now() Date
+}
+
+namespace infrastructure {
+  class MongoDeliveryRepository {
+    <<Adapter>>
+    -connection: MongoConnection
+    +insert(delivery)
+    +search(criteria)
+    +update(id, changes)
+    +remove(id)
+    -toObjectId(id) ObjectId
+  }
+  class InMemoryDeliveryRepository {
+    <<Adapter>>
+    -items: object[]
+    +insert(delivery)
+    +search(criteria)
+    +update(id, changes)
+    +remove(id)
+  }
+  class MongoConnection {
+    -uri: string
+    -databaseName: string
+    -collectionName: string
+    -client: MongoClient
+    +fromEnvironment(env)$ MongoConnection
+    +getCollection() Promise~Collection~
+  }
+  class SystemClock {
+    <<Adapter>>
+    +now() Date
+  }
+}
+
+namespace bootstrap {
+  class CompositionRoot {
+    <<container.js>>
+    +buildContainer(env)$ Container
+  }
+}
+
+MongoDeliveryRepository ..|> DeliveryWriter
+MongoDeliveryRepository ..|> DeliveryReader
+MongoDeliveryRepository ..|> DeliveryUpdater
+MongoDeliveryRepository ..|> DeliveryRemover
+InMemoryDeliveryRepository ..|> DeliveryWriter
+InMemoryDeliveryRepository ..|> DeliveryReader
+InMemoryDeliveryRepository ..|> DeliveryUpdater
+InMemoryDeliveryRepository ..|> DeliveryRemover
+SystemClock ..|> Clock
+MongoDeliveryRepository *-- "1" MongoConnection
+
+CompositionRoot ..> MongoDeliveryRepository : «instantiate»
+CompositionRoot ..> InMemoryDeliveryRepository : «instantiate» (DELIVERY_REPOSITORY=memory)
+CompositionRoot ..> SystemClock : «instantiate»

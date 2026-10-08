@@ -1,0 +1,119 @@
+---
+title: "Diagrama de Classes 1/2 — Fatias verticais (Application) e Domínio"
+config:
+  layout: elk
+  class:
+    hideEmptyMembersBox: true
+---
+classDiagram
+direction TB
+
+namespace features_createDelivery {
+  class CreateDeliveryUseCase {
+    <<UseCase>>
+    -deliveryWriter: DeliveryWriter
+    -clock: Clock
+    +execute(input) Promise~Delivery~
+  }
+}
+namespace features_searchDeliveries {
+  class SearchDeliveriesUseCase {
+    <<UseCase>>
+    -deliveryReader: DeliveryReader
+    +execute(filters) Promise~Result~
+  }
+}
+namespace features_updateDelivery {
+  class UpdateDeliveryUseCase {
+    <<UseCase>>
+    -deliveryUpdater: DeliveryUpdater
+    -clock: Clock
+    +execute(id, input) Promise~Delivery~
+  }
+}
+namespace features_deleteDelivery {
+  class DeleteDeliveryUseCase {
+    <<UseCase>>
+    -deliveryRemover: DeliveryRemover
+    +execute(id) Promise~Result~
+  }
+}
+namespace features_hello {
+  class SayHelloUseCase {
+    <<UseCase>>
+    -clock: Clock
+    +execute(input) Greeting
+  }
+}
+
+namespace domain {
+  class Delivery {
+    <<Entity>>
+    +id: string
+    +code: string
+    +customer: string
+    +destination: string
+    +driver: string
+    +status: string
+    +eta: string
+    +progress: number
+    +createdAt: Date
+    +updatedAt: Date
+    +create(props, now)$ Delivery
+    +validateChanges(props, now)$ Changes
+    +toPrimitives() object
+  }
+  class DeliveryStatus {
+    <<ValueObject>>
+    +PENDING: string$
+    +IN_ROUTE: string$
+    +DELAYED: string$
+    +DELIVERED: string$
+    +values()$ string[]
+    +assertValid(value)$ string
+  }
+  class DeliveryWriter {
+    <<interface>>
+    +insert(delivery)
+  }
+  class DeliveryReader {
+    <<interface>>
+    +search(criteria)
+  }
+  class DeliveryUpdater {
+    <<interface>>
+    +update(id, changes)
+  }
+  class DeliveryRemover {
+    <<interface>>
+    +remove(id)
+  }
+  class Clock {
+    <<interface>>
+    +now() Date
+  }
+  class DomainError {
+    <<abstract>>
+  }
+  class ValidationError
+  class NotFoundError
+  class InvalidIdentifierError
+}
+
+CreateDeliveryUseCase ..> Delivery : «create»
+UpdateDeliveryUseCase ..> Delivery : valida alterações
+CreateDeliveryUseCase --> "1" DeliveryWriter
+CreateDeliveryUseCase --> "1" Clock
+SearchDeliveriesUseCase --> "1" DeliveryReader
+UpdateDeliveryUseCase --> "1" DeliveryUpdater
+UpdateDeliveryUseCase --> "1" Clock
+DeleteDeliveryUseCase --> "1" DeliveryRemover
+SayHelloUseCase --> "1" Clock
+UpdateDeliveryUseCase ..> NotFoundError : «throws»
+DeleteDeliveryUseCase ..> NotFoundError : «throws»
+
+Delivery ..> DeliveryStatus : usa
+Delivery ..> ValidationError : «throws»
+DomainError <|-- ValidationError
+DomainError <|-- NotFoundError
+ValidationError <|-- InvalidIdentifierError
