@@ -79,6 +79,14 @@ Na branch `refactor/vertical-slice-clean-architecture`, o `api/` está organizad
 - Prompts de IAG usados na refatoração: [`docs/backend/PROMPTS_BACKEND.md`](docs/backend/PROMPTS_BACKEND.md)
 - Testes: `cd api && npm test` (unitários + testes de arquitetura)
 
+## Eventos (Arquitetura Orientada a Eventos)
+
+Inserir, alterar e excluir entregas publicam os eventos `DeliveryCreated`, `DeliveryUpdated` e `DeliveryDeleted` pela porta `DeliveryEventPublisher`.
+
+- Com `SERVICEBUS_CONNECTION` (e opcionalmente `SERVICEBUS_QUEUE`, padrão `cloudlog-delivery-events`), os eventos vão para uma fila do Azure Service Bus.
+- Sem essa configuração, os eventos apenas são registrados em log; a API continua funcionando.
+- O consumidor `processDeliveryEvent` (ServiceBusQueueTrigger) gera alertas de entrega atrasada (RF-05). Ele roda numa Function App dedicada com `SERVICEBUS_CONSUMER_ENABLED=true`, porque o Static Web Apps aceita apenas gatilhos HTTP.
+
 ## Estrutura
 
 - `src/`: frontend React.

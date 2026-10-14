@@ -6,17 +6,20 @@ const { UpdateDeliveryUseCase } = require("../../src/features/updateDelivery/Upd
 const { DeleteDeliveryUseCase } = require("../../src/features/deleteDelivery/DeleteDeliveryUseCase");
 const { SayHelloUseCase } = require("../../src/features/hello/SayHelloUseCase");
 const { InMemoryDeliveryRepository } = require("../../src/infrastructure/persistence/memory/InMemoryDeliveryRepository");
+const { InMemoryEventPublisher } = require("../../src/infrastructure/messaging/InMemoryEventPublisher");
 const { NotFoundError } = require("../../src/domain/errors");
 const { fixedClock, FIXED_NOW, validDelivery } = require("../support/fakes");
 
 function setup() {
   const repository = new InMemoryDeliveryRepository();
+  const eventPublisher = new InMemoryEventPublisher();
   return {
     repository,
-    create: new CreateDeliveryUseCase({ deliveryWriter: repository, clock: fixedClock }),
+    eventPublisher,
+    create: new CreateDeliveryUseCase({ deliveryWriter: repository, eventPublisher, clock: fixedClock }),
     search: new SearchDeliveriesUseCase({ deliveryReader: repository }),
-    update: new UpdateDeliveryUseCase({ deliveryUpdater: repository, clock: fixedClock }),
-    remove: new DeleteDeliveryUseCase({ deliveryRemover: repository }),
+    update: new UpdateDeliveryUseCase({ deliveryUpdater: repository, eventPublisher, clock: fixedClock }),
+    remove: new DeleteDeliveryUseCase({ deliveryRemover: repository, eventPublisher, clock: fixedClock }),
   };
 }
 
@@ -59,7 +62,7 @@ test("DeleteDelivery remove e lança NotFoundError na segunda tentativa", async 
 });
 
 test("Casos de uso recusam dependências que não cumprem a porta (LSP/DIP)", () => {
-  assert.throws(() => new CreateDeliveryUseCase({ deliveryWriter: {}, clock: fixedClock }), /DeliveryWriter inválido/);
+  assert.throws(() => new CreateDeliveryUseCase({ deliveryWriter: {}, eventPublisher: new InMemoryEventPublisher(), clock: fixedClock }), /DeliveryWriter inválido/);
   assert.throws(() => new SearchDeliveriesUseCase({ deliveryReader: { find() {} } }), /DeliveryReader inválido/);
 });
 

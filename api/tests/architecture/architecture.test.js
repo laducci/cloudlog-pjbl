@@ -75,6 +75,22 @@ test("Pacote '@azure/functions' só é usado nos arquivos *.function.js", () => 
   assert.deepEqual(found, []);
 });
 
+test("Pacote '@azure/service-bus' só é usado no adaptador de mensageria", () => {
+  const found = violations(
+    (file, dep) => dep.kind === "package" && dep.target === "@azure/service-bus" && !file.startsWith("infrastructure/messaging/"),
+    "mensageria confinada",
+  );
+  assert.deepEqual(found, []);
+});
+
+test("Casos de uso que alteram estado dependem da porta DeliveryEventPublisher (EDA)", () => {
+  const writers = ["createDelivery/CreateDeliveryUseCase.js", "updateDelivery/UpdateDeliveryUseCase.js", "deleteDelivery/DeleteDeliveryUseCase.js"];
+  for (const file of writers) {
+    const source = fs.readFileSync(path.join(SRC, "features", file), "utf8");
+    assert.match(source, /assertPort\("DeliveryEventPublisher"/, `${file} não publica eventos`);
+  }
+});
+
 test("Somente o Composition Root (bootstrap) instancia a infraestrutura", () => {
   const found = violations(
     (file, dep) => dep.kind === "internal" && layerOf(dep.target) === "infrastructure"
