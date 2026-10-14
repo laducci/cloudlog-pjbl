@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1736px" preserveAspectRatio="none" style="width:988px;height:1736px;background:#FFFFFF;" version="1.1" viewBox="0 0 988 1736" width="988px" zoomAndPan="magnify"><defs/><g><rect fill="none" height="26.9395" id="_title" style="stroke:none;stroke-width:1.0;" width="614" x="180" y="5"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="604" x="185" y="23.5625">CloudLog — C4 Nível 3: Componentes do Serviço de Entregas (código entregue: api/src)</text><!--MD5=[7442f3b126ee602ae02566c1a49e158a]
+cluster api--><g id="cluster_api"><rect fill="none" height="1082" rx="2.5" ry="2.5" style="stroke:#444444;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="704" x="7" y="260.9395"/><text fill="#444444" font-family="&quot;DejaVu Sans&quot;" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="481" x="118.5" y="278.4395">Serviço de Entregas — Azure Functions (Node.js, modelo v4)</text><text fill="#444444" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="66" x="326" y="293.9238">[Container]</text></g><!--MD5=[efe044005c58f9ae11da609fc134f032]
+entity fnHttp--><g id="elem_fnHttp"><rect fill="#85BBF0" height="155.5156" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="187" x="92.5" y="312.9395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="125" x="123.5" y="338.4395">HTTP Functions</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="136" x="118" y="353.9238">[features/*/*.function.js]</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="184" y="370.3809"> </text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="151" x="110.5" y="387.3203">createDelivery (POST),</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="152" x="108" y="404.2598">searchDeliveries (GET),</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="146" x="111" y="421.1992">updateDelivery (PUT),</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="163" x="102.5" y="438.1387">deleteDelivery (DELETE),</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="138" x="117" y="455.0781">helloCloudLog (GET).</text></g><!--MD5=[014aa0cc6e6a134e8f0e818919544259]
+entity handlers--><g id="elem_handlers"><rect fill="#85BBF0" height="136.1563" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="219" x="221.5" y="544.9395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="119" x="271.5" y="570.4395">Handlers HTTP</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="140" x="259.5" y="585.9238">[features/*/*.handler.js +</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="69" x="296.5" y="600.4434">shared/http]</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="329" y="616.9004"> </text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="195" x="235.5" y="633.8398">Leem a requisição, chamam o</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="195" x="231.5" y="650.7793">caso de uso e traduzem erros</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="109" x="276.5" y="667.7188">em status HTTP.</text></g><!--MD5=[cb056a9e1111117d358136e8c0b86e85]
+entity useCases--><g id="elem_useCases"><rect fill="#85BBF0" height="140.9961" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="191" x="259.5" y="756.9395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="161" x="272.5" y="782.4395">Casos de Uso (fatias</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="74" x="318" y="801.7988">verticais)</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="138" x="286" y="817.2832">[features/*/*UseCase.js]</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="353" y="833.7402"> </text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="159" x="275.5" y="850.6797">Create, Search, Update,</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="167" x="269.5" y="867.6191">Delete Delivery; publicam</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="148" x="281" y="884.5586">eventos após persistir.</text></g><!--MD5=[8890788e37b11dd3053f547e2b5ce265]
+entity domain--><g id="elem_domain"><rect fill="#85BBF0" height="121.6367" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="220" x="245" y="998.9395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="65" x="322.5" y="1024.4395">Domínio</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="195" x="257.5" y="1039.9238">[domain/delivery + domain/errors]</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="353" y="1056.3809"> </text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="119" x="295.5" y="1073.3203">Entidade Delivery,</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="200" x="255" y="1090.2598">DeliveryStatus, DeliveryEvents</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="125" x="292.5" y="1107.1992">e erros de domínio.</text></g><!--MD5=[9a6a2daacf0b4b68d4df1aa31a075a47]
+entity ports--><g id="elem_ports"><rect fill="#85BBF0" height="172.4551" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="195" x="500.5" y="973.9395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="51" x="572.5" y="999.4395">Portas</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="175" x="510.5" y="1014.9238">[domain/ports/deliveryPorts.js]</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="596" y="1031.3809"> </text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="97" x="549.5" y="1048.3203">DeliveryWriter,</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="104" x="544" y="1065.2598">DeliveryReader,</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="111" x="540.5" y="1082.1992">DeliveryUpdater,</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="115" x="538.5" y="1099.1387">DeliveryRemover,</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="154" x="519" y="1116.0781">DeliveryEventPublisher,</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="128" x="534" y="1133.0176">AlertNotifier, Clock.</text></g><!--MD5=[ae38f3df50bbf8acf027574e6a8bac37]
+entity repo--><g id="elem_repo"><rect fill="#85BBF0" height="104.6973" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="229" x="80.5" y="1221.9395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="209" x="90.5" y="1247.4395">MongoDeliveryRepository</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="199" x="95.5" y="1262.9238">[infrastructure/persistence/mongo]</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="193" y="1279.3809"> </text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="163" x="113.5" y="1296.3203">Implementa as portas de</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="83" x="153.5" y="1313.2598">persistência.</text></g><!--MD5=[1fe25e6ad2a661c9f8478b5f50e2a15d]
+entity publisher--><g id="elem_publisher"><rect fill="#85BBF0" height="104.6973" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="297" x="344.5" y="1221.9395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="277" x="354.5" y="1247.4395">ServiceBusDeliveryEventPublisher</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="151" x="417.5" y="1262.9238">[infrastructure/messaging]</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="491" y="1279.3809"> </text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="77" x="454.5" y="1296.3203">Implementa</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="154" x="416" y="1313.2598">DeliveryEventPublisher.</text></g><!--MD5=[eab4eb7d0ef44c19c3b4c8ba4c3c2b5b]
+entity root--><g id="elem_root"><rect fill="#85BBF0" height="104.6973" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="187" x="22.5" y="1007.4395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="141" x="45.5" y="1032.9395">Composition Root</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="132" x="50" y="1048.4238">[bootstrap/container.js]</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="114" y="1064.8809"> </text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="159" x="36.5" y="1081.8203">Instancia adaptadores e</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="156" x="38" y="1098.7598">injeta nos casos de uso.</text></g><!--MD5=[d3d8369465a5ceb503783f534308ddfd]
+entity bff--><g id="elem_bff"><rect fill="#B3B3B3" height="138.5762" rx="2.5" ry="2.5" style="stroke:#A6A6A6;stroke-width:0.5;" width="206" x="83" y="44.9395"/><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="156" x="108" y="70.4395">BFF Web / Frontend</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="86" x="143" y="85.9238">[HTTPS/JSON]</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="184" y="102.3809"> </text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="178" x="97" y="119.3203">Hoje o frontend chama /api</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="103" x="132.5" y="136.2598">diretamente; na</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="180" x="94" y="153.1992">arquitetura-alvo passa pelo</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="130" x="121" y="170.1387">API Gateway e BFF.</text></g><!--MD5=[0469bbe7e3c83ced3406d336948e0e21]
+entity mongo--><g id="elem_mongo"><path d="M154.5,1457.9395 C154.5,1447.9395 226,1447.9395 226,1447.9395 C226,1447.9395 297.5,1447.9395 297.5,1457.9395 L297.5,1534.6973 C297.5,1544.6973 226,1544.6973 226,1544.6973 C226,1544.6973 154.5,1544.6973 154.5,1534.6973 L154.5,1457.9395 " fill="#438DD5" style="stroke:#3C7FC0;stroke-width:0.5;"/><path d="M154.5,1457.9395 C154.5,1467.9395 226,1467.9395 226,1467.9395 C226,1467.9395 297.5,1467.9395 297.5,1457.9395 " fill="none" style="stroke:#3C7FC0;stroke-width:0.5;"/><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="98" x="177" y="1487.4395">Entregas DB</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="95" x="178.5" y="1502.9238">[MongoDB Atlas]</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="224" y="1519.3809"> </text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="119" x="168.5" y="1536.3203">Coleção deliveries</text></g><!--MD5=[c21c6209adb761c2c6f92b8fc687f537]
+entity bus--><g id="elem_bus"><path d="M343,1457.4395 L547,1457.4395 C552,1457.4395 552,1496.3184 552,1496.3184 C552,1496.3184 552,1535.1973 547,1535.1973 L343,1535.1973 C338,1535.1973 338,1496.3184 338,1496.3184 C338,1496.3184 338,1457.4395 343,1457.4395 " fill="#438DD5" style="stroke:#3C7FC0;stroke-width:0.5;"/><path d="M547,1457.4395 C542,1457.4395 542,1496.3184 542,1496.3184 C542,1535.1973 547,1535.1973 547,1535.1973 " fill="none" style="stroke:#3C7FC0;stroke-width:0.5;"/><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="187" x="346.5" y="1477.9395">Barramento de Eventos</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="113" x="383.5" y="1493.4238">[Azure Service Bus]</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="438" y="1509.8809"> </text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="190" x="347" y="1526.8203">Fila cloudlog-delivery-events</text></g><!--MD5=[e6980103a72f7c06897718b1405d9217]
+entity notif--><g id="elem_notif"><rect fill="#999999" height="73.2383" rx="2.5" ry="2.5" style="stroke:#8A8A8A;stroke-width:0.5;" width="206" x="744" y="1237.9395"/><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="186" x="754" y="1263.4395">Serviço de Notificações</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="845" y="1280.8613"> </text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="129" x="784.5" y="1297.8008">push / e-mail / SMS</text></g><!--MD5=[b933df2f22f7fe798d2b96341190beec]
+entity svcAlertas--><g id="elem_svcAlertas"><rect fill="#438DD5" height="153.0957" rx="2.5" ry="2.5" style="stroke:#3C7FC0;stroke-width:0.5;" width="212" x="741" y="1419.9395"/><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="145" x="774.5" y="1445.4395">Serviço de Alertas</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="96" x="797.5" y="1460.9238">[Azure Functions</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="156" x="769" y="1475.4434">(ServiceBusQueueTrigger)]</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="845" y="1491.9004"> </text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="130" x="782" y="1508.8398">Mesmo código api/,</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="184" x="753" y="1525.7793">implantado separadamente:</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="188" x="751" y="1542.7188">fatia processDeliveryEvent +</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="163" x="765.5" y="1559.6582">LogAlertNotifier (RF-05).</text></g><!--MD5=[3468d4537d9d9f5b1c1dbb1465c34526]
+link bff to fnHttp--><g id="link_bff_fnHttp"><path d="M186,183.9995 C186,220.4695 186,265.6595 186,304.4095 " fill="none" id="bff-to-fnHttp" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="186,312.5695,189,304.5695,183,304.5695,186,312.5695" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="41" x="209.5" y="226.5645">Chama</text><text fill="#666666" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="86" x="187" y="241.084">[HTTPS/JSON]</text></g><!--MD5=[64a8a2c3eb363a945b5c3a21ac50d4e4]
+link fnHttp to handlers--><g id="link_fnHttp_handlers"><path d="M236.92,469.1895 C251.63,491.5195 267.66,515.8295 282.24,537.9595 " fill="none" id="fnHttp-to-handlers" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="286.71,544.7495,284.818,536.4176,279.806,539.716,286.71,544.7495" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="41" x="263" y="511.5645">Delega</text></g><!--MD5=[f28403ca6edb35ca2861a91eac6de2b0]
+link handlers to useCases--><g id="link_handlers_useCases"><path d="M338.59,681.1795 C341.02,702.6195 343.72,726.5195 346.21,748.6495 " fill="none" id="handlers-to-useCases" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="347.12,756.7095,349.2019,748.423,343.2399,749.0973,347.12,756.7095" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="46" x="344" y="723.5645">Executa</text></g><!--MD5=[a60fcc7244326be6f28f482320f33a12]
+link useCases to domain--><g id="link_useCases_domain"><path d="M355,898.2195 C355,927.5295 355,961.5195 355,990.6595 " fill="none" id="useCases-to-domain" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="355,998.7495,358,990.7495,352,990.7495,355,998.7495" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="65" x="356" y="940.5645">Usa regras</text></g><!--MD5=[79921f2de094232e38c225ae21d078e8]
+link useCases to ports--><g id="link_useCases_ports"><path d="M428.57,898.2195 C451.85,920.2995 477.92,945.0395 502.5,968.3495 " fill="none" id="useCases-to-ports" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="508.38,973.9295,504.6492,966.243,500.5151,970.5914,508.38,973.9295" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="150" x="477" y="940.5645">Depende de (abstrações)</text></g><!--MD5=[5b8e03da539dc3d076ce8bcac25dd9ca]
+reverse link ports to repo--><g id="link_ports_repo"><path d="M493.64,1139.5395 C490.08,1141.7495 486.53,1143.8895 483,1145.9395 C451.68,1164.1495 375.63,1197.6595 309.54,1225.7595 " fill="none" id="ports-backto-repo" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="500.48,1135.2095,492.1131,1136.9403,495.3143,1142.015,500.48,1135.2095" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="68" x="417" y="1188.5645">Implementa</text></g><!--MD5=[12a98d8705ed0521ce4ab6d0bd774f2a]
+reverse link ports to publisher--><g id="link_ports_publisher"><path d="M552.32,1153.3995 C540.72,1176.8695 528.67,1201.2495 518.49,1221.8595 " fill="none" id="ports-backto-publisher" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="555.9,1146.1495,549.6669,1151.9932,555.0463,1154.6507,555.9,1146.1495" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="68" x="540" y="1188.5645">Implementa</text></g><!--MD5=[9d6c6699cc109c980408da4d74290921]
+link root to repo--><g id="link_root_repo"><path d="M135.22,1112.6495 C146.64,1143.3595 161.16,1182.4095 173.03,1214.3295 " fill="none" id="root-to-repo" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="175.83,1221.8695,175.8568,1213.3255,170.2322,1215.4146,175.83,1221.8695" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="52" x="163" y="1188.5645">Instancia</text></g><!--MD5=[38bd84e5a0e6f6a0f0408d223fdf34c6]
+link root to publisher--><g id="link_root_publisher"><path d="M180.49,1112.6195 C195.74,1124.0595 212.18,1135.7895 228,1145.9395 C270.04,1172.8895 318.63,1197.8595 362.64,1218.4295 " fill="none" id="root-to-publisher" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="369.95,1221.8195,363.9587,1215.7281,361.4307,1221.1696,369.95,1221.8195" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="52" x="306" y="1188.5645">Instancia</text></g><!--MD5=[2dd3f30c5dd38a6cc8fc8804260194d6]
+link fnHttp to root--><g id="link_fnHttp_root"><path d="M177.9,469.0995 C163.79,603.5295 135,877.8595 122.28,999.0695 " fill="none" id="fnHttp-to-root" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="121.43,1007.1795,125.256,999.54,119.2894,998.908,121.43,1007.1795" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="119" x="152" y="723.5645">Obtém casos de uso</text></g><!--MD5=[1e2391423227041b6954a5ad502930d7]
+link repo to mongo--><g id="link_repo_mongo"><path d="M202.27,1327.0195 C207.02,1360.7595 213.23,1404.8395 218.11,1439.4395 " fill="none" id="repo-to-mongo" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="219.25,1447.5695,221.1053,1439.2293,215.1639,1440.0658,219.25,1447.5695" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="53" x="248.5" y="1371.5645">Lê/grava</text><text fill="#666666" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="128" x="211" y="1386.084">[MongoDB driver/TLS]</text></g><!--MD5=[40583133655ec96c7f13e69e17efa447]
+link publisher to bus--><g id="link_publisher_bus"><path d="M481.75,1327.0195 C473.66,1364.0995 462.85,1413.6395 455.05,1449.3895 " fill="none" id="publisher-to-bus" style="stroke:#7A3E9D;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#7A3E9D" points="453.33,1457.2495,457.9621,1450.07,452.0992,1448.7946,453.33,1457.2495" style="stroke:#7A3E9D;stroke-width:1.0;"/><text fill="#7A3E9D" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="92" x="475" y="1371.5645">Publica eventos</text><text fill="#7A3E9D" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="44" x="499" y="1386.084">[AMQP]</text></g><!--MD5=[cb71500a3ba230fca5f60274494a277f]
+link bus to svcAlertas--><g id="link_bus_svcAlertas"><path d="M552.2,1496.4395 C607.84,1496.4395 675.85,1496.4395 732.52,1496.4395 " fill="none" id="bus-to-svcAlertas" style="stroke:#7A3E9D;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#7A3E9D" points="740.79,1496.4395,732.79,1493.4395,732.79,1499.4395,740.79,1496.4395" style="stroke:#7A3E9D;stroke-width:1.0;"/><text fill="#7A3E9D" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="46" x="623.5" y="1475.0645">Dispara</text><text fill="#7A3E9D" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="152" x="570.5" y="1489.584">[ServiceBusQueueTrigger]</text></g><!--MD5=[7d76953c36f7683346e9e3d1cd763206]
+reverse link notif to svcAlertas--><g id="link_notif_svcAlertas"><path d="M847,1319.4895 C847,1348.2095 847,1386.4495 847,1419.9395 " fill="none" id="notif-backto-svcAlertas" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="847,1311.2795,844,1319.2795,850,1319.2795,847,1311.2795" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="132" x="848" y="1371.5645">Envia alerta (evolução)</text><text fill="#666666" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="49" x="889.5" y="1386.084">[HTTPS]</text></g><!--MD5=[784d9dad5b9b2a4937f73280b5b96513]
+link mongo to bus--><rect fill="none" height="134.5762" id="_legend" rx="7.5" ry="7.5" style="stroke:none;stroke-width:1.0;" width="265" x="701" y="1586.0352"/><rect height="16.9395" style="stroke:none;stroke-width:1.0;fill:none;" width="253" x="707" y="1594.0352"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="51" x="707" y="1607.5977">Legend</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="758" y="1607.5977"> </text><rect fill="#438DD5" height="16.9395" style="stroke:none;stroke-width:1.0;" width="253" x="707" y="1610.9746"/><text fill="#3C7FC0" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="8" x="711" y="1624.5371">▯</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="719" y="1624.5371"> </text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="61" x="727" y="1624.5371">container</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="792" y="1624.5371"> </text><rect fill="#85BBF0" height="16.9395" style="stroke:none;stroke-width:1.0;" width="253" x="707" y="1627.9141"/><text fill="#78A8D8" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="8" x="711" y="1641.4766">▯</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="719" y="1641.4766"> </text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="74" x="727" y="1641.4766">component</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="805" y="1641.4766"> </text><rect fill="#999999" height="16.9395" style="stroke:none;stroke-width:1.0;" width="253" x="707" y="1644.8535"/><text fill="#8A8A8A" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="8" x="711" y="1658.416">▯</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="719" y="1658.416"> </text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="106" x="727" y="1658.416">external_system</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="837" y="1658.416"> </text><rect fill="#B3B3B3" height="16.9395" style="stroke:none;stroke-width:1.0;" width="253" x="707" y="1661.793"/><text fill="#A6A6A6" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="8" x="711" y="1675.3555">▯</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="719" y="1675.3555"> </text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="120" x="727" y="1675.3555">external_container</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="851" y="1675.3555"> </text><rect fill="#438DD5" height="16.9395" style="stroke:none;stroke-width:1.0;" width="253" x="707" y="1678.7324"/><text fill="#438DD5" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="8" x="711" y="1692.2949">▯</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="719" y="1692.2949"> </text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="225" x="727" y="1692.2949">implementado no código entregue</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="956" y="1692.2949"> </text><text fill="#7A3E9D" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="8" x="711" y="1709.2344">─</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="719" y="1709.2344"> </text><text fill="#7A3E9D" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="206" x="727" y="1709.2344">assíncrono (evento/mensagem)</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="937" y="1709.2344"> </text><line style="stroke:#00000000;stroke-width:1.0;" x1="707" x2="960" y1="1594.0352" y2="1594.0352"/><line style="stroke:#00000000;stroke-width:1.0;" x1="707" x2="960" y1="1610.9746" y2="1610.9746"/><line style="stroke:#00000000;stroke-width:1.0;" x1="707" x2="960" y1="1627.9141" y2="1627.9141"/><line style="stroke:#00000000;stroke-width:1.0;" x1="707" x2="960" y1="1644.8535" y2="1644.8535"/><line style="stroke:#00000000;stroke-width:1.0;" x1="707" x2="960" y1="1661.793" y2="1661.793"/><line style="stroke:#00000000;stroke-width:1.0;" x1="707" x2="960" y1="1678.7324" y2="1678.7324"/><line style="stroke:#00000000;stroke-width:1.0;" x1="707" x2="960" y1="1695.6719" y2="1695.6719"/><line style="stroke:#00000000;stroke-width:1.0;" x1="707" x2="960" y1="1712.6113" y2="1712.6113"/><line style="stroke:#00000000;stroke-width:1.0;" x1="707" x2="707" y1="1594.0352" y2="1712.6113"/><line style="stroke:#00000000;stroke-width:1.0;" x1="960" x2="960" y1="1594.0352" y2="1712.6113"/><!--MD5=[39a1e7134b102887155cfa8007805fe9]
+@startuml c4-3-componentes
+!include <C4/C4_Component>
+!include _style.iuml
+LAYOUT_TOP_DOWN()
+title CloudLog — C4 Nível 3: Componentes do Serviço de Entregas (código entregue: api/src)
+
+Container_Ext(bff, "BFF Web / Frontend", "HTTPS/JSON", "Hoje o frontend chama /api diretamente; na arquitetura-alvo passa pelo API Gateway e BFF.")
+ContainerDb(mongo, "Entregas DB", "MongoDB Atlas", "Coleção deliveries")
+ContainerQueue(bus, "Barramento de Eventos", "Azure Service Bus", "Fila cloudlog-delivery-events")
+System_Ext(notif, "Serviço de Notificações", "push / e-mail / SMS")
+
+Container_Boundary(api, "Serviço de Entregas — Azure Functions (Node.js, modelo v4)") {
+  Component(fnHttp, "HTTP Functions", "features/*/*.function.js", "createDelivery (POST), searchDeliveries (GET), updateDelivery (PUT), deleteDelivery (DELETE), helloCloudLog (GET).")
+  Component(handlers, "Handlers HTTP", "features/*/*.handler.js + shared/http", "Leem a requisição, chamam o caso de uso e traduzem erros em status HTTP.")
+  Component(useCases, "Casos de Uso (fatias verticais)", "features/*/*UseCase.js", "Create, Search, Update, Delete Delivery; publicam eventos após persistir.")
+  Component(domain, "Domínio", "domain/delivery + domain/errors", "Entidade Delivery, DeliveryStatus, DeliveryEvents e erros de domínio.")
+  Component(ports, "Portas", "domain/ports/deliveryPorts.js", "DeliveryWriter, DeliveryReader, DeliveryUpdater, DeliveryRemover, DeliveryEventPublisher, AlertNotifier, Clock.")
+  Component(repo, "MongoDeliveryRepository", "infrastructure/persistence/mongo", "Implementa as portas de persistência.")
+  Component(publisher, "ServiceBusDeliveryEventPublisher", "infrastructure/messaging", "Implementa DeliveryEventPublisher.")
+  Component(root, "Composition Root", "bootstrap/container.js", "Instancia adaptadores e injeta nos casos de uso.")
+}
+Container(svcAlertas, "Serviço de Alertas", "Azure Functions (ServiceBusQueueTrigger)", "Mesmo código api/, implantado separadamente: fatia processDeliveryEvent + LogAlertNotifier (RF-05).", $tags="impl")
+
+Rel(bff, fnHttp, "Chama", "HTTPS/JSON")
+Rel(fnHttp, handlers, "Delega")
+Rel(handlers, useCases, "Executa")
+Rel(useCases, domain, "Usa regras")
+Rel(useCases, ports, "Depende de (abstrações)")
+Rel_U(repo, ports, "Implementa")
+Rel_U(publisher, ports, "Implementa")
+Rel(root, repo, "Instancia")
+Rel(root, publisher, "Instancia")
+Rel(fnHttp, root, "Obtém casos de uso")
+Rel(repo, mongo, "Lê/grava", "MongoDB driver/TLS")
+Rel(publisher, bus, "Publica eventos", "AMQP", $tags="async")
+Rel_R(bus, svcAlertas, "Dispara", "ServiceBusQueueTrigger", $tags="async")
+Rel_U(svcAlertas, notif, "Envia alerta (evolução)", "HTTPS")
+
+Lay_R(mongo, bus)
+SHOW_LEGEND()
+@enduml
+
+@startuml c4-3-componentes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam LegendBorderColor transparent
+skinparam LegendBackgroundColor transparent
+skinparam LegendFontColor #FFFFFF
+
+skinparam shadowing<<legendArea>> false
+skinparam rectangle<<legendArea>> {
+    backgroundcolor #00000000
+    bordercolor #00000000
+}
+
+skinparam rectangle {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam database {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam queue {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam actor {
+    StereotypeFontSize 12
+    shadowing false
+    style awesome
+}
+
+skinparam person {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam package {
+    StereotypeFontSize 6
+    StereotypeFontColor transparent
+    FontStyle plain
+    BackgroundColor transparent
+}
+
+skinparam rectangle<<boundary>> {
+    Shadowing false
+    StereotypeFontSize 6
+    StereotypeFontColor transparent
+    FontColor #444444
+    BorderColor #444444
+    BackgroundColor transparent
+    BorderStyle dashed
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam database<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam queue<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam actor<<person>> {
+    StereotypeFontColor #08427B
+    FontColor #08427B
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam person<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam database<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam actor<<external_person>> {
+    StereotypeFontColor #686868
+    FontColor #686868
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam person<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+
+
+skinparam rectangle<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam database<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam queue<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam actor<<system>> {
+    StereotypeFontColor #1168BD
+    FontColor #1168BD
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam person<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+
+skinparam rectangle<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam database<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam actor<<external_system>> {
+    StereotypeFontColor #999999
+    FontColor #999999
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam person<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+
+
+
+
+sprite $person [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000025788300000000005886410000000000000
+000000000007DFFFFFFD9643347BFFFFFFFB400000000000
+0000000004EFFFFFFFFFFFFFFFFFFFFFFFFFFB1000000000
+000000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFD200000000
+00000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE10000000
+0000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB0000000
+000000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5000000
+000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD000000
+000009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF200000
+00000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF600000
+00000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF800000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00000EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF700000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+0000008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD3000000
+000000014555555555555555555555555555555300000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+sprite $person2 [48x48/16] {
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000002578888300000000005888864100000000000
+0000000007DFFFFFFFFD9643347BFFFFFFFFFB4000000000
+00000004EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB10000000
+0000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD2000000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+00003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+0000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF50000
+0003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD0000
+0009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2000
+000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000
+000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA000
+000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000
+0009FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFF2000
+0003FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFD0000
+0000BFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFF50000
+00003FFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFB00000
+000006FFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFE100000
+0000007FFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFD2000000
+00000004EFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFB10000000
+0000000007DF8FFFFFFFFFFFFFFFFFFFFFF8FB4000000000
+000000000002578888888888888888888864100000000000
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam database<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam queue<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam actor<<container>> {
+    StereotypeFontColor #438DD5
+    FontColor #438DD5
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam person<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+
+skinparam rectangle<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam database<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam queue<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam actor<<external_container>> {
+    StereotypeFontColor #B3B3B3
+    FontColor #B3B3B3
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam person<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+skinparam database<<component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+skinparam queue<<component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+skinparam actor<<component>> {
+    StereotypeFontColor #85BBF0
+    FontColor #85BBF0
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+skinparam person<<component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+
+
+skinparam rectangle<<external_component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+skinparam database<<external_component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+skinparam queue<<external_component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+skinparam actor<<external_component>> {
+    StereotypeFontColor #CCCCCC
+    FontColor #CCCCCC
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+skinparam person<<external_component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<impl>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+}
+skinparam database<<impl>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+}
+skinparam queue<<impl>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+}
+skinparam actor<<impl>> {
+    StereotypeFontColor #438DD5
+    FontColor #438DD5
+    BackgroundColor #438DD5
+}
+skinparam person<<impl>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+}
+
+
+skinparam rectangle<<plan>> {
+    StereotypeFontColor #0B2545
+    FontColor #0B2545
+    BackgroundColor #B7D3F2
+    BorderColor #5B8AC4
+}
+skinparam database<<plan>> {
+    StereotypeFontColor #0B2545
+    FontColor #0B2545
+    BackgroundColor #B7D3F2
+    BorderColor #5B8AC4
+}
+skinparam queue<<plan>> {
+    StereotypeFontColor #0B2545
+    FontColor #0B2545
+    BackgroundColor #B7D3F2
+    BorderColor #5B8AC4
+}
+skinparam actor<<plan>> {
+    StereotypeFontColor #B7D3F2
+    FontColor #B7D3F2
+    BackgroundColor #B7D3F2
+    BorderColor #5B8AC4
+}
+skinparam person<<plan>> {
+    StereotypeFontColor #0B2545
+    FontColor #0B2545
+    BackgroundColor #B7D3F2
+    BorderColor #5B8AC4
+}
+
+
+skinparam arrow<<async>> {
+    Color 7A3E9D;text:7A3E9D;line.dashed
+}
+
+skinparam defaultFontName "DejaVu Sans"
+top to bottom direction
+title CloudLog — C4 Nível 3: Componentes do Serviço de Entregas (código entregue: api/src)
+
+rectangle "==BFF Web / Frontend\n//<size:12>[HTTPS/JSON]</size>//\n\n Hoje o frontend chama /api diretamente; na arquitetura-alvo passa pelo API Gateway e BFF." <<external_container>> as bff 
+database "==Entregas DB\n//<size:12>[MongoDB Atlas]</size>//\n\n Coleção deliveries" <<container>> as mongo 
+queue "==Barramento de Eventos\n//<size:12>[Azure Service Bus]</size>//\n\n Fila cloudlog-delivery-events" <<container>> as bus 
+rectangle "==Serviço de Notificações\n\n push / e-mail / SMS" <<external_system>> as notif 
+
+rectangle "==Serviço de Entregas — Azure Functions (Node.js, modelo v4)\n<size:12>[Container]</size>" <<boundary>> as api  {
+  rectangle "==HTTP Functions\n//<size:12>[features/*/*.function.js]</size>//\n\n createDelivery (POST), searchDeliveries (GET), updateDelivery (PUT), deleteDelivery (DELETE), helloCloudLog (GET)." <<component>> as fnHttp 
+  rectangle "==Handlers HTTP\n//<size:12>[features/*/*.handler.js + shared/http]</size>//\n\n Leem a requisição, chamam o caso de uso e traduzem erros em status HTTP." <<component>> as handlers 
+  rectangle "==Casos de Uso (fatias verticais)\n//<size:12>[features/*/*UseCase.js]</size>//\n\n Create, Search, Update, Delete Delivery; publicam eventos após persistir." <<component>> as useCases 
+  rectangle "==Domínio\n//<size:12>[domain/delivery + domain/errors]</size>//\n\n Entidade Delivery, DeliveryStatus, DeliveryEvents e erros de domínio." <<component>> as domain 
+  rectangle "==Portas\n//<size:12>[domain/ports/deliveryPorts.js]</size>//\n\n DeliveryWriter, DeliveryReader, DeliveryUpdater, DeliveryRemover, DeliveryEventPublisher, AlertNotifier, Clock." <<component>> as ports 
+  rectangle "==MongoDeliveryRepository\n//<size:12>[infrastructure/persistence/mongo]</size>//\n\n Implementa as portas de persistência." <<component>> as repo 
+  rectangle "==ServiceBusDeliveryEventPublisher\n//<size:12>[infrastructure/messaging]</size>//\n\n Implementa DeliveryEventPublisher." <<component>> as publisher 
+  rectangle "==Composition Root\n//<size:12>[bootstrap/container.js]</size>//\n\n Instancia adaptadores e injeta nos casos de uso." <<component>> as root 
+}
+rectangle "==Serviço de Alertas\n//<size:12>[Azure Functions (ServiceBusQueueTrigger)]</size>//\n\n Mesmo código api/, implantado separadamente: fatia processDeliveryEvent + LogAlertNotifier (RF-05)." <<impl>><<container>> as svcAlertas 
+
+bff - ->> fnHttp : **Chama**\n//<size:12>[HTTPS/JSON]</size>//
+fnHttp - ->> handlers : **Delega**
+handlers - ->> useCases : **Executa**
+useCases - ->> domain : **Usa regras**
+useCases - ->> ports : **Depende de (abstrações)**
+repo -UP->> ports : **Implementa**
+publisher -UP->> ports : **Implementa**
+root - ->> repo : **Instancia**
+root - ->> publisher : **Instancia**
+fnHttp - ->> root : **Obtém casos de uso**
+repo - ->> mongo : **Lê/grava**\n//<size:12>[MongoDB driver/TLS]</size>//
+publisher - ->> bus <<async>> : **Publica eventos**\n//<size:12>[AMQP]</size>//
+bus -RIGHT->> svcAlertas <<async>> : **Dispara**\n//<size:12>[ServiceBusQueueTrigger]</size>//
+svcAlertas -UP->> notif : **Envia alerta (evolução)**\n//<size:12>[HTTPS]</size>//
+
+mongo -[hidden]R- bus
+hide stereotype
+legend right
+<#00000000,#00000000>|<color:#000000>**Legend**</color> |
+|<#438DD5><color:#3C7FC0> <U+25AF></color> <color:#FFFFFF> container </color> |
+|<#85BBF0><color:#78A8D8> <U+25AF></color> <color:#000000> component </color> |
+|<#999999><color:#8A8A8A> <U+25AF></color> <color:#FFFFFF> external_system </color> |
+|<#B3B3B3><color:#A6A6A6> <U+25AF></color> <color:#FFFFFF> external_container </color> |
+|<#438DD5><color:#438DD5> <U+25AF></color> <color:#FFFFFF> implementado no código entregue </color> |
+|<color:#7A3E9D> <U+2500></color> <color:#7A3E9D> assíncrono (evento/mensagem) </color> |
+endlegend
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 14:01:30 BRT 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

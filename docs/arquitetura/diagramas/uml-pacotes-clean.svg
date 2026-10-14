@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="622px" preserveAspectRatio="none" style="width:1246px;height:622px;background:#FFFFFF;" version="1.1" viewBox="0 0 1246 622" width="1246px" zoomAndPan="magnify"><defs/><g><rect fill="none" height="26.9395" id="_title" style="stroke:none;stroke-width:1.0;" width="635" x="298.5" y="5"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="625" x="303.5" y="23.5625">Clean Architecture + Vertical Slice — Diagrama de Pacotes e Regra de Dependência (api/src)</text><!--MD5=[36944fc37a71538cd95167e1d9b7083f]
+cluster FD--><g id="cluster_FD"><rect fill="#F0F0F0" height="219" rx="2.5" ry="2.5" style="stroke:#8AA2C2;stroke-width:1.0;" width="627" x="130" y="44.9395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="151" x="368" y="60.502">Frameworks &amp; Drivers</text></g><!--MD5=[3db579321d9e1495f4843472289929e6]
+cluster IA--><g id="cluster_IA"><rect fill="#E3EEFB" height="185" rx="2.5" ry="2.5" style="stroke:#8AA2C2;stroke-width:1.0;" width="645" x="233" y="295.9395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="128" x="491.5" y="311.502">Interface Adapters</text></g><!--MD5=[4b75a8c45955889c019af6ea18cf67a5]
+cluster APP--><g id="cluster_APP"><rect fill="#CFE2F8" height="88" rx="2.5" ry="2.5" style="stroke:#8AA2C2;stroke-width:1.0;" width="202" x="7" y="392.9395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="163" x="26.5" y="408.502">Application (Use Cases)</text></g><!--MD5=[1f35fdfc0604f53473a210a307b278e7]
+cluster DOM--><g id="cluster_DOM"><rect fill="#B7D3F2" height="104" rx="2.5" ry="2.5" style="stroke:#8AA2C2;stroke-width:1.0;" width="515" x="188" y="512.9395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="118" x="386.5" y="528.502">Entities (Domain)</text></g><!--MD5=[b8b9d1457ab5a369c74b48f9b412607e]
+entity FN--><g id="elem_FN"><rect fill="#F1F1F1" height="36.9395" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="169" x="544.5" y="87.9395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="149" x="554.5" y="111.502">features/*/*.function.js</text></g><!--MD5=[50c35d0a5350f8e8f48a6d3669f54f50]
+entity BOOT--><g id="elem_BOOT"><rect fill="#F1F1F1" height="36.9395" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="213" x="348.5" y="202.9395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="193" x="358.5" y="226.502">bootstrap (Composition Root)</text></g><!--MD5=[629f17c66f0e22e7673992f2dfab1378]
+entity LIBS--><g id="elem_LIBS"><rect fill="#F1F1F1" height="36.9395" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="356" x="154" y="87.9395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="336" x="164" y="111.502">@azure/functions · mongodb · @azure/service-bus</text></g><!--MD5=[1730225aef07b03d0f5eccd0ae1124d3]
+entity HD--><g id="elem_HD"><rect fill="#F1F1F1" height="36.9395" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="165" x="696.5" y="330.9395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="145" x="706.5" y="354.502">features/*/*.handler.js</text></g><!--MD5=[37c6688db026a1258583cb16b1e42d17]
+entity SH--><g id="elem_SH"><rect fill="#F1F1F1" height="36.9395" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="97" x="619.5" y="427.9395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="77" x="629.5" y="451.502">shared/http</text></g><!--MD5=[8f8e40a50b51e447b2199cfff9b5df24]
+entity INF--><g id="elem_INF"><rect fill="#F1F1F1" height="36.9395" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="412" x="249" y="330.9395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="392" x="259" y="354.502">infrastructure (persistence · messaging · notifications · time)</text></g><!--MD5=[62e43bbec3da0a8e3edd1560198742d1]
+entity UC--><g id="elem_UC"><rect fill="#F1F1F1" height="36.9395" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="170" x="23" y="427.9395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="150" x="33" y="451.502">features/*/*UseCase.js</text></g><!--MD5=[118f42602524ad482f02b27ef22fc383]
+entity D--><g id="elem_D"><rect fill="#F1F1F1" height="36.9395" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="447" x="231.5" y="555.9395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="427" x="241.5" y="579.502">domain (Delivery · DeliveryStatus · DeliveryEvents · errors · ports)</text></g><g id="elem_GMN309"><path d="M726.5,545.9395 L726.5,603.1279 L1071.5,603.1279 L1071.5,555.9395 L1061.5,545.9395 L726.5,545.9395 " fill="#FFF8E1" style="stroke:#181818;stroke-width:0.5;"/><path d="M1061.5,545.9395 L1061.5,555.9395 L1071.5,555.9395 L1061.5,545.9395 " fill="#FFF8E1" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="308" x="732.5" y="563.5332">Regra de dependência: as setas apontam sempre</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="305" x="732.5" y="579.2627">para dentro. O domínio não depende de nenhum</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="324" x="732.5" y="594.9922">pacote externo (verificado por teste de arquitetura).</text></g><g id="elem_GMN312"><path d="M781,184.9395 L781,257.8574 L1239,257.8574 L1239,194.9395 L1229,184.9395 L781,184.9395 " fill="#FFF8E1" style="stroke:#181818;stroke-width:0.5;"/><path d="M1229,184.9395 L1229,194.9395 L1239,194.9395 L1229,184.9395 " fill="#FFF8E1" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="374" x="787" y="202.5332">Vertical Slice: cada funcionalidade é uma pasta em features/</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="407" x="787" y="218.2627">(createDelivery, searchDeliveries, updateDelivery, deleteDelivery,</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="437" x="787" y="233.9922">hello, processDeliveryEvent) contendo function + handler + use case.</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="226" x="787" y="249.7217">Fatias não importam umas às outras.</text></g><!--MD5=[653e7f532ba870b17fc2aeeb2ad4dccd]
+link FN to HD--><g id="link_FN_HD"><path d="M640.03,125.1595 C666.9,168.3395 735.71,278.8895 765.22,326.3095 " fill="none" id="FN-to-HD" style="stroke:#333333;stroke-width:1.0;"/><polygon fill="#333333" points="767.95,330.6895,766.5868,320.9354,765.3064,326.4455,759.7964,325.1651,767.95,330.6895" style="stroke:#333333;stroke-width:1.0;"/></g><!--MD5=[107582e15df468a0140805330df5ba59]
+link FN to BOOT--><g id="link_FN_BOOT"><path d="M601.81,125.0995 C570.53,145.4095 519.25,178.7195 486.32,200.0995 " fill="none" id="FN-to-BOOT" style="stroke:#333333;stroke-width:1.0;"/><polygon fill="#333333" points="482,202.9095,491.7276,201.3688,486.1952,200.189,487.375,194.6566,482,202.9095" style="stroke:#333333;stroke-width:1.0;"/></g><!--MD5=[587a4999049254c6e5e80bf581e0b81d]
+link HD to UC--><g id="link_HD_UC"><path d="M696.45,365.7795 C690.56,366.5995 684.7,367.3395 679,367.9395 C580.37,378.3995 329.23,360.9395 233,384.9395 C199.75,393.2295 164.88,410.9695 140.45,425.1095 " fill="none" id="HD-to-UC" style="stroke:#333333;stroke-width:1.0;"/><polygon fill="#333333" points="136.01,427.6995,145.7973,426.5996,140.3237,425.1712,141.7521,419.6977,136.01,427.6995" style="stroke:#333333;stroke-width:1.0;"/></g><!--MD5=[75de480eabcc6af8fceb443a34350328]
+link HD to SH--><g id="link_HD_SH"><path d="M758.38,368.0895 C739.69,384.0795 712.12,407.6795 692.35,424.5995 " fill="none" id="HD-to-SH" style="stroke:#333333;stroke-width:1.0;"/><polygon fill="#333333" points="688.51,427.8895,697.9526,425.0899,692.3133,424.6437,692.7594,419.0045,688.51,427.8895" style="stroke:#333333;stroke-width:1.0;"/></g><!--MD5=[eaadae4823953ec2409f50f45f8dac04]
+link SH to D--><g id="link_SH_D"><path d="M638.38,464.9595 C599.23,488.1195 530.39,528.8395 489.11,553.2595 " fill="none" id="SH-to-D" style="stroke:#333333;stroke-width:1.0;"/><polygon fill="#333333" points="484.71,555.8695,494.4945,554.7455,489.0175,553.3306,490.4324,547.8536,484.71,555.8695" style="stroke:#333333;stroke-width:1.0;"/></g><!--MD5=[51651288ecab0edf8fbfd11b596bd5db]
+link UC to D--><g id="link_UC_D"><path d="M156.25,464.9595 C220.81,488.3995 334.91,529.8295 401.86,554.1495 " fill="none" id="UC-to-D" style="stroke:#333333;stroke-width:1.0;"/><polygon fill="#333333" points="406.6,555.8695,399.4972,549.0467,401.8981,554.1688,396.7761,556.5697,406.6,555.8695" style="stroke:#333333;stroke-width:1.0;"/></g><!--MD5=[569d8d6ac242d394a64da0ca14dd96b9]
+link INF to D--><g id="link_INF_D"><path d="M455,368.3095 C455,408.5395 455,506.1295 455,550.6395 " fill="none" id="INF-to-D" style="stroke:#333333;stroke-width:1.0;"/><polygon fill="#333333" points="455,555.7895,459,546.7895,455,550.7895,451,546.7895,455,555.7895" style="stroke:#333333;stroke-width:1.0;"/></g><!--MD5=[97255a2a5f61963f5d6f271e945ecb3a]
+link BOOT to INF--><g id="link_BOOT_INF"><path d="M455,239.9595 C455,262.3095 455,300.9995 455,325.6295 " fill="none" id="BOOT-to-INF" style="stroke:#333333;stroke-width:1.0;"/><polygon fill="#333333" points="455,330.6595,459,321.6595,455,325.6595,451,321.6595,455,330.6595" style="stroke:#333333;stroke-width:1.0;"/></g><!--MD5=[8c40a2b975722eab87b37126a8106f8c]
+link BOOT to UC--><g id="link_BOOT_UC"><path d="M348.38,239.9295 C309.75,249.7395 267.23,264.8495 233,287.9395 C179.82,323.8095 138.58,389.3295 119.54,423.4595 " fill="none" id="BOOT-to-UC" style="stroke:#333333;stroke-width:1.0;"/><polygon fill="#333333" points="117.11,427.8595,124.9626,421.915,119.5273,423.4826,117.9596,418.0473,117.11,427.8595" style="stroke:#333333;stroke-width:1.0;"/></g><!--MD5=[54bdc85dc710269c95fadccfdd666422]
+link DOM to GMN309--><g id="link_DOM_GMN309"><path d="M204.0594,512.9013 C204.1691,512.6644 204.2802,512.4282 204.3926,512.1928 C205.292,510.3091 206.2769,508.4723 207.3548,506.6984 C209.5106,503.1505 212.0388,499.8545 215,496.9395 C220.69,491.3395 224.57,493.8295 232.5,492.9395 C257.07,490.1695 652.93,490.1695 677.5,492.9395 C736.74,499.6195 800.2,525.0395 843.93,545.7295 " fill="none" id="DOM-GMN309" style="stroke:#333333;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/></g><!--MD5=[1d72152f36e9c8e180d5a1a7901acddc]
+link FD to GMN312--><g id="link_FD_GMN312"><path d="M757.2996,111.0302 C757.4198,111.0822 757.5413,111.1348 757.6639,111.1879 C757.9092,111.2941 758.1592,111.4023 758.414,111.5126 C758.9235,111.7332 759.4517,111.9619 759.9983,112.1985 C762.1847,113.145 764.6643,114.2185 767.407,115.4059 C778.3778,120.1554 793.5581,126.7276 811.0213,134.2882 C845.9475,149.4095 890.005,168.4845 927.78,184.8395 " fill="none" id="FD-GMN312" style="stroke:#333333;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/></g><!--MD5=[cae967ece2cb225c06302691c96e0977]
+@startuml uml-pacotes-clean
+!include _uml.iuml
+title Clean Architecture + Vertical Slice — Diagrama de Pacotes e Regra de Dependência (api/src)
+
+package "Frameworks & Drivers" as FD #F0F0F0 {
+  rectangle "features/*/*.function.js" as FN
+  rectangle "bootstrap (Composition Root)" as BOOT
+  rectangle "@azure/functions · mongodb · @azure/service-bus" as LIBS
+}
+package "Interface Adapters" as IA #E3EEFB {
+  rectangle "features/*/*.handler.js" as HD
+  rectangle "shared/http" as SH
+  rectangle "infrastructure (persistence · messaging · notifications · time)" as INF
+}
+package "Application (Use Cases)" as APP #CFE2F8 {
+  rectangle "features/*/*UseCase.js" as UC
+}
+package "Entities (Domain)" as DOM #B7D3F2 {
+  rectangle "domain (Delivery · DeliveryStatus · DeliveryEvents · errors · ports)" as D
+}
+
+FN - -> HD
+FN - -> BOOT
+HD - -> UC
+HD - -> SH
+SH - -> D
+UC - -> D
+INF - -> D
+BOOT - -> INF
+BOOT - -> UC
+
+note right of DOM
+  Regra de dependência: as setas apontam sempre
+  para dentro. O domínio não depende de nenhum
+  pacote externo (verificado por teste de arquitetura).
+end note
+
+note bottom of FD
+  Vertical Slice: cada funcionalidade é uma pasta em features/
+  (createDelivery, searchDeliveries, updateDelivery, deleteDelivery,
+  hello, processDeliveryEvent) contendo function + handler + use case.
+  Fatias não importam umas às outras.
+end note
+@enduml
+
+@startuml uml-pacotes-clean
+skinparam defaultFontName "DejaVu Sans"
+skinparam shadowing false
+hide footbox
+skinparam classAttributeIconSize 0
+skinparam packageStyle rectangle
+skinparam class {
+  BackgroundColor #F4F8FD
+  BorderColor #1A4E8A
+  ArrowColor #333333
+  StereotypeFontColor #1A4E8A
+}
+skinparam package {
+  BorderColor #8AA2C2
+  FontColor #0B2545
+}
+skinparam componentStyle uml2
+skinparam component {
+  BackgroundColor #F4F8FD
+  BorderColor #1A4E8A
+}
+skinparam interface {
+  BackgroundColor #FFFFFF
+  BorderColor #1A4E8A
+}
+skinparam sequence {
+  ParticipantBackgroundColor #F4F8FD
+  ParticipantBorderColor #1A4E8A
+  LifeLineBorderColor #8AA2C2
+  ArrowColor #333333
+}
+skinparam note {
+  BackgroundColor #FFF8E1
+  BorderColor #C9A227
+}
+title Clean Architecture + Vertical Slice — Diagrama de Pacotes e Regra de Dependência (api/src)
+
+package "Frameworks & Drivers" as FD #F0F0F0 {
+  rectangle "features/*/*.function.js" as FN
+  rectangle "bootstrap (Composition Root)" as BOOT
+  rectangle "@azure/functions · mongodb · @azure/service-bus" as LIBS
+}
+package "Interface Adapters" as IA #E3EEFB {
+  rectangle "features/*/*.handler.js" as HD
+  rectangle "shared/http" as SH
+  rectangle "infrastructure (persistence · messaging · notifications · time)" as INF
+}
+package "Application (Use Cases)" as APP #CFE2F8 {
+  rectangle "features/*/*UseCase.js" as UC
+}
+package "Entities (Domain)" as DOM #B7D3F2 {
+  rectangle "domain (Delivery · DeliveryStatus · DeliveryEvents · errors · ports)" as D
+}
+
+FN - -> HD
+FN - -> BOOT
+HD - -> UC
+HD - -> SH
+SH - -> D
+UC - -> D
+INF - -> D
+BOOT - -> INF
+BOOT - -> UC
+
+note right of DOM
+  Regra de dependência: as setas apontam sempre
+  para dentro. O domínio não depende de nenhum
+  pacote externo (verificado por teste de arquitetura).
+end note
+
+note bottom of FD
+  Vertical Slice: cada funcionalidade é uma pasta em features/
+  (createDelivery, searchDeliveries, updateDelivery, deleteDelivery,
+  hello, processDeliveryEvent) contendo function + handler + use case.
+  Fatias não importam umas às outras.
+end note
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 14:01:30 BRT 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

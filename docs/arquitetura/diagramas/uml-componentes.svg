@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="597px" preserveAspectRatio="none" style="width:1787px;height:597px;background:#FFFFFF;" version="1.1" viewBox="0 0 1787 597" width="1787px" zoomAndPan="magnify"><defs/><g><rect fill="none" height="26.9395" id="_title" style="stroke:none;stroke-width:1.0;" width="738" x="517.5" y="5"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="728" x="522.5" y="23.5625">C4 Nível 4 / UML — Diagrama de Componentes do Serviço de Entregas (interfaces fornecidas e requeridas)</text><!--MD5=[fa508830d4f54e19bcdf7ae514cf8f92]
+cluster Código api/ — Serviço de Entregas (HTTP) e Serviço de Alertas (fila)--><g id="cluster_Código api/ — Serviço de Entregas (HTTP) e Serviço de Alertas (fila)"><rect fill="none" height="508" rx="2.5" ry="2.5" style="stroke:#8AA2C2;stroke-width:1.0;" width="1359" x="150" y="44.9395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="459" x="600" y="60.502">Código api/ — Serviço de Entregas (HTTP) e Serviço de Alertas (fila)</text></g><!--MD5=[4fbf31c67cc381fb6f67b1ea472f4c7d]
+entity IHttp--><g id="elem_IHttp"><ellipse cx="291" cy="373.9395" fill="#FFFFFF" rx="8" ry="8" style="stroke:#1A4E8A;stroke-width:0.5;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="133" x="224.5" y="404.502">HTTP /api/deliveries</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="60" x="224.5" y="421.4414">/api/hello</text></g><!--MD5=[a0b81e94ca79ded3f04bccbc1de297b4]
+entity Slices--><g id="elem_Slices"><rect fill="#F4F8FD" height="131.6367" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="203" x="539" y="311.9395"/><rect fill="#F4F8FD" height="10" style="stroke:#1A4E8A;stroke-width:0.5;" width="15" x="722" y="316.9395"/><rect fill="#F4F8FD" height="2" style="stroke:#1A4E8A;stroke-width:0.5;" width="4" x="720" y="318.9395"/><rect fill="#F4F8FD" height="2" style="stroke:#1A4E8A;stroke-width:0.5;" width="4" x="720" y="322.9395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="105" x="583" y="345.502">«vertical slices»</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="163" x="554" y="362.4414">[features] createDelivery</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="107" x="554" y="379.3809">searchDeliveries</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="100" x="554" y="396.3203">updateDelivery</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="94" x="554" y="413.2598">deleteDelivery</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="30" x="554" y="430.1992">hello</text></g><!--MD5=[3a1cc0fc9a6767a9e6bdbff0206def9c]
+entity SharedHttp--><g id="elem_SharedHttp"><rect fill="#F4F8FD" height="63.8789" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="140" x="570.5" y="79.9395"/><rect fill="#F4F8FD" height="10" style="stroke:#1A4E8A;stroke-width:0.5;" width="15" x="690.5" y="84.9395"/><rect fill="#F4F8FD" height="2" style="stroke:#1A4E8A;stroke-width:0.5;" width="4" x="688.5" y="86.9395"/><rect fill="#F4F8FD" height="2" style="stroke:#1A4E8A;stroke-width:0.5;" width="4" x="688.5" y="90.9395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="87" x="585.5" y="113.502">[shared/http]</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="100" x="585.5" y="130.4414">HttpAdapterKit</text></g><!--MD5=[2fb3fc8e03cad589fa238654c03a9f58]
+entity Domain--><g id="elem_Domain"><rect fill="#F4F8FD" height="80.8184" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="142" x="569.5" y="179.4395"/><rect fill="#F4F8FD" height="10" style="stroke:#1A4E8A;stroke-width:0.5;" width="15" x="691.5" y="184.4395"/><rect fill="#F4F8FD" height="2" style="stroke:#1A4E8A;stroke-width:0.5;" width="4" x="689.5" y="186.4395"/><rect fill="#F4F8FD" height="2" style="stroke:#1A4E8A;stroke-width:0.5;" width="4" x="689.5" y="190.4395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="45" x="613" y="213.002">«core»</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="58" x="584.5" y="229.9414">[domain]</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="102" x="584.5" y="246.8809">DeliveryDomain</text></g><!--MD5=[fc6e986f9fc8b6f203f3c0af6f829802]
+entity IRepo--><g id="elem_IRepo"><ellipse cx="1017" cy="193.9395" fill="#FFFFFF" rx="8" ry="8" style="stroke:#1A4E8A;stroke-width:0.5;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="288" x="873" y="224.502">DeliveryWriter · Reader · Updater · Remover</text></g><!--MD5=[8beb016051487e0f622fb836eb54db4a]
+entity IPub--><g id="elem_IPub"><ellipse cx="1017" cy="390.9395" fill="#FFFFFF" rx="8" ry="8" style="stroke:#1A4E8A;stroke-width:0.5;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="150" x="942" y="421.502">DeliveryEventPublisher</text></g><!--MD5=[00d94e6993b8ed18a276ec4900fddf33]
+entity IAlert--><g id="elem_IAlert"><ellipse cx="640.5" cy="507.9395" fill="#FFFFFF" rx="8" ry="8" style="stroke:#1A4E8A;stroke-width:0.5;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="79" x="601" y="538.502">AlertNotifier</text></g><!--MD5=[7cc9116c9bbcbd811c897883443cc8c2]
+entity IClock--><g id="elem_IClock"><ellipse cx="1017" cy="297.9395" fill="#FFFFFF" rx="8" ry="8" style="stroke:#1A4E8A;stroke-width:0.5;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="37" x="998.5" y="328.502">Clock</text></g><!--MD5=[f6181eb7291fdfcdc70f8bd8cb7742a2]
+entity Mongo--><g id="elem_Mongo"><rect fill="#F4F8FD" height="80.8184" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="209" x="1257" y="146.4395"/><rect fill="#F4F8FD" height="10" style="stroke:#1A4E8A;stroke-width:0.5;" width="15" x="1446" y="151.4395"/><rect fill="#F4F8FD" height="2" style="stroke:#1A4E8A;stroke-width:0.5;" width="4" x="1444" y="153.4395"/><rect fill="#F4F8FD" height="2" style="stroke:#1A4E8A;stroke-width:0.5;" width="4" x="1444" y="157.4395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="70" x="1321.5" y="180.002">«adapter»</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="98" x="1272" y="196.9414">[infrastructure]</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="169" x="1272" y="213.8809">MongoDeliveryRepository</text></g><!--MD5=[2a69711d69faaaad2c11aac397dde9b8]
+entity Pub--><g id="elem_Pub"><rect fill="#F4F8FD" height="80.8184" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="263" x="1230" y="402.4395"/><rect fill="#F4F8FD" height="10" style="stroke:#1A4E8A;stroke-width:0.5;" width="15" x="1473" y="407.4395"/><rect fill="#F4F8FD" height="2" style="stroke:#1A4E8A;stroke-width:0.5;" width="4" x="1471" y="409.4395"/><rect fill="#F4F8FD" height="2" style="stroke:#1A4E8A;stroke-width:0.5;" width="4" x="1471" y="413.4395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="70" x="1321.5" y="436.002">«adapter»</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="98" x="1245" y="452.9414">[infrastructure]</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="223" x="1245" y="469.8809">ServiceBusDeliveryEventPublisher</text></g><!--MD5=[8deeff1cfa66d96b67ddb5a2a7f9c862]
+entity Clock--><g id="elem_Clock"><rect fill="#F4F8FD" height="80.8184" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="138" x="1292.5" y="262.4395"/><rect fill="#F4F8FD" height="10" style="stroke:#1A4E8A;stroke-width:0.5;" width="15" x="1410.5" y="267.4395"/><rect fill="#F4F8FD" height="2" style="stroke:#1A4E8A;stroke-width:0.5;" width="4" x="1408.5" y="269.4395"/><rect fill="#F4F8FD" height="2" style="stroke:#1A4E8A;stroke-width:0.5;" width="4" x="1408.5" y="273.4395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="70" x="1321.5" y="296.002">«adapter»</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="98" x="1307.5" y="312.9414">[infrastructure]</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="86" x="1307.5" y="329.8809">SystemClock</text></g><!--MD5=[4d65782647d64e21a92b473b2db819be]
+entity Consumer--><g id="elem_Consumer"><rect fill="#F4F8FD" height="80.8184" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="250" x="166" y="455.4395"/><rect fill="#F4F8FD" height="10" style="stroke:#1A4E8A;stroke-width:0.5;" width="15" x="396" y="460.4395"/><rect fill="#F4F8FD" height="2" style="stroke:#1A4E8A;stroke-width:0.5;" width="4" x="394" y="462.4395"/><rect fill="#F4F8FD" height="2" style="stroke:#1A4E8A;stroke-width:0.5;" width="4" x="394" y="466.4395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="98" x="237" y="489.002">«vertical slice»</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="210" x="181" y="505.9414">[features] processDeliveryEvent</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="174" x="181" y="522.8809">(ServiceBusQueueTrigger)</text></g><!--MD5=[3c9c57a7798ac2c2903428bcb377c627]
+entity Alert--><g id="elem_Alert"><rect fill="#F4F8FD" height="80.8184" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="144" x="945" y="455.4395"/><rect fill="#F4F8FD" height="10" style="stroke:#1A4E8A;stroke-width:0.5;" width="15" x="1069" y="460.4395"/><rect fill="#F4F8FD" height="2" style="stroke:#1A4E8A;stroke-width:0.5;" width="4" x="1067" y="462.4395"/><rect fill="#F4F8FD" height="2" style="stroke:#1A4E8A;stroke-width:0.5;" width="4" x="1067" y="466.4395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="70" x="977" y="489.002">«adapter»</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="98" x="960" y="505.9414">[infrastructure]</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="104" x="960" y="522.8809">LogAlertNotifier</text></g><!--MD5=[4a65e84059005d12693a083370a06717]
+entity client--><g id="elem_client"><ellipse cx="54.5" cy="343.9395" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M54.5,351.9395 L54.5,378.9395 M41.5,359.9395 L67.5,359.9395 M54.5,378.9395 L41.5,393.9395 M54.5,378.9395 L67.5,393.9395 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="97" x="6" y="409.002">Frontend / BFF</text></g><!--MD5=[0469bbe7e3c83ced3406d336948e0e21]
+entity mongo--><g id="elem_mongo"><path d="M1617,165.4395 C1617,155.4395 1688,155.4395 1688,155.4395 C1688,155.4395 1759,155.4395 1759,165.4395 L1759,208.3184 C1759,218.3184 1688,218.3184 1688,218.3184 C1688,218.3184 1617,218.3184 1617,208.3184 L1617,165.4395 " fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;"/><path d="M1617,165.4395 C1617,175.4395 1688,175.4395 1688,175.4395 C1688,175.4395 1759,175.4395 1759,165.4395 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="102" x="1627" y="193.002">MongoDB Atlas</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="122" x="1627" y="209.9414">cloudlog.deliveries</text></g><!--MD5=[c21c6209adb761c2c6f92b8fc687f537]
+entity bus--><g id="elem_bus"><path d="M1601,520.9395 L1775,520.9395 C1780,520.9395 1780,542.8789 1780,542.8789 C1780,542.8789 1780,564.8184 1775,564.8184 L1601,564.8184 C1596,564.8184 1596,542.8789 1596,542.8789 C1596,542.8789 1596,520.9395 1601,520.9395 " fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;"/><path d="M1775,520.9395 C1770,520.9395 1770,542.8789 1770,542.8789 C1770,564.8184 1775,564.8184 1775,564.8184 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="120" x="1601" y="539.502">Azure Service Bus</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="164" x="1601" y="556.4414">cloudlog-delivery-events</text></g><!--MD5=[b028c35b5561ddc8dc43bcca31c89f87]
+link client to IHttp--><g id="link_client_IHttp"><path d="M103.24,373.9395 C157.92,373.9395 244.19,373.9395 276.87,373.9395 " fill="none" id="client-to-IHttp" style="stroke:#333333;stroke-width:1.0;"/><polygon fill="#333333" points="281.98,373.9395,272.98,369.9395,276.98,373.9395,272.98,377.9395,281.98,373.9395" style="stroke:#333333;stroke-width:1.0;"/></g><!--MD5=[d643162ef57866d044be39f4d6e18cdf]
+link IHttp to Slices--><g id="link_IHttp_Slices"><path d="M300.25,374.0295 C332.26,374.3995 450.9,375.7695 538.9,376.7795 " fill="none" id="IHttp-Slices" style="stroke:#333333;stroke-width:1.0;"/></g><!--MD5=[891b1828b4f099a0f4c0903d0254cffb]
+link Slices to SharedHttp--><g id="link_Slices_SharedHttp"><path d="M538.79,326.6895 C499.2,299.0895 466.94,261.9695 484,219.4395 C498.45,183.4295 532.7,157.8095 565.48,140.6295 " fill="none" id="Slices-to-SharedHttp" style="stroke:#333333;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#333333" points="570.31,138.1595,560.4764,138.707,565.8609,140.441,564.1269,145.8256,570.31,138.1595" style="stroke:#333333;stroke-width:1.0;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="39" x="458" y="233.0332">«use»</text></g><!--MD5=[0ac670031168abed8a98cb1d90d72e39]
+link Slices to Domain--><g id="link_Slices_Domain"><path d="M640.5,311.8495 C640.5,296.3295 640.5,280.1395 640.5,265.7395 " fill="none" id="Slices-to-Domain" style="stroke:#333333;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#333333" points="640.5,260.5195,636.5,269.5195,640.5,265.5195,644.5,269.5195,640.5,260.5195" style="stroke:#333333;stroke-width:1.0;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="39" x="609.5" y="291.2832">«use»</text></g><!--MD5=[b35a8c6b978694caecfbaae177d28d68]
+link Slices to IRepo--><g id="link_Slices_IRepo"><path d="M742.09,316.3595 C779.94,294.3695 823.79,270.2795 865,250.9395 C914.7,227.6095 976.78,206.5995 1003.17,198.0295 " fill="none" id="Slices-to-IRepo" style="stroke:#333333;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#333333" points="1007.96,196.4795,998.165,195.4511,1003.2039,198.022,1000.633,203.0609,1007.96,196.4795" style="stroke:#333333;stroke-width:1.0;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="61" x="773" y="263.5332">«require»</text></g><!--MD5=[9468e6c111f1ac5dfd995341b0aa7438]
+link Slices to IPub--><g id="link_Slices_IPub"><path d="M742.35,381.4395 C834.03,384.6195 961.1,389.0295 1002.43,390.4695 " fill="none" id="Slices-to-IPub" style="stroke:#333333;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#333333" points="1007.89,390.6595,999.0451,386.3272,1002.8935,390.4733,998.7473,394.3217,1007.89,390.6595" style="stroke:#333333;stroke-width:1.0;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="61" x="773" y="379.5332">«require»</text></g><!--MD5=[ef19e36204510a584ea4e1f261f33b84]
+link Slices to IClock--><g id="link_Slices_IClock"><path d="M742.35,356.3995 C834.41,336.7295 962.15,309.4395 1002.93,300.7295 " fill="none" id="Slices-to-IClock" style="stroke:#333333;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#333333" points="1007.89,299.6695,998.2533,297.6363,1003.0002,300.7132,999.9233,305.4601,1007.89,299.6695" style="stroke:#333333;stroke-width:1.0;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="61" x="773" y="334.5332">«require»</text></g><!--MD5=[a575f49baa07e3ef500bcc654a156d5e]
+link IRepo to Mongo--><g id="link_IRepo_Mongo"><path d="M1026.13,193.7695 C1057.13,193.1395 1170.51,190.8195 1256.73,189.0595 " fill="none" id="IRepo-Mongo" style="stroke:#333333;stroke-width:1.0;"/></g><!--MD5=[7dd26c4734ba325cc4ce7861f8277743]
+link IPub to Pub--><g id="link_IPub_Pub"><path d="M1026.13,392.1695 C1053.99,396.3995 1148.38,410.7295 1229.8,423.0995 " fill="none" id="IPub-Pub" style="stroke:#333333;stroke-width:1.0;"/></g><!--MD5=[2c167aa5457a3327d0bd6bde6a5157e9]
+link IClock to Clock--><g id="link_IClock_Clock"><path d="M1026.13,298.0595 C1061.63,298.5795 1205.23,300.6695 1292.28,301.9395 " fill="none" id="IClock-Clock" style="stroke:#333333;stroke-width:1.0;"/></g><!--MD5=[333c644533283bfdc89d03af602674b4]
+link Mongo to mongo--><g id="link_Mongo_mongo"><path d="M1466.07,186.9395 C1513.3,186.9395 1568.2,186.9395 1611.46,186.9395 " fill="none" id="Mongo-to-mongo" style="stroke:#333333;stroke-width:1.0;"/><polygon fill="#333333" points="1616.67,186.9395,1607.67,182.9395,1611.67,186.9395,1607.67,190.9395,1616.67,186.9395" style="stroke:#333333;stroke-width:1.0;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="23" x="1534" y="183.5332">TLS</text></g><!--MD5=[0bc1df4497c4241ed768ce0a6d5cfd77]
+link Pub to bus--><g id="link_Pub_bus"><path d="M1493.08,483.1795 C1532.87,495.4395 1575.29,508.5195 1610.28,519.2995 " fill="none" id="Pub-to-bus" style="stroke:#333333;stroke-width:1.0;"/><polygon fill="#333333" points="1615.39,520.8695,1607.9684,514.3949,1610.612,519.396,1605.6109,522.0396,1615.39,520.8695" style="stroke:#333333;stroke-width:1.0;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="39" x="1526" y="492.5332">AMQP</text></g><!--MD5=[645726d8971c6dc5ec2459572c98f64c]
+link bus to Consumer--><g id="link_bus_Consumer"><path d="M1595.89,563.2795 C1531.13,575.9795 1441.91,589.9395 1362.5,589.9395 C639.5,589.9395 639.5,589.9395 639.5,589.9395 C554.21,589.9395 461.09,563.2295 392.74,538.2795 " fill="none" id="bus-to-Consumer" style="stroke:#333333;stroke-width:1.0;"/><polygon fill="#333333" points="387.86,536.4895,394.9194,543.3572,392.551,538.22,397.6882,535.8516,387.86,536.4895" style="stroke:#333333;stroke-width:1.0;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="41" x="996.5" y="586.5332">trigger</text></g><!--MD5=[c8a205323639844a2f9dcf541e206fa7]
+link Consumer to IAlert--><g id="link_Consumer_IAlert"><path d="M416.47,500.2395 C496.37,502.9995 591.43,506.2795 626.05,507.4795 " fill="none" id="Consumer-to-IAlert" style="stroke:#333333;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#333333" points="631.43,507.6595,622.5723,503.3534,626.4329,507.4881,622.2982,511.3487,631.43,507.6595" style="stroke:#333333;stroke-width:1.0;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="61" x="447" y="498.5332">«require»</text></g><!--MD5=[a0974cef8b429d0381ddb4eebb43104a]
+link IAlert to Alert--><g id="link_IAlert_Alert"><path d="M649.67,507.6795 C687.7,506.4595 849.53,501.2695 944.9,498.2195 " fill="none" id="IAlert-Alert" style="stroke:#333333;stroke-width:1.0;"/></g><!--MD5=[d4adc4bbf458374f5c9199e829a7b413]
+@startuml uml-componentes
+!include _uml.iuml
+title C4 Nível 4 / UML — Diagrama de Componentes do Serviço de Entregas (interfaces fornecidas e requeridas)
+left to right direction
+
+actor "Frontend / BFF" as client
+database "MongoDB Atlas\ncloudlog.deliveries" as mongo
+queue "Azure Service Bus\ncloudlog-delivery-events" as bus
+
+package "Código api/ — Serviço de Entregas (HTTP) e Serviço de Alertas (fila)" {
+  interface "HTTP /api/deliveries\n/api/hello" as IHttp
+  component "[features] createDelivery\nsearchDeliveries\nupdateDelivery\ndeleteDelivery\nhello" as Slices <<vertical slices>>
+  component "[shared/http]\nHttpAdapterKit" as SharedHttp
+  component "[domain]\nDeliveryDomain" as Domain <<core>>
+  interface "DeliveryWriter · Reader · Updater · Remover" as IRepo
+  interface "DeliveryEventPublisher" as IPub
+  interface "AlertNotifier" as IAlert
+  interface "Clock" as IClock
+  component "[infrastructure]\nMongoDeliveryRepository" as Mongo <<adapter>>
+  component "[infrastructure]\nServiceBusDeliveryEventPublisher" as Pub <<adapter>>
+  component "[infrastructure]\nSystemClock" as Clock <<adapter>>
+  component "[features] processDeliveryEvent\n(ServiceBusQueueTrigger)" as Consumer <<vertical slice>>
+  component "[infrastructure]\nLogAlertNotifier" as Alert <<adapter>>
+}
+
+client - -> IHttp
+IHttp - - Slices
+Slices .> SharedHttp : <<use>>
+Slices .> Domain : <<use>>
+Slices ..> IRepo : <<require>>
+Slices ..> IPub : <<require>>
+Slices ..> IClock : <<require>>
+IRepo - - Mongo
+IPub - - Pub
+IClock - - Clock
+Mongo - -> mongo : TLS
+Pub - -> bus : AMQP
+bus - -> Consumer : trigger
+Consumer ..> IAlert : <<require>>
+IAlert - - Alert
+@enduml
+
+@startuml uml-componentes
+skinparam defaultFontName "DejaVu Sans"
+skinparam shadowing false
+hide footbox
+skinparam classAttributeIconSize 0
+skinparam packageStyle rectangle
+skinparam class {
+  BackgroundColor #F4F8FD
+  BorderColor #1A4E8A
+  ArrowColor #333333
+  StereotypeFontColor #1A4E8A
+}
+skinparam package {
+  BorderColor #8AA2C2
+  FontColor #0B2545
+}
+skinparam componentStyle uml2
+skinparam component {
+  BackgroundColor #F4F8FD
+  BorderColor #1A4E8A
+}
+skinparam interface {
+  BackgroundColor #FFFFFF
+  BorderColor #1A4E8A
+}
+skinparam sequence {
+  ParticipantBackgroundColor #F4F8FD
+  ParticipantBorderColor #1A4E8A
+  LifeLineBorderColor #8AA2C2
+  ArrowColor #333333
+}
+skinparam note {
+  BackgroundColor #FFF8E1
+  BorderColor #C9A227
+}
+title C4 Nível 4 / UML — Diagrama de Componentes do Serviço de Entregas (interfaces fornecidas e requeridas)
+left to right direction
+
+actor "Frontend / BFF" as client
+database "MongoDB Atlas\ncloudlog.deliveries" as mongo
+queue "Azure Service Bus\ncloudlog-delivery-events" as bus
+
+package "Código api/ — Serviço de Entregas (HTTP) e Serviço de Alertas (fila)" {
+  interface "HTTP /api/deliveries\n/api/hello" as IHttp
+  component "[features] createDelivery\nsearchDeliveries\nupdateDelivery\ndeleteDelivery\nhello" as Slices <<vertical slices>>
+  component "[shared/http]\nHttpAdapterKit" as SharedHttp
+  component "[domain]\nDeliveryDomain" as Domain <<core>>
+  interface "DeliveryWriter · Reader · Updater · Remover" as IRepo
+  interface "DeliveryEventPublisher" as IPub
+  interface "AlertNotifier" as IAlert
+  interface "Clock" as IClock
+  component "[infrastructure]\nMongoDeliveryRepository" as Mongo <<adapter>>
+  component "[infrastructure]\nServiceBusDeliveryEventPublisher" as Pub <<adapter>>
+  component "[infrastructure]\nSystemClock" as Clock <<adapter>>
+  component "[features] processDeliveryEvent\n(ServiceBusQueueTrigger)" as Consumer <<vertical slice>>
+  component "[infrastructure]\nLogAlertNotifier" as Alert <<adapter>>
+}
+
+client - -> IHttp
+IHttp - - Slices
+Slices .> SharedHttp : <<use>>
+Slices .> Domain : <<use>>
+Slices ..> IRepo : <<require>>
+Slices ..> IPub : <<require>>
+Slices ..> IClock : <<require>>
+IRepo - - Mongo
+IPub - - Pub
+IClock - - Clock
+Mongo - -> mongo : TLS
+Pub - -> bus : AMQP
+bus - -> Consumer : trigger
+Consumer ..> IAlert : <<require>>
+IAlert - - Alert
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 14:01:30 BRT 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

@@ -1,0 +1,115 @@
+@startuml der
+!include _uml.iuml
+title Diagrama de Entidades e Relacionamentos — Database per Service (notação pé-de-galinha)
+hide circle
+skinparam entity {
+  BackgroundColor #F4F8FD
+  BorderColor #1A4E8A
+}
+
+package "Entregas DB — MongoDB Atlas (Serviço de Entregas)" #EEF6EE {
+  entity "MOTORISTA" as MOT {
+    * id : ObjectId <<PK>>
+    --
+    * nome : string
+    * cnh : string
+    * telefone : string
+    * ativo : boolean
+  }
+  entity "VEICULO" as VEI {
+    * id : ObjectId <<PK>>
+    --
+    * placa : string
+    * modelo : string
+    * capacidade_kg : number
+  }
+  entity "ALOCACAO_VEICULO" as ALO {
+    * id : ObjectId <<PK>>
+    --
+    * motorista_id : ObjectId <<FK>>
+    * veiculo_id : ObjectId <<FK>>
+    * inicio : Date
+    fim : Date
+  }
+  entity "ROTA" as ROT {
+    * id : ObjectId <<PK>>
+    --
+    * motorista_id : ObjectId <<FK>>
+    * veiculo_id : ObjectId <<FK>>
+    * data : Date
+    * status : string
+    trajeto_planejado : GeoJSON
+  }
+  entity "ENTREGA (coleção deliveries — implementada)" as ENT {
+    * _id : ObjectId <<PK>>
+    --
+    rota_id : ObjectId <<FK, planejado>>
+    * code : string
+    * customer : string
+    * destination : string
+    * driver : string
+    * status : Pendente | Em rota | Atrasada | Entregue
+    * eta : string
+    progress : number (0..100)
+    * createdAt : Date
+    * updatedAt : Date
+  }
+}
+
+package "Telemetria DB — Cosmos DB" #F6F2FA {
+  entity "EVENTO_TELEMETRIA" as TEL {
+    * id : string <<PK>>
+    --
+    * veiculo_id : string <<ref. lógica>>
+    * latitude : number
+    * longitude : number
+    velocidade_kmh : number
+    * registrado_em : DateTime
+  }
+}
+
+package "Comprovantes — Blob Storage + metadados" #FBF6EC {
+  entity "COMPROVANTE" as COM {
+    * id : string <<PK>>
+    --
+    * entrega_id : string <<ref. lógica>>
+    * foto_url : string
+    * assinatura_url : string
+    * recebedor : string
+    * enviado_em : DateTime
+  }
+}
+
+package "Alertas DB — Table Storage" #FBEFEF {
+  entity "ALERTA" as ALE {
+    * PartitionKey : data <<PK>>
+    * RowKey : id <<PK>>
+    --
+    * entrega_id : string <<ref. lógica>>
+    * tipo : ATRASO | DESVIO
+    * mensagem : string
+    lido : boolean
+  }
+}
+
+package "Indicadores DB — Azure SQL" #EEF2F6 {
+  entity "KPI_DIARIO" as KPI {
+    * data : date <<PK>>
+    --
+    entregas_concluidas : int
+    entregas_atrasadas : int
+    tempo_medio_rota_min : decimal
+    consumo_medio_km_l : decimal
+  }
+}
+
+MOT ||--o{ ALO : possui
+VEI ||--o{ ALO : alocado em
+MOT ||--o{ ROT : executa
+VEI ||--o{ ROT : utilizado em
+ROT ||--|{ ENT : contém
+
+ENT .. COM : 0..1 (referência por id, sem FK)
+ENT .. ALE : 0..* (referência por id, sem FK)
+VEI .. TEL : 0..* (referência por id, sem FK)
+@enduml

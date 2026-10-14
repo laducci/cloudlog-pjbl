@@ -1,0 +1,25 @@
+@startuml c4-1-contexto
+!include <C4/C4_Context>
+!include _style.iuml
+LAYOUT_TOP_DOWN()
+title CloudLog — C4 Nível 1: Contexto do Sistema
+
+Person(gerente, "Gerente de Logística", "Carlos. Planeja rotas e entregas, acompanha a frota e os indicadores.")
+Person(sac, "Atendente de SAC", "Fernanda. Consulta status, localização e atrasos para atender clientes.")
+Person(motorista, "Motorista de Frota", "Marcos. Consulta rotas, atualiza entregas e envia comprovantes.")
+
+System(cloudlog, "CloudLog", "Plataforma cloud de gestão logística: rotas e entregas, rastreamento em tempo real, comprovação digital, alertas e indicadores.")
+
+System_Ext(gps, "Dispositivos GPS / IoT", "Rastreadores embarcados nos veículos.")
+System_Ext(idp, "Provedor de Identidade", "Microsoft Entra External ID: login, MFA e emissão de tokens (RF-01).")
+System_Ext(notif, "Serviço de Notificações", "Envio de push, e-mail e SMS.")
+
+Rel(gerente, cloudlog, "Gerencia rotas, entregas e indicadores", "HTTPS")
+Rel(sac, cloudlog, "Consulta entregas e alertas", "HTTPS")
+Rel(motorista, cloudlog, "Atualiza entregas e envia comprovantes", "HTTPS / app mobile")
+Rel(gps, cloudlog, "Envia posição e telemetria", "MQTT", $tags="async")
+Rel(cloudlog, idp, "Autentica usuários e valida tokens", "OIDC / OAuth 2.0")
+Rel(cloudlog, notif, "Solicita envio de alertas", "HTTPS", $tags="async")
+
+SHOW_LEGEND()
+@enduml

@@ -1,0 +1,82 @@
+@startuml c4-2-conteineres
+!include <C4/C4_Container>
+!include _style.iuml
+LAYOUT_TOP_DOWN()
+title CloudLog — C4 Nível 2: Contêineres (Microfrontends + API Gateway + BFF + Microsserviços serverless + EDA)
+
+Person(gerente, "Gerente de Logística")
+Person(sac, "Atendente de SAC")
+Person(motorista, "Motorista de Frota")
+System_Ext(gps, "Dispositivos GPS / IoT")
+System_Ext(idp, "Provedor de Identidade", "Entra External ID (MFA)")
+System_Ext(notif, "Serviço de Notificações", "push / e-mail / SMS")
+
+System_Boundary(cloudlog, "CloudLog") {
+  Boundary(front, "Frontend — Microfrontends (Azure Static Web Apps)") {
+    Container(shell, "Shell Web", "React + Vite, Module Federation (host)", "Layout, login, menu e carregamento dos microfrontends. Hoje: SPA React única com as telas Operação e Entregas.", $tags="plan")
+    Container(mfeEntregas, "MFE Entregas", "React (remote)", "Pesquisa, inserção, alteração e exclusão de entregas (RF-03).", $tags="plan")
+    Container(mfeOperacao, "MFE Operação", "React (remote)", "Indicadores, alertas e visão operacional (RF-05, RF-06).", $tags="plan")
+    Container(mfeRastreio, "MFE Rastreamento", "React (remote)", "Mapa da frota em tempo real (RF-02).", $tags="plan")
+  }
+  Container(mobile, "App do Motorista", "React Native", "Rotas do dia, status e comprovação digital com foto e assinatura (RF-04).", $tags="plan")
+
+  Container(gateway, "API Gateway", "Azure API Management", "Ponto único de entrada: valida JWT, aplica rate limit, CORS e roteia para os BFFs.", $tags="plan")
+  Container(bffWeb, "BFF Web", "Azure Functions (Node.js)", "Agrega dados para o painel do gerente e do SAC.", $tags="plan")
+  Container(bffMobile, "BFF Mobile", "Azure Functions (Node.js)", "Payload enxuto e sincronização offline para o motorista.", $tags="plan")
+
+  Boundary(ms, "Microsserviços serverless (Azure Functions, plano Consumption)") {
+    Container(svcEntregas, "Serviço de Entregas", "Azure Functions (Node.js) — Clean Architecture + Vertical Slice", "CRUD de rotas e entregas; publica eventos de domínio.", $tags="impl")
+    Container(svcTelemetria, "Serviço de Telemetria", "Azure Functions", "Ingestão de posições, rastreamento e detecção de desvio (RF-02).", $tags="plan")
+    Container(svcComprovantes, "Serviço de Comprovantes", "Azure Functions", "Recebe fotos e assinaturas, gera URLs SAS (RF-04).", $tags="plan")
+    Container(svcAlertas, "Serviço de Alertas", "Azure Functions (ServiceBusQueueTrigger)", "Consome eventos e dispara alertas de atraso/desvio (RF-05).", $tags="impl")
+    Container(svcIndicadores, "Serviço de Indicadores", "Azure Functions", "Projeções de leitura para dashboards (RF-06).", $tags="plan")
+  }
+
+  ContainerDb(dbEntregas, "Entregas DB", "MongoDB Atlas", "Coleção deliveries.", $tags="impl")
+  ContainerDb(dbTelemetria, "Telemetria DB", "Azure Cosmos DB", "Posições e eventos de telemetria.", $tags="plan")
+  ContainerDb(dbComprovantes, "Comprovantes Storage", "Azure Blob Storage", "Fotos e assinaturas.", $tags="plan")
+  ContainerDb(dbAlertas, "Alertas DB", "Azure Table Storage", "Histórico de alertas.", $tags="plan")
+  ContainerDb(dbIndicadores, "Indicadores DB", "Azure SQL Database", "Modelo analítico.", $tags="plan")
+
+  ContainerQueue(bus, "Barramento de Eventos", "Azure Service Bus", "Fila/tópico de eventos de domínio (DeliveryCreated, DeliveryUpdated, DeliveryDeleted, PositionReceived...).", $tags="impl")
+  ContainerQueue(iotHub, "Ingestão IoT", "Azure IoT Hub", "Recebe mensagens MQTT dos rastreadores.", $tags="plan")
+}
+
+Rel(gerente, shell, "Usa", "HTTPS")
+Rel(sac, shell, "Usa", "HTTPS")
+Rel(motorista, mobile, "Usa")
+Rel(shell, mfeEntregas, "Carrega em tempo de execução", "Module Federation")
+Rel(shell, mfeOperacao, "Carrega", "Module Federation")
+Rel(shell, mfeRastreio, "Carrega", "Module Federation")
+Rel(shell, idp, "Login + MFA", "OIDC")
+
+Rel(mfeEntregas, gateway, "Chama API", "HTTPS/JSON")
+Rel(mfeOperacao, gateway, "Chama API", "HTTPS/JSON")
+Rel(mfeRastreio, gateway, "Chama API", "HTTPS/JSON")
+Rel(mobile, gateway, "Chama API", "HTTPS/JSON")
+Rel(gateway, bffWeb, "Roteia /web/*", "HTTPS")
+Rel(gateway, bffMobile, "Roteia /mobile/*", "HTTPS")
+
+Rel(bffWeb, svcEntregas, "/api/deliveries", "HTTPS/JSON")
+Rel(bffWeb, svcIndicadores, "Consulta KPIs", "HTTPS/JSON")
+Rel(bffWeb, svcTelemetria, "Posições", "HTTPS/JSON")
+Rel(bffMobile, svcEntregas, "Entregas do motorista", "HTTPS/JSON")
+Rel(bffMobile, svcComprovantes, "Envia comprovante", "HTTPS")
+
+Rel(svcEntregas, dbEntregas, "Lê/grava (exclusivo)", "MongoDB driver/TLS")
+Rel(svcTelemetria, dbTelemetria, "Lê/grava (exclusivo)")
+Rel(svcComprovantes, dbComprovantes, "Grava arquivos (exclusivo)")
+Rel(svcAlertas, dbAlertas, "Grava alertas (exclusivo)")
+Rel(svcIndicadores, dbIndicadores, "Lê/grava (exclusivo)")
+
+Rel(gps, iotHub, "Posições", "MQTT", $tags="async")
+Rel(iotHub, svcTelemetria, "Dispara ingestão", "Event Hubs", $tags="async")
+Rel(svcEntregas, bus, "Publica eventos", "AMQP", $tags="async")
+Rel(svcTelemetria, bus, "Publica PositionReceived / RouteDeviation", "AMQP", $tags="async")
+Rel(svcComprovantes, bus, "Publica ProofSubmitted", "AMQP", $tags="async")
+Rel(bus, svcAlertas, "Entrega eventos", "ServiceBusQueueTrigger", $tags="async")
+Rel(bus, svcIndicadores, "Entrega eventos", "Subscription", $tags="async")
+Rel(svcAlertas, notif, "Envia alerta", "HTTPS")
+
+SHOW_LEGEND()
+@enduml

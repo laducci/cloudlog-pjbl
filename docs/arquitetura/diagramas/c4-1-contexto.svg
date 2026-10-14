@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="787px" preserveAspectRatio="none" style="width:925px;height:787px;background:#FFFFFF;" version="1.1" viewBox="0 0 925 787" width="925px" zoomAndPan="magnify"><defs/><g><rect fill="none" height="26.9395" id="_title" style="stroke:none;stroke-width:1.0;" width="313" x="299.25" y="5"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="303" x="304.25" y="23.5625">CloudLog — C4 Nível 1: Contexto do Sistema</text><!--MD5=[1c261f789cf92f2b22d4584c79f6f03d]
+entity gerente--><g id="elem_gerente"><rect fill="#08427B" height="155.1172" rx="2.5" ry="2.5" style="stroke:#073B6F;stroke-width:0.5;" width="214" x="7" y="44.9395"/><image height="48" width="48" x="90" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACD0lEQVR4Xu2YoU4EMRCGT+4j8Ai8AhaH4QHgAUjQuFMECUgMIUgwJAgMhgQsAYUiJCiQIBBY+EITsjfTdme6V24v4c8vyGbb+ZjOtN0bNcvjQXmkH83WvYBWto6PLm6v7p7uH1/w2fXD+PBycX1Pv2l3IdDm/vn7x+dXQiAubRzoURa7gRZWd0iGRIiJbOnhnfYBQZNJjNbuyY2eJG8fkDE3bbG4ep6MHUAsgYxmE3nVs6VsBWJSGccsOlFPmLIViMzLOB7pCVO2AtHJMohH7Fh6zqitQK7m0rJvAVYgGcEpe//PLdDz65sM4pF9N7ICcXDKIB5Nv6j7tD0NoSdM2QrU9Gg0ewE1LqBhHR3BBdvj2vapnidjHxD/q6vd7Pvhr31AwcY8eXMTXAKECZZJFXuEq27aLgQK5uLMohCenGGuGewOxSjBvYBqeG6B+Nqiblggdjnc+ZXDy+FNFpFzw76O3UBAROuXh6FoiAcf5g9eTvUgzy0nWg6I8cXHRUpg5bOVBCo+KDpFajOf23GgPme7RSQ+lacIENUgJ6gg1k6HjgOlqnLqip4tEuhv0hNEMXUD0clyXE3p6pZA0S2nnvTlXwLJEZWlb7cTQH1+USgTN4VhAenm/wea1OCAOmqo6fE1WCb9WSKBah+rbUWPWAmE2Rvk0ApiB45eOyNAzU8xcTvj8KvkKEoOaIYeHNA3ZuygAvFMUO0AAAAASUVORK5CYII=" y="54.9395"/><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="163" x="32.5" y="118.4395">Gerente de Logística</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="112" y="135.8613"> </text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="145" x="41.5" y="152.8008">Carlos. Planeja rotas e</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="190" x="17" y="169.7402">entregas, acompanha a frota</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="111" x="58.5" y="186.6797">e os indicadores.</text></g><!--MD5=[be9f6de3346dc78ec37c9fdb54718f0f]
+entity sac--><g id="elem_sac"><rect fill="#08427B" height="155.1172" rx="2.5" ry="2.5" style="stroke:#073B6F;stroke-width:0.5;" width="203" x="256.5" y="44.9395"/><image height="48" width="48" x="334" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACD0lEQVR4Xu2YoU4EMRCGT+4j8Ai8AhaH4QHgAUjQuFMECUgMIUgwJAgMhgQsAYUiJCiQIBBY+EITsjfTdme6V24v4c8vyGbb+ZjOtN0bNcvjQXmkH83WvYBWto6PLm6v7p7uH1/w2fXD+PBycX1Pv2l3IdDm/vn7x+dXQiAubRzoURa7gRZWd0iGRIiJbOnhnfYBQZNJjNbuyY2eJG8fkDE3bbG4ep6MHUAsgYxmE3nVs6VsBWJSGccsOlFPmLIViMzLOB7pCVO2AtHJMohH7Fh6zqitQK7m0rJvAVYgGcEpe//PLdDz65sM4pF9N7ICcXDKIB5Nv6j7tD0NoSdM2QrU9Gg0ewE1LqBhHR3BBdvj2vapnidjHxD/q6vd7Pvhr31AwcY8eXMTXAKECZZJFXuEq27aLgQK5uLMohCenGGuGewOxSjBvYBqeG6B+Nqiblggdjnc+ZXDy+FNFpFzw76O3UBAROuXh6FoiAcf5g9eTvUgzy0nWg6I8cXHRUpg5bOVBCo+KDpFajOf23GgPme7RSQ+lacIENUgJ6gg1k6HjgOlqnLqip4tEuhv0hNEMXUD0clyXE3p6pZA0S2nnvTlXwLJEZWlb7cTQH1+USgTN4VhAenm/wea1OCAOmqo6fE1WCb9WSKBah+rbUWPWAmE2Rvk0ApiB45eOyNAzU8xcTvj8KvkKEoOaIYeHNA3ZuygAvFMUO0AAAAASUVORK5CYII=" y="54.9395"/><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="146" x="285" y="118.4395">Atendente de SAC</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="356" y="135.8613"> </text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="175" x="270.5" y="152.8008">Fernanda. Consulta status,</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="171" x="270.5" y="169.7402">localização e atrasos para</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="109" x="303.5" y="186.6797">atender clientes.</text></g><!--MD5=[ebac6f7c3cc5ba1b81c2ff678684a57e]
+entity motorista--><g id="elem_motorista"><rect fill="#08427B" height="155.1172" rx="2.5" ry="2.5" style="stroke:#073B6F;stroke-width:0.5;" width="188" x="495" y="44.9395"/><image height="48" width="48" x="565" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACD0lEQVR4Xu2YoU4EMRCGT+4j8Ai8AhaH4QHgAUjQuFMECUgMIUgwJAgMhgQsAYUiJCiQIBBY+EITsjfTdme6V24v4c8vyGbb+ZjOtN0bNcvjQXmkH83WvYBWto6PLm6v7p7uH1/w2fXD+PBycX1Pv2l3IdDm/vn7x+dXQiAubRzoURa7gRZWd0iGRIiJbOnhnfYBQZNJjNbuyY2eJG8fkDE3bbG4ep6MHUAsgYxmE3nVs6VsBWJSGccsOlFPmLIViMzLOB7pCVO2AtHJMohH7Fh6zqitQK7m0rJvAVYgGcEpe//PLdDz65sM4pF9N7ICcXDKIB5Nv6j7tD0NoSdM2QrU9Gg0ewE1LqBhHR3BBdvj2vapnidjHxD/q6vd7Pvhr31AwcY8eXMTXAKECZZJFXuEq27aLgQK5uLMohCenGGuGewOxSjBvYBqeG6B+Nqiblggdjnc+ZXDy+FNFpFzw76O3UBAROuXh6FoiAcf5g9eTvUgzy0nWg6I8cXHRUpg5bOVBCo+KDpFajOf23GgPme7RSQ+lacIENUgJ6gg1k6HjgOlqnLqip4tEuhv0hNEMXUD0clyXE3p6pZA0S2nnvTlXwLJEZWlb7cTQH1+USgTN4VhAenm/wea1OCAOmqo6fE1WCb9WSKBah+rbUWPWAmE2Rvk0ApiB45eOyNAzU8xcTvj8KvkKEoOaIYeHNA3ZuygAvFMUO0AAAAASUVORK5CYII=" y="54.9395"/><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="145" x="516.5" y="118.4395">Motorista de Frota</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="587" y="135.8613"> </text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="155" x="511.5" y="152.8008">Marcos. Consulta rotas,</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="164" x="505" y="169.7402">atualiza entregas e envia</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="98" x="540" y="186.6797">comprovantes.</text></g><!--MD5=[32b9caa0b124f71f263e9ab91af6907d]
+entity cloudlog--><g id="elem_cloudlog"><rect fill="#1168BD" height="140.9961" rx="2.5" ry="2.5" style="stroke:#3C7FC0;stroke-width:0.5;" width="218" x="364" y="304.9395"/><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="75" x="435.5" y="330.4395">CloudLog</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="471" y="347.8613"> </text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="181" x="382.5" y="364.8008">Plataforma cloud de gestão</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="173" x="384.5" y="381.7402">logística: rotas e entregas,</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="189" x="376.5" y="398.6797">rastreamento em tempo real,</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="198" x="374" y="415.6191">comprovação digital, alertas e</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="80" x="433" y="432.5586">indicadores.</text></g><!--MD5=[f11baee3137158b194bdaee9ece3526d]
+entity gps--><g id="elem_gps"><rect fill="#999999" height="90.1777" rx="2.5" ry="2.5" style="stroke:#8A8A8A;stroke-width:0.5;" width="201" x="718.5" y="77.4395"/><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="173" x="732.5" y="102.9395">Dispositivos GPS / IoT</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="817" y="120.3613"> </text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="173" x="732.5" y="137.3008">Rastreadores embarcados</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="84" x="777" y="154.2402">nos veículos.</text></g><!--MD5=[1729cd35d55f98b869577ea5b63d9f84]
+entity idp--><g id="elem_idp"><rect fill="#999999" height="107.1172" rx="2.5" ry="2.5" style="stroke:#8A8A8A;stroke-width:0.5;" width="207" x="246.5" y="550.9395"/><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="186" x="257" y="576.4395">Provedor de Identidade</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="348" y="593.8613"> </text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="179" x="260.5" y="610.8008">Microsoft Entra External ID:</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="160" x="268" y="627.7402">login, MFA e emissão de</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="100" x="300" y="644.6797">tokens (RF-01).</text></g><!--MD5=[e6980103a72f7c06897718b1405d9217]
+entity notif--><g id="elem_notif"><rect fill="#999999" height="73.2383" rx="2.5" ry="2.5" style="stroke:#8A8A8A;stroke-width:0.5;" width="215" x="488.5" y="567.9395"/><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="186" x="503" y="593.4395">Serviço de Notificações</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="594" y="610.8613"> </text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="191" x="502.5" y="627.8008">Envio de push, e-mail e SMS.</text></g><!--MD5=[b09b2567a766a70496fa74c612de9c4f]
+link gerente to cloudlog--><g id="link_gerente_cloudlog"><path d="M171.26,200.1195 C193.45,226.2295 220.4,254.0695 249,274.9395 C281.33,298.5395 320.14,318.2195 356.31,333.6895 " fill="none" id="gerente-to-cloudlog" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="363.98,336.9295,357.7782,331.0526,355.4432,336.5796,363.98,336.9295" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="144" x="250" y="242.5645">Gerencia rotas, entregas</text><text fill="#666666" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="79" x="284" y="257.084">e indicadores</text><text fill="#666666" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="49" x="299" y="271.6035">[HTTPS]</text></g><!--MD5=[3f616ec67c0b32b10da1291964be9def]
+link sac to cloudlog--><g id="link_sac_cloudlog"><path d="M391.25,199.9595 C401.87,224.0295 413.78,250.6595 425,274.9395 C428.35,282.1895 431.88,289.7095 435.44,297.2195 " fill="none" id="sac-to-cloudlog" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="439.01,304.7195,438.2922,296.2057,432.8711,298.7769,439.01,304.7195" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="116" x="426" y="242.5645">Consulta entregas e</text><text fill="#666666" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="40" x="465.5" y="257.084">alertas</text><text fill="#666666" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="49" x="461" y="271.6035">[HTTPS]</text></g><!--MD5=[7ee5b2190bcf7caf9f0ee94620e7e859]
+link motorista to cloudlog--><g id="link_motorista_cloudlog"><path d="M575.68,199.9495 C569.73,224.6495 561.41,251.6395 550,274.9395 C546.21,282.6795 541.77,290.3895 536.95,297.8995 " fill="none" id="motorista-to-cloudlog" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="532.44,304.7395,539.3564,299.7231,534.3526,296.4123,532.44,304.7395" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="146" x="568" y="242.5645">Atualiza entregas e envia</text><text fill="#666666" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="84" x="600.5" y="257.084">comprovantes</text><text fill="#666666" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="121" x="582" y="271.6035">[HTTPS / app mobile]</text></g><!--MD5=[296bd068233b8459626df453debd4b39]
+link gps to cloudlog--><g id="link_gps_cloudlog"><path d="M801.21,167.6295 C785.75,201.0995 760.42,246.0995 726,274.9395 C686.93,307.6795 635.81,330.4995 589.75,345.9495 " fill="none" id="gps-to-cloudlog" style="stroke:#7A3E9D;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#7A3E9D" points="582.1,348.4595,590.6368,348.8094,588.762,343.1099,582.1,348.4595" style="stroke:#7A3E9D;stroke-width:1.0;"/><text fill="#7A3E9D" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="90" x="765" y="242.5645">Envia posição e</text><text fill="#7A3E9D" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="58" x="782.5" y="257.084">telemetria</text><text fill="#7A3E9D" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="44" x="789.5" y="271.6035">[MQTT]</text></g><!--MD5=[f6954d858313953df03346753e3c9b35]
+link cloudlog to idp--><g id="link_cloudlog_idp"><path d="M435.26,446.0895 C418.33,477.3395 398.56,513.8295 382.32,543.7995 " fill="none" id="cloudlog-to-idp" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="378.48,550.8695,384.919,545.2534,379.6385,542.4044,378.48,550.8695" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="118" x="419" y="488.5645">Autentica usuários e</text><text fill="#666666" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="77" x="441" y="503.084">valida tokens</text><text fill="#666666" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="104" x="427.5" y="517.6035">[OIDC / OAuth 2.0]</text></g><!--MD5=[1da8f38c0d61b859dd4b1d933919d40d]
+link cloudlog to notif--><g id="link_cloudlog_notif"><path d="M530.3,446.1495 C537.06,455.8595 543.5,465.9395 549,475.9395 C563.68,502.6395 575.51,534.8395 583.63,560.2095 " fill="none" id="cloudlog-to-notif" style="stroke:#7A3E9D;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#7A3E9D" points="586.03,567.8495,586.5054,559.3187,580.7789,561.1096,586.03,567.8495" style="stroke:#7A3E9D;stroke-width:1.0;"/><text fill="#7A3E9D" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="137" x="570" y="495.5645">Solicita envio de alertas</text><text fill="#7A3E9D" font-family="&quot;DejaVu Sans&quot;" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="49" x="614" y="510.084">[HTTPS]</text></g><rect fill="none" height="100.6973" id="_legend" rx="7.5" ry="7.5" style="stroke:none;stroke-width:1.0;" width="246" x="657.5" y="671.0566"/><rect height="16.9395" style="stroke:none;stroke-width:1.0;fill:none;" width="234" x="663.5" y="679.0566"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="51" x="663.5" y="692.6191">Legend</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="714.5" y="692.6191"> </text><rect fill="#08427B" height="16.9395" style="stroke:none;stroke-width:1.0;" width="234" x="663.5" y="695.9961"/><text fill="#073B6F" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="8" x="667.5" y="709.5586">▯</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="675.5" y="709.5586"> </text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="45" x="683.5" y="709.5586">person</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="732.5" y="709.5586"> </text><rect fill="#1168BD" height="16.9395" style="stroke:none;stroke-width:1.0;" width="234" x="663.5" y="712.9355"/><text fill="#3C7FC0" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="8" x="667.5" y="726.498">▯</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="675.5" y="726.498"> </text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="47" x="683.5" y="726.498">system</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="734.5" y="726.498"> </text><rect fill="#999999" height="16.9395" style="stroke:none;stroke-width:1.0;" width="234" x="663.5" y="729.875"/><text fill="#8A8A8A" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="8" x="667.5" y="743.4375">▯</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="675.5" y="743.4375"> </text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="106" x="683.5" y="743.4375">external_system</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="793.5" y="743.4375"> </text><text fill="#7A3E9D" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="8" x="667.5" y="760.377">─</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="675.5" y="760.377"> </text><text fill="#7A3E9D" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="206" x="683.5" y="760.377">assíncrono (evento/mensagem)</text><text fill="#FFFFFF" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="4" x="893.5" y="760.377"> </text><line style="stroke:#00000000;stroke-width:1.0;" x1="663.5" x2="897.5" y1="679.0566" y2="679.0566"/><line style="stroke:#00000000;stroke-width:1.0;" x1="663.5" x2="897.5" y1="695.9961" y2="695.9961"/><line style="stroke:#00000000;stroke-width:1.0;" x1="663.5" x2="897.5" y1="712.9355" y2="712.9355"/><line style="stroke:#00000000;stroke-width:1.0;" x1="663.5" x2="897.5" y1="729.875" y2="729.875"/><line style="stroke:#00000000;stroke-width:1.0;" x1="663.5" x2="897.5" y1="746.8145" y2="746.8145"/><line style="stroke:#00000000;stroke-width:1.0;" x1="663.5" x2="897.5" y1="763.7539" y2="763.7539"/><line style="stroke:#00000000;stroke-width:1.0;" x1="663.5" x2="663.5" y1="679.0566" y2="763.7539"/><line style="stroke:#00000000;stroke-width:1.0;" x1="897.5" x2="897.5" y1="679.0566" y2="763.7539"/><!--MD5=[ad12437c08dcb188aa9380be49e2cf71]
+@startuml c4-1-contexto
+!include <C4/C4_Context>
+!include _style.iuml
+LAYOUT_TOP_DOWN()
+title CloudLog — C4 Nível 1: Contexto do Sistema
+
+Person(gerente, "Gerente de Logística", "Carlos. Planeja rotas e entregas, acompanha a frota e os indicadores.")
+Person(sac, "Atendente de SAC", "Fernanda. Consulta status, localização e atrasos para atender clientes.")
+Person(motorista, "Motorista de Frota", "Marcos. Consulta rotas, atualiza entregas e envia comprovantes.")
+
+System(cloudlog, "CloudLog", "Plataforma cloud de gestão logística: rotas e entregas, rastreamento em tempo real, comprovação digital, alertas e indicadores.")
+
+System_Ext(gps, "Dispositivos GPS / IoT", "Rastreadores embarcados nos veículos.")
+System_Ext(idp, "Provedor de Identidade", "Microsoft Entra External ID: login, MFA e emissão de tokens (RF-01).")
+System_Ext(notif, "Serviço de Notificações", "Envio de push, e-mail e SMS.")
+
+Rel(gerente, cloudlog, "Gerencia rotas, entregas e indicadores", "HTTPS")
+Rel(sac, cloudlog, "Consulta entregas e alertas", "HTTPS")
+Rel(motorista, cloudlog, "Atualiza entregas e envia comprovantes", "HTTPS / app mobile")
+Rel(gps, cloudlog, "Envia posição e telemetria", "MQTT", $tags="async")
+Rel(cloudlog, idp, "Autentica usuários e valida tokens", "OIDC / OAuth 2.0")
+Rel(cloudlog, notif, "Solicita envio de alertas", "HTTPS", $tags="async")
+
+SHOW_LEGEND()
+@enduml
+
+@startuml c4-1-contexto
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam LegendBorderColor transparent
+skinparam LegendBackgroundColor transparent
+skinparam LegendFontColor #FFFFFF
+
+skinparam shadowing<<legendArea>> false
+skinparam rectangle<<legendArea>> {
+    backgroundcolor #00000000
+    bordercolor #00000000
+}
+
+skinparam rectangle {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam database {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam queue {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam actor {
+    StereotypeFontSize 12
+    shadowing false
+    style awesome
+}
+
+skinparam person {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam package {
+    StereotypeFontSize 6
+    StereotypeFontColor transparent
+    FontStyle plain
+    BackgroundColor transparent
+}
+
+skinparam rectangle<<boundary>> {
+    Shadowing false
+    StereotypeFontSize 6
+    StereotypeFontColor transparent
+    FontColor #444444
+    BorderColor #444444
+    BackgroundColor transparent
+    BorderStyle dashed
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam database<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam queue<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam actor<<person>> {
+    StereotypeFontColor #08427B
+    FontColor #08427B
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam person<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam database<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam actor<<external_person>> {
+    StereotypeFontColor #686868
+    FontColor #686868
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam person<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+
+
+skinparam rectangle<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam database<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam queue<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam actor<<system>> {
+    StereotypeFontColor #1168BD
+    FontColor #1168BD
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam person<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+
+skinparam rectangle<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam database<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam actor<<external_system>> {
+    StereotypeFontColor #999999
+    FontColor #999999
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam person<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+
+
+
+
+sprite $person [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000025788300000000005886410000000000000
+000000000007DFFFFFFD9643347BFFFFFFFB400000000000
+0000000004EFFFFFFFFFFFFFFFFFFFFFFFFFFB1000000000
+000000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFD200000000
+00000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE10000000
+0000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB0000000
+000000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5000000
+000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD000000
+000009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF200000
+00000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF600000
+00000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF800000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00000EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF700000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+0000008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD3000000
+000000014555555555555555555555555555555300000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+sprite $person2 [48x48/16] {
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000002578888300000000005888864100000000000
+0000000007DFFFFFFFFD9643347BFFFFFFFFFB4000000000
+00000004EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB10000000
+0000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD2000000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+00003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+0000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF50000
+0003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD0000
+0009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2000
+000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000
+000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA000
+000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000
+0009FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFF2000
+0003FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFD0000
+0000BFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFF50000
+00003FFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFB00000
+000006FFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFE100000
+0000007FFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFD2000000
+00000004EFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFB10000000
+0000000007DF8FFFFFFFFFFFFFFFFFFFFFF8FB4000000000
+000000000002578888888888888888888864100000000000
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<impl>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+}
+skinparam database<<impl>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+}
+skinparam queue<<impl>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+}
+skinparam actor<<impl>> {
+    StereotypeFontColor #438DD5
+    FontColor #438DD5
+    BackgroundColor #438DD5
+}
+skinparam person<<impl>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+}
+
+
+skinparam rectangle<<plan>> {
+    StereotypeFontColor #0B2545
+    FontColor #0B2545
+    BackgroundColor #B7D3F2
+    BorderColor #5B8AC4
+}
+skinparam database<<plan>> {
+    StereotypeFontColor #0B2545
+    FontColor #0B2545
+    BackgroundColor #B7D3F2
+    BorderColor #5B8AC4
+}
+skinparam queue<<plan>> {
+    StereotypeFontColor #0B2545
+    FontColor #0B2545
+    BackgroundColor #B7D3F2
+    BorderColor #5B8AC4
+}
+skinparam actor<<plan>> {
+    StereotypeFontColor #B7D3F2
+    FontColor #B7D3F2
+    BackgroundColor #B7D3F2
+    BorderColor #5B8AC4
+}
+skinparam person<<plan>> {
+    StereotypeFontColor #0B2545
+    FontColor #0B2545
+    BackgroundColor #B7D3F2
+    BorderColor #5B8AC4
+}
+
+
+skinparam arrow<<async>> {
+    Color 7A3E9D;text:7A3E9D;line.dashed
+}
+
+skinparam defaultFontName "DejaVu Sans"
+top to bottom direction
+title CloudLog — C4 Nível 1: Contexto do Sistema
+
+rectangle "<$person>\n==Gerente de Logística\n\n Carlos. Planeja rotas e entregas, acompanha a frota e os indicadores." <<person>> as gerente 
+rectangle "<$person>\n==Atendente de SAC\n\n Fernanda. Consulta status, localização e atrasos para atender clientes." <<person>> as sac 
+rectangle "<$person>\n==Motorista de Frota\n\n Marcos. Consulta rotas, atualiza entregas e envia comprovantes." <<person>> as motorista 
+
+rectangle "==CloudLog\n\n Plataforma cloud de gestão logística: rotas e entregas, rastreamento em tempo real, comprovação digital, alertas e indicadores." <<system>> as cloudlog 
+
+rectangle "==Dispositivos GPS / IoT\n\n Rastreadores embarcados nos veículos." <<external_system>> as gps 
+rectangle "==Provedor de Identidade\n\n Microsoft Entra External ID: login, MFA e emissão de tokens (RF-01)." <<external_system>> as idp 
+rectangle "==Serviço de Notificações\n\n Envio de push, e-mail e SMS." <<external_system>> as notif 
+
+gerente - ->> cloudlog : **Gerencia rotas, entregas e indicadores**\n//<size:12>[HTTPS]</size>//
+sac - ->> cloudlog : **Consulta entregas e alertas**\n//<size:12>[HTTPS]</size>//
+motorista - ->> cloudlog : **Atualiza entregas e envia comprovantes**\n//<size:12>[HTTPS / app mobile]</size>//
+gps - ->> cloudlog <<async>> : **Envia posição e telemetria**\n//<size:12>[MQTT]</size>//
+cloudlog - ->> idp : **Autentica usuários e valida tokens**\n//<size:12>[OIDC / OAuth 2.0]</size>//
+cloudlog - ->> notif <<async>> : **Solicita envio de alertas**\n//<size:12>[HTTPS]</size>//
+
+hide stereotype
+legend right
+<#00000000,#00000000>|<color:#000000>**Legend**</color> |
+|<#08427B><color:#073B6F> <U+25AF></color> <color:#FFFFFF> person </color> |
+|<#1168BD><color:#3C7FC0> <U+25AF></color> <color:#FFFFFF> system </color> |
+|<#999999><color:#8A8A8A> <U+25AF></color> <color:#FFFFFF> external_system </color> |
+|<color:#7A3E9D> <U+2500></color> <color:#7A3E9D> assíncrono (evento/mensagem) </color> |
+endlegend
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 14:01:30 BRT 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

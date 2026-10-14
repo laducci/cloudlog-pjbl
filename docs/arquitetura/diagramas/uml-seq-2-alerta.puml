@@ -1,0 +1,36 @@
+@startuml uml-seq-2-alerta
+!include _uml.iuml
+title C4 Nível 4 / UML — Sequência 2: Entrega atrasada gera alerta via eventos (RF-05, EDA — código entregue)
+autonumber
+actor "Motorista / Gerente" as U
+participant "updateDelivery\n.handler" as H
+participant "UpdateDelivery\nUseCase" as UC
+participant "MongoDelivery\nRepository" as R
+participant "ServiceBusDelivery\nEventPublisher" as P
+queue "Azure Service Bus\ncloudlog-delivery-events" as SB
+participant "processDeliveryEvent\n(ServiceBusQueueTrigger)" as C
+participant "ProcessDeliveryEvent\nUseCase" as PC
+participant "LogAlertNotifier\n<<AlertNotifier>>" as N
+actor "Atendente de SAC" as SAC
+
+U -> H : PUT /api/deliveries/{id} { status: "Atrasada" }
+H -> UC : execute(id, changes)
+UC -> UC : Delivery.validateChanges()
+UC -> R : update(id, changes)
+R --> UC : entrega atualizada
+UC -> P : publish(DeliveryUpdated)
+P -> SB : sendMessages()
+UC --> H : entrega
+H --> U : 200 OK
+... processamento assíncrono (desacoplado da requisição HTTP) ...
+SB -> C : entrega mensagem
+C -> PC : execute(event)
+alt status == "Atrasada"
+  PC -> N : notify(alerta)
+  N --> SAC : alerta "Entrega CL-xxxx está atrasada"
+  PC --> C : { alerted: true }
+else outro status
+  PC --> C : { alerted: false }
+end
+C --> SB : complete (mensagem consumida)
+@enduml

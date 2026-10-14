@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1301px" preserveAspectRatio="none" style="width:1316px;height:1301px;background:#FFFFFF;" version="1.1" viewBox="0 0 1316 1301" width="1316px" zoomAndPan="magnify"><defs/><g><rect fill="none" height="26.9395" id="_title" style="stroke:none;stroke-width:1.0;" width="593" x="354.5" y="5"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="583" x="359.5" y="23.5625">C4 Nível 4 / UML — Diagrama de Classes 1/2: Fatias verticais (casos de uso) e Domínio</text><!--MD5=[3ea589b96ba0a0eb4831186ebc9e007b]
+cluster features (fatias verticais)--><g id="cluster_features (fatias verticais)"><rect fill="none" height="875" rx="2.5" ry="2.5" style="stroke:#8AA2C2;stroke-width:1.5;" width="327" x="7" y="381.9395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="172" x="84.5" y="397.502">features (fatias verticais)</text></g><!--MD5=[27f772719433d509ddbc20ff768eba08]
+cluster domain--><g id="cluster_domain"><rect fill="none" height="1251" rx="2.5" ry="2.5" style="stroke:#8AA2C2;stroke-width:1.5;" width="839" x="471" y="44.9395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="52" x="864.5" y="60.502">domain</text></g><!--MD5=[cfa9417c0cea52f27b634f6d24fd234e]
+class CreateDeliveryUseCase--><g id="elem_CreateDeliveryUseCase"><rect codeLine="6" fill="#F4F8FD" height="124.666" id="CreateDeliveryUseCase" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="277" x="32" y="543.4395"/><ellipse cx="88.75" cy="563.8936" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M91.7188,569.5342 Q91.1406,569.8311 90.5,569.9717 Q89.8594,570.1279 89.1563,570.1279 Q86.6563,570.1279 85.3281,568.4873 Q84.0156,566.8311 84.0156,563.7061 Q84.0156,560.5811 85.3281,558.9248 Q86.6563,557.2686 89.1563,557.2686 Q89.8594,557.2686 90.5,557.4248 Q91.1563,557.5811 91.7188,557.8779 L91.7188,560.5967 Q91.0938,560.0186 90.5,559.7529 Q89.9063,559.4717 89.2813,559.4717 Q87.9375,559.4717 87.25,560.5498 Q86.5625,561.6123 86.5625,563.7061 Q86.5625,565.7998 87.25,566.8779 Q87.9375,567.9404 89.2813,567.9404 Q89.9063,567.9404 90.5,567.6748 Q91.0938,567.3936 91.7188,566.8154 L91.7188,569.5342 Z " fill="#000000"/><text fill="#1A4E8A" font-family="DejaVu Sans" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="67" x="153.25" y="559.5781">«UseCase»</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="155" x="109.25" y="575.9707">CreateDeliveryUseCase</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="33" x2="308" y1="584.3477" y2="584.3477"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="203" x="38" y="601.9102">-deliveryWriter : DeliveryWriter</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="265" x="38" y="618.8496">-eventPublisher : DeliveryEventPublisher</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="90" x="38" y="635.7891">-clock : Clock</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="33" x2="308" y1="643.166" y2="643.166"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="240" x="38" y="660.7285">+execute(input) : Promise&lt;Delivery&gt;</text></g><!--MD5=[3863d6e8eb8d0e48425e211d27e8f300]
+class SearchDeliveriesUseCase--><g id="elem_SearchDeliveriesUseCase"><rect codeLine="12" fill="#F4F8FD" height="90.7871" id="SearchDeliveriesUseCase" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="288" x="26.5" y="417.4395"/><ellipse cx="82.75" cy="437.8936" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M85.7188,443.5342 Q85.1406,443.8311 84.5,443.9717 Q83.8594,444.1279 83.1563,444.1279 Q80.6563,444.1279 79.3281,442.4873 Q78.0156,440.8311 78.0156,437.7061 Q78.0156,434.5811 79.3281,432.9248 Q80.6563,431.2686 83.1563,431.2686 Q83.8594,431.2686 84.5,431.4248 Q85.1563,431.5811 85.7188,431.8779 L85.7188,434.5967 Q85.0938,434.0186 84.5,433.7529 Q83.9063,433.4717 83.2813,433.4717 Q81.9375,433.4717 81.25,434.5498 Q80.5625,435.6123 80.5625,437.7061 Q80.5625,439.7998 81.25,440.8779 Q81.9375,441.9404 83.2813,441.9404 Q83.9063,441.9404 84.5,441.6748 Q85.0938,441.3936 85.7188,440.8154 L85.7188,443.5342 Z " fill="#000000"/><text fill="#1A4E8A" font-family="DejaVu Sans" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="67" x="153.25" y="433.5781">«UseCase»</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="167" x="103.25" y="449.9707">SearchDeliveriesUseCase</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="27.5" x2="313.5" y1="458.3477" y2="458.3477"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="217" x="32.5" y="475.9102">-deliveryReader : DeliveryReader</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="27.5" x2="313.5" y1="483.2871" y2="483.2871"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="276" x="32.5" y="500.8496">+execute(filters) : Promise&lt;SearchResult&gt;</text></g><!--MD5=[193af25fd359b11dcd9a72484fa9342d]
+class UpdateDeliveryUseCase--><g id="elem_UpdateDeliveryUseCase"><rect codeLine="16" fill="#F4F8FD" height="124.666" id="UpdateDeliveryUseCase" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="277" x="32" y="703.4395"/><ellipse cx="86.25" cy="723.8936" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M89.2188,729.5342 Q88.6406,729.8311 88,729.9717 Q87.3594,730.1279 86.6563,730.1279 Q84.1563,730.1279 82.8281,728.4873 Q81.5156,726.8311 81.5156,723.7061 Q81.5156,720.5811 82.8281,718.9248 Q84.1563,717.2686 86.6563,717.2686 Q87.3594,717.2686 88,717.4248 Q88.6563,717.5811 89.2188,717.8779 L89.2188,720.5967 Q88.5938,720.0186 88,719.7529 Q87.4063,719.4717 86.7813,719.4717 Q85.4375,719.4717 84.75,720.5498 Q84.0625,721.6123 84.0625,723.7061 Q84.0625,725.7998 84.75,726.8779 Q85.4375,727.9404 86.7813,727.9404 Q87.4063,727.9404 88,727.6748 Q88.5938,727.3936 89.2188,726.8154 L89.2188,729.5342 Z " fill="#000000"/><text fill="#1A4E8A" font-family="DejaVu Sans" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="67" x="153.25" y="719.5781">«UseCase»</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="160" x="106.75" y="735.9707">UpdateDeliveryUseCase</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="33" x2="308" y1="744.3477" y2="744.3477"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="231" x="38" y="761.9102">-deliveryUpdater : DeliveryUpdater</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="265" x="38" y="778.8496">-eventPublisher : DeliveryEventPublisher</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="90" x="38" y="795.7891">-clock : Clock</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="33" x2="308" y1="803.166" y2="803.166"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="260" x="38" y="820.7285">+execute(id, input) : Promise&lt;Delivery&gt;</text></g><!--MD5=[2fdd17ceb10035e2a058f65feefceb28]
+class DeleteDeliveryUseCase--><g id="elem_DeleteDeliveryUseCase"><rect codeLine="22" fill="#F4F8FD" height="124.666" id="DeleteDeliveryUseCase" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="277" x="32" y="989.4395"/><ellipse cx="89.75" cy="1009.8936" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M92.7188,1015.5342 Q92.1406,1015.8311 91.5,1015.9717 Q90.8594,1016.1279 90.1563,1016.1279 Q87.6563,1016.1279 86.3281,1014.4873 Q85.0156,1012.8311 85.0156,1009.7061 Q85.0156,1006.5811 86.3281,1004.9248 Q87.6563,1003.2686 90.1563,1003.2686 Q90.8594,1003.2686 91.5,1003.4248 Q92.1563,1003.5811 92.7188,1003.8779 L92.7188,1006.5967 Q92.0938,1006.0186 91.5,1005.7529 Q90.9063,1005.4717 90.2813,1005.4717 Q88.9375,1005.4717 88.25,1006.5498 Q87.5625,1007.6123 87.5625,1009.7061 Q87.5625,1011.7998 88.25,1012.8779 Q88.9375,1013.9404 90.2813,1013.9404 Q90.9063,1013.9404 91.5,1013.6748 Q92.0938,1013.3936 92.7188,1012.8154 L92.7188,1015.5342 Z " fill="#000000"/><text fill="#1A4E8A" font-family="DejaVu Sans" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="67" x="153.25" y="1005.5781">«UseCase»</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="153" x="110.25" y="1021.9707">DeleteDeliveryUseCase</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="33" x2="308" y1="1030.3477" y2="1030.3477"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="239" x="38" y="1047.9102">-deliveryRemover : DeliveryRemover</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="265" x="38" y="1064.8496">-eventPublisher : DeliveryEventPublisher</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="90" x="38" y="1081.7891">-clock : Clock</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="33" x2="308" y1="1089.166" y2="1089.166"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="248" x="38" y="1106.7285">+execute(id) : Promise&lt;DeleteResult&gt;</text></g><!--MD5=[19bf17f7d211bbe810a1dabd1f18501a]
+class ProcessDeliveryEventUseCase--><g id="elem_ProcessDeliveryEventUseCase"><rect codeLine="28" fill="#F4F8FD" height="90.7871" id="ProcessDeliveryEventUseCase" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="295" x="23" y="1149.4395"/><ellipse cx="66.35" cy="1169.8936" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M69.3188,1175.5342 Q68.7406,1175.8311 68.1,1175.9717 Q67.4594,1176.1279 66.7563,1176.1279 Q64.2563,1176.1279 62.9281,1174.4873 Q61.6156,1172.8311 61.6156,1169.7061 Q61.6156,1166.5811 62.9281,1164.9248 Q64.2563,1163.2686 66.7563,1163.2686 Q67.4594,1163.2686 68.1,1163.4248 Q68.7563,1163.5811 69.3188,1163.8779 L69.3188,1166.5967 Q68.6938,1166.0186 68.1,1165.7529 Q67.5063,1165.4717 66.8813,1165.4717 Q65.5375,1165.4717 64.85,1166.5498 Q64.1625,1167.6123 64.1625,1169.7061 Q64.1625,1171.7998 64.85,1172.8779 Q65.5375,1173.9404 66.8813,1173.9404 Q67.5063,1173.9404 68.1,1173.6748 Q68.6938,1173.3936 69.3188,1172.8154 L69.3188,1175.5342 Z " fill="#000000"/><text fill="#1A4E8A" font-family="DejaVu Sans" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="67" x="153.15" y="1165.5781">«UseCase»</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="200" x="86.65" y="1181.9707">ProcessDeliveryEventUseCase</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="24" x2="317" y1="1190.3477" y2="1190.3477"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="174" x="29" y="1207.9102">-alertNotifier : AlertNotifier</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="24" x2="317" y1="1215.2871" y2="1215.2871"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="283" x="29" y="1232.8496">+execute(event) : Promise&lt;ProcessResult&gt;</text></g><!--MD5=[d51ebb699d8dccb1b411bd1327fdbebe]
+class SayHelloUseCase--><g id="elem_SayHelloUseCase"><rect codeLine="32" fill="#F4F8FD" height="90.7871" id="SayHelloUseCase" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="185" x="78" y="863.4395"/><ellipse cx="110.1" cy="883.8936" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M113.0688,889.5342 Q112.4906,889.8311 111.85,889.9717 Q111.2094,890.1279 110.5063,890.1279 Q108.0063,890.1279 106.6781,888.4873 Q105.3656,886.8311 105.3656,883.7061 Q105.3656,880.5811 106.6781,878.9248 Q108.0063,877.2686 110.5063,877.2686 Q111.2094,877.2686 111.85,877.4248 Q112.5063,877.5811 113.0688,877.8779 L113.0688,880.5967 Q112.4438,880.0186 111.85,879.7529 Q111.2563,879.4717 110.6313,879.4717 Q109.2875,879.4717 108.6,880.5498 Q107.9125,881.6123 107.9125,883.7061 Q107.9125,885.7998 108.6,886.8779 Q109.2875,887.9404 110.6313,887.9404 Q111.2563,887.9404 111.85,887.6748 Q112.4438,887.3936 113.0688,886.8154 L113.0688,889.5342 Z " fill="#000000"/><text fill="#1A4E8A" font-family="DejaVu Sans" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="67" x="151.9" y="879.5781">«UseCase»</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="115" x="127.9" y="895.9707">SayHelloUseCase</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="79" x2="262" y1="904.3477" y2="904.3477"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="90" x="84" y="921.9102">-clock : Clock</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="79" x2="262" y1="929.2871" y2="929.2871"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="173" x="84" y="946.8496">+execute(input) : Greeting</text></g><!--MD5=[fff5db4abcb6eec6574b9ea9c3ee0eae]
+class Delivery--><g id="elem_Delivery"><rect codeLine="39" fill="#F4F8FD" height="277.1211" id="Delivery" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="284" x="487" y="172.4395"/><ellipse cx="598.25" cy="192.8936" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M601.2188,198.5342 Q600.6406,198.8311 600,198.9717 Q599.3594,199.1279 598.6563,199.1279 Q596.1563,199.1279 594.8281,197.4873 Q593.5156,195.8311 593.5156,192.7061 Q593.5156,189.5811 594.8281,187.9248 Q596.1563,186.2686 598.6563,186.2686 Q599.3594,186.2686 600,186.4248 Q600.6563,186.5811 601.2188,186.8779 L601.2188,189.5967 Q600.5938,189.0186 600,188.7529 Q599.4063,188.4717 598.7813,188.4717 Q597.4375,188.4717 596.75,189.5498 Q596.0625,190.6123 596.0625,192.7061 Q596.0625,194.7998 596.75,195.8779 Q597.4375,196.9404 598.7813,196.9404 Q599.4063,196.9404 600,196.6748 Q600.5938,196.3936 601.2188,195.8154 L601.2188,198.5342 Z " fill="#000000"/><text fill="#1A4E8A" font-family="DejaVu Sans" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="50" x="620.25" y="188.5781">«Entity»</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="53" x="618.75" y="204.9707">Delivery</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="488" x2="770" y1="213.3477" y2="213.3477"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="70" x="493" y="230.9102">+id : string</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="91" x="493" y="247.8496">+code : string</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="119" x="493" y="264.7891">+customer : string</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="130" x="493" y="281.7285">+destination : string</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="96" x="493" y="298.668">+driver : string</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="98" x="493" y="315.6074">+status : string</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="79" x="493" y="332.5469">+eta : string</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="129" x="493" y="349.4863">+progress : number</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="118" x="493" y="366.4258">+createdAt : Date</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="123" x="493" y="383.3652">+updatedAt : Date</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="488" x2="770" y1="390.7422" y2="390.7422"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="199" x="493" y="408.3047">+create(props, now) : Delivery</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="272" x="493" y="425.2441">+validateChanges(props, now) : Changes</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="148" x="493" y="442.1836">+toPrimitives() : object</text></g><!--MD5=[f160ba300d47c98b270c2929f680544d]
+class DeliveryStatus--><g id="elem_DeliveryStatus"><rect codeLine="54" fill="#F4F8FD" height="124.666" id="DeliveryStatus" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="177" x="892" y="248.4395"/><ellipse cx="929.5" cy="268.8936" fill="#EB937F" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M933.6094,274.8936 L925.8906,274.8936 L925.8906,262.5029 L933.6094,262.5029 L933.6094,264.6592 L928.3438,264.6592 L928.3438,267.3311 L933.1094,267.3311 L933.1094,269.4873 L928.3438,269.4873 L928.3438,272.7373 L933.6094,272.7373 L933.6094,274.8936 Z " fill="#000000"/><text fill="#1A4E8A" font-family="DejaVu Sans" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="88" x="952" y="264.5781">«ValueObject»</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="95" x="948.5" y="280.9707">DeliveryStatus</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="893" x2="1068" y1="289.3477" y2="289.3477"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="157" x="898" y="306.9102">PENDING = "Pendente"</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="149" x="898" y="323.8496">IN_ROUTE = "Em rota"</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="155" x="898" y="340.7891">DELAYED = "Atrasada"</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="165" x="898" y="357.7285">DELIVERED = "Entregue"</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="893" x2="1068" y1="365.1055" y2="365.1055"/></g><!--MD5=[caa01e0bdd75bbd16bc728638e0d17d4]
+class DeliveryEvent--><g id="elem_DeliveryEvent"><rect codeLine="60" fill="#F4F8FD" height="158.5449" id="DeliveryEvent" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="187" x="535.5" y="936.4395"/><ellipse cx="578.85" cy="956.8936" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M581.8188,962.5342 Q581.2406,962.8311 580.6,962.9717 Q579.9594,963.1279 579.2563,963.1279 Q576.7563,963.1279 575.4281,961.4873 Q574.1156,959.8311 574.1156,956.7061 Q574.1156,953.5811 575.4281,951.9248 Q576.7563,950.2686 579.2563,950.2686 Q579.9594,950.2686 580.6,950.4248 Q581.2563,950.5811 581.8188,950.8779 L581.8188,953.5967 Q581.1938,953.0186 580.6,952.7529 Q580.0063,952.4717 579.3813,952.4717 Q578.0375,952.4717 577.35,953.5498 Q576.6625,954.6123 576.6625,956.7061 Q576.6625,958.7998 577.35,959.8779 Q578.0375,960.9404 579.3813,960.9404 Q580.0063,960.9404 580.6,960.6748 Q581.1938,960.3936 581.8188,959.8154 L581.8188,962.5342 Z " fill="#000000"/><text fill="#1A4E8A" font-family="DejaVu Sans" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="96" x="597.15" y="952.5781">«DomainEvent»</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="90" x="600.15" y="968.9707">DeliveryEvent</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="536.5" x2="721.5" y1="977.3477" y2="977.3477"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="175" x="541.5" y="994.9102">+type : DeliveryEventType</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="118" x="541.5" y="1011.8496">+version : number</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="102" x="541.5" y="1028.7891">+source : string</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="140" x="541.5" y="1045.7285">+aggregateId : string</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="132" x="541.5" y="1062.668">+occurredAt : string</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="92" x="541.5" y="1079.6074">+data : object</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="536.5" x2="721.5" y1="1086.9844" y2="1086.9844"/></g><!--MD5=[6ba85bad149aa3885a2b35456fe4677b]
+class DeliveryEventType--><g id="elem_DeliveryEventType"><rect codeLine="68" fill="#F4F8FD" height="98.8184" id="DeliveryEventType" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="156" x="902.5" y="966.4395"/><ellipse cx="917.5" cy="982.4395" fill="#EB937F" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M921.6094,988.4395 L913.8906,988.4395 L913.8906,976.0488 L921.6094,976.0488 L921.6094,978.2051 L916.3438,978.2051 L916.3438,980.877 L921.1094,980.877 L921.1094,983.0332 L916.3438,983.0332 L916.3438,986.2832 L921.6094,986.2832 L921.6094,988.4395 Z " fill="#000000"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="124" x="931.5" y="987.5322">DeliveryEventType</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="903.5" x2="1057.5" y1="998.4395" y2="998.4395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="106" x="908.5" y="1016.002">DeliveryCreated</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="111" x="908.5" y="1032.9414">DeliveryUpdated</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="104" x="908.5" y="1049.8809">DeliveryDeleted</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="903.5" x2="1057.5" y1="1057.2578" y2="1057.2578"/></g><!--MD5=[4e3496d9fd17a486d3c34a71686687fe]
+class DomainError--><g id="elem_DomainError"><rect codeLine="73" fill="#F4F8FD" height="48" id="DomainError" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="113" x="572.5" y="484.9395"/><ellipse cx="587.5" cy="500.9395" fill="#A9DCDF" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M587.6094,496.2832 L586.4531,501.3613 L588.7813,501.3613 L587.6094,496.2832 Z M586.125,494.0488 L589.1094,494.0488 L592.4688,506.4395 L590.0156,506.4395 L589.25,503.377 L585.9688,503.377 L585.2188,506.4395 L582.7813,506.4395 L586.125,494.0488 Z " fill="#000000"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="81" x="601.5" y="506.0322">DomainError</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="573.5" x2="684.5" y1="516.9395" y2="516.9395"/><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="573.5" x2="684.5" y1="524.9395" y2="524.9395"/></g><!--MD5=[4ee7b5cdff3e8fb6c1d795c22c494b4b]
+class ValidationError--><g id="elem_ValidationError"><rect codeLine="74" fill="#F4F8FD" height="48" id="ValidationError" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="128" x="916.5" y="408.9395"/><ellipse cx="931.5" cy="424.9395" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M934.4688,430.5801 Q933.8906,430.877 933.25,431.0176 Q932.6094,431.1738 931.9063,431.1738 Q929.4063,431.1738 928.0781,429.5332 Q926.7656,427.877 926.7656,424.752 Q926.7656,421.627 928.0781,419.9707 Q929.4063,418.3145 931.9063,418.3145 Q932.6094,418.3145 933.25,418.4707 Q933.9063,418.627 934.4688,418.9238 L934.4688,421.6426 Q933.8438,421.0645 933.25,420.7988 Q932.6563,420.5176 932.0313,420.5176 Q930.6875,420.5176 930,421.5957 Q929.3125,422.6582 929.3125,424.752 Q929.3125,426.8457 930,427.9238 Q930.6875,428.9863 932.0313,428.9863 Q932.6563,428.9863 933.25,428.7207 Q933.8438,428.4395 934.4688,427.8613 L934.4688,430.5801 Z " fill="#000000"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="96" x="945.5" y="430.0322">ValidationError</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="917.5" x2="1043.5" y1="440.9395" y2="440.9395"/><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="917.5" x2="1043.5" y1="448.9395" y2="448.9395"/></g><!--MD5=[afb6d683766c68a0c0d28114fb53a3f9]
+class InvalidIdentifierError--><g id="elem_InvalidIdentifierError"><rect codeLine="75" fill="#F4F8FD" height="48" id="InvalidIdentifierError" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="164" x="1130" y="408.9395"/><ellipse cx="1145" cy="424.9395" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1147.9688,430.5801 Q1147.3906,430.877 1146.75,431.0176 Q1146.1094,431.1738 1145.4063,431.1738 Q1142.9063,431.1738 1141.5781,429.5332 Q1140.2656,427.877 1140.2656,424.752 Q1140.2656,421.627 1141.5781,419.9707 Q1142.9063,418.3145 1145.4063,418.3145 Q1146.1094,418.3145 1146.75,418.4707 Q1147.4063,418.627 1147.9688,418.9238 L1147.9688,421.6426 Q1147.3438,421.0645 1146.75,420.7988 Q1146.1563,420.5176 1145.5313,420.5176 Q1144.1875,420.5176 1143.5,421.5957 Q1142.8125,422.6582 1142.8125,424.752 Q1142.8125,426.8457 1143.5,427.9238 Q1144.1875,428.9863 1145.5313,428.9863 Q1146.1563,428.9863 1146.75,428.7207 Q1147.3438,428.4395 1147.9688,427.8613 L1147.9688,430.5801 Z " fill="#000000"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="132" x="1159" y="430.0322">InvalidIdentifierError</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="1131" x2="1293" y1="440.9395" y2="440.9395"/><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="1131" x2="1293" y1="448.9395" y2="448.9395"/></g><!--MD5=[f1ec2166af04f61bf1484fb0eaea6fc2]
+class NotFoundError--><g id="elem_NotFoundError"><rect codeLine="76" fill="#F4F8FD" height="48" id="NotFoundError" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="128" x="916.5" y="491.9395"/><ellipse cx="931.5" cy="507.9395" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M934.4688,513.5801 Q933.8906,513.877 933.25,514.0176 Q932.6094,514.1738 931.9063,514.1738 Q929.4063,514.1738 928.0781,512.5332 Q926.7656,510.877 926.7656,507.752 Q926.7656,504.627 928.0781,502.9707 Q929.4063,501.3145 931.9063,501.3145 Q932.6094,501.3145 933.25,501.4707 Q933.9063,501.627 934.4688,501.9238 L934.4688,504.6426 Q933.8438,504.0645 933.25,503.7988 Q932.6563,503.5176 932.0313,503.5176 Q930.6875,503.5176 930,504.5957 Q929.3125,505.6582 929.3125,507.752 Q929.3125,509.8457 930,510.9238 Q930.6875,511.9863 932.0313,511.9863 Q932.6563,511.9863 933.25,511.7207 Q933.8438,511.4395 934.4688,510.8613 L934.4688,513.5801 Z " fill="#000000"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="96" x="945.5" y="513.0322">NotFoundError</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="917.5" x2="1043.5" y1="523.9395" y2="523.9395"/><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="917.5" x2="1043.5" y1="531.9395" y2="531.9395"/></g><!--MD5=[52c9b32ee99912b086cb723720fb3076]
+class DeliveryWriter--><g id="elem_DeliveryWriter"><rect codeLine="78" fill="#F4F8FD" height="56.9082" id="DeliveryWriter" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="125" x="566.5" y="80.4395"/><ellipse cx="581.5" cy="100.8936" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M577.4219,96.6592 L577.4219,94.5029 L584.8125,94.5029 L584.8125,96.6592 L582.3438,96.6592 L582.3438,104.7373 L584.8125,104.7373 L584.8125,106.8936 L577.4219,106.8936 L577.4219,104.7373 L579.8906,104.7373 L579.8906,96.6592 L577.4219,96.6592 Z " fill="#000000"/><text fill="#1A4E8A" font-family="DejaVu Sans" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="40" x="622" y="96.5781">«port»</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="93" x="595.5" y="112.9707">DeliveryWriter</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="567.5" x2="690.5" y1="121.3477" y2="121.3477"/><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="567.5" x2="690.5" y1="129.3477" y2="129.3477"/></g><!--MD5=[caf4615fc7253167220d095f14d0ec32]
+class DeliveryReader--><g id="elem_DeliveryReader"><rect codeLine="79" fill="#F4F8FD" height="56.9082" id="DeliveryReader" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="133" x="562.5" y="568.4395"/><ellipse cx="577.5" cy="588.8936" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M573.4219,584.6592 L573.4219,582.5029 L580.8125,582.5029 L580.8125,584.6592 L578.3438,584.6592 L578.3438,592.7373 L580.8125,592.7373 L580.8125,594.8936 L573.4219,594.8936 L573.4219,592.7373 L575.8906,592.7373 L575.8906,584.6592 L573.4219,584.6592 Z " fill="#000000"/><text fill="#1A4E8A" font-family="DejaVu Sans" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="40" x="622" y="584.5781">«port»</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="101" x="591.5" y="600.9707">DeliveryReader</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="563.5" x2="694.5" y1="609.3477" y2="609.3477"/><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="563.5" x2="694.5" y1="617.3477" y2="617.3477"/></g><!--MD5=[2dcb34b35c79d7d10f2ecedebbfd7df1]
+class DeliveryUpdater--><g id="elem_DeliveryUpdater"><rect codeLine="80" fill="#F4F8FD" height="56.9082" id="DeliveryUpdater" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="140" x="559" y="660.4395"/><ellipse cx="574" cy="680.8936" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M569.9219,676.6592 L569.9219,674.5029 L577.3125,674.5029 L577.3125,676.6592 L574.8438,676.6592 L574.8438,684.7373 L577.3125,684.7373 L577.3125,686.8936 L569.9219,686.8936 L569.9219,684.7373 L572.3906,684.7373 L572.3906,676.6592 L569.9219,676.6592 Z " fill="#000000"/><text fill="#1A4E8A" font-family="DejaVu Sans" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="40" x="622" y="676.5781">«port»</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="108" x="588" y="692.9707">DeliveryUpdater</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="560" x2="698" y1="701.3477" y2="701.3477"/><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="560" x2="698" y1="709.3477" y2="709.3477"/></g><!--MD5=[9b64d325db1510046aaaa59f7631dd38]
+class DeliveryRemover--><g id="elem_DeliveryRemover"><rect codeLine="81" fill="#F4F8FD" height="56.9082" id="DeliveryRemover" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="143" x="557.5" y="1130.4395"/><ellipse cx="572.5" cy="1150.8936" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M568.4219,1146.6592 L568.4219,1144.5029 L575.8125,1144.5029 L575.8125,1146.6592 L573.3438,1146.6592 L573.3438,1154.7373 L575.8125,1154.7373 L575.8125,1156.8936 L568.4219,1156.8936 L568.4219,1154.7373 L570.8906,1154.7373 L570.8906,1146.6592 L568.4219,1146.6592 Z " fill="#000000"/><text fill="#1A4E8A" font-family="DejaVu Sans" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="40" x="622" y="1146.5781">«port»</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="111" x="586.5" y="1162.9707">DeliveryRemover</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="558.5" x2="699.5" y1="1171.3477" y2="1171.3477"/><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="558.5" x2="699.5" y1="1179.3477" y2="1179.3477"/></g><!--MD5=[b6f102cb2a906d5bc5761d3cf12ab922]
+class DeliveryEventPublisher--><g id="elem_DeliveryEventPublisher"><rect codeLine="82" fill="#F4F8FD" height="56.9082" id="DeliveryEventPublisher" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="182" x="538" y="752.4395"/><ellipse cx="553" cy="772.8936" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M548.9219,768.6592 L548.9219,766.5029 L556.3125,766.5029 L556.3125,768.6592 L553.8438,768.6592 L553.8438,776.7373 L556.3125,776.7373 L556.3125,778.8936 L548.9219,778.8936 L548.9219,776.7373 L551.3906,776.7373 L551.3906,768.6592 L548.9219,768.6592 Z " fill="#000000"/><text fill="#1A4E8A" font-family="DejaVu Sans" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="40" x="622" y="768.5781">«port»</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="150" x="567" y="784.9707">DeliveryEventPublisher</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="539" x2="719" y1="793.3477" y2="793.3477"/><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="539" x2="719" y1="801.3477" y2="801.3477"/></g><!--MD5=[e7ffe7ebabe9e44ea24abac34082c337]
+class AlertNotifier--><g id="elem_AlertNotifier"><rect codeLine="83" fill="#F4F8FD" height="56.9082" id="AlertNotifier" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="111" x="573.5" y="1222.4395"/><ellipse cx="588.5" cy="1242.8936" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M584.4219,1238.6592 L584.4219,1236.5029 L591.8125,1236.5029 L591.8125,1238.6592 L589.3438,1238.6592 L589.3438,1246.7373 L591.8125,1246.7373 L591.8125,1248.8936 L584.4219,1248.8936 L584.4219,1246.7373 L586.8906,1246.7373 L586.8906,1238.6592 L584.4219,1238.6592 Z " fill="#000000"/><text fill="#1A4E8A" font-family="DejaVu Sans" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="40" x="622" y="1238.5781">«port»</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="79" x="602.5" y="1254.9707">AlertNotifier</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="574.5" x2="683.5" y1="1263.3477" y2="1263.3477"/><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="574.5" x2="683.5" y1="1271.3477" y2="1271.3477"/></g><!--MD5=[c053a105bcf153d42bf1c80326010135]
+class Clock--><g id="elem_Clock"><rect codeLine="84" fill="#F4F8FD" height="56.9082" id="Clock" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="69" x="594.5" y="844.4395"/><ellipse cx="609.5" cy="864.8936" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M605.4219,860.6592 L605.4219,858.5029 L612.8125,858.5029 L612.8125,860.6592 L610.3438,860.6592 L610.3438,868.7373 L612.8125,868.7373 L612.8125,870.8936 L605.4219,870.8936 L605.4219,868.7373 L607.8906,868.7373 L607.8906,860.6592 L605.4219,860.6592 Z " fill="#000000"/><text fill="#1A4E8A" font-family="DejaVu Sans" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="40" x="622" y="860.5781">«port»</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="37" x="623.5" y="876.9707">Clock</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="595.5" x2="662.5" y1="885.3477" y2="885.3477"/><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="595.5" x2="662.5" y1="893.3477" y2="893.3477"/></g><!--MD5=[feb90a31f5d337c7e6b6b589d88a2dab]
+link CreateDeliveryUseCase to Delivery--><g id="link_CreateDeliveryUseCase_Delivery"><path codeLine="87" d="M309.39,558.3095 C321.98,549.2695 333.26,538.5795 342,525.9395 C354.93,507.2395 336.58,442.2895 350,423.9395 C381.51,380.8595 432.32,354.1595 481.94,337.6395 " fill="none" id="CreateDeliveryUseCase-to-Delivery" style="stroke:#333333;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#333333" points="486.73,336.0695,476.935,335.0411,481.9739,337.612,479.403,342.6509,486.73,336.0695" style="stroke:#333333;stroke-width:1.0;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="55" x="375" y="345.5332">«create»</text></g><!--MD5=[c923b774c8f8a0b23d01852e3505bc9c]
+link UpdateDeliveryUseCase to Delivery--><g id="link_UpdateDeliveryUseCase_Delivery"><path codeLine="88" d="M309.15,711.0995 C320.92,703.5795 332.09,695.2095 342,685.9395 C423.19,609.9495 394.9,554.8495 463,466.9395 C469.33,458.7695 476.09,450.6395 483.13,442.6195 " fill="none" id="UpdateDeliveryUseCase-to-Delivery" style="stroke:#333333;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#333333" points="486.61,438.6995,477.6488,442.7857,483.2953,442.4428,483.6382,448.0893,486.61,438.6995" style="stroke:#333333;stroke-width:1.0;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="103" x="351" y="479.5332">valida alterações</text></g><!--MD5=[9781e6fb8473824e94b52e523ecd3d2d]
+link CreateDeliveryUseCase to DeliveryEvent--><g id="link_CreateDeliveryUseCase_DeliveryEvent"><path codeLine="89" d="M309.35,653.0295 C322.04,662.1795 333.35,673.0395 342,685.9395 C361.96,715.6895 332,815.9695 350,846.9395 C389.22,914.3995 467.07,958.2695 530.43,984.3595 " fill="none" id="CreateDeliveryUseCase-to-DeliveryEvent" style="stroke:#333333;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#333333" points="535.35,986.3595,528.5244,979.2594,530.7195,984.473,525.506,986.6682,535.35,986.3595" style="stroke:#333333;stroke-width:1.0;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="55" x="375" y="843.5332">«create»</text></g><!--MD5=[ea67f4dec2d939ae13cf536acddec556]
+link UpdateDeliveryUseCase to DeliveryEvent--><g id="link_UpdateDeliveryUseCase_DeliveryEvent"><path codeLine="90" d="M309.01,812.6995 C321.85,821.9095 333.29,832.8895 342,845.9395 C352.99,862.4095 335.69,1010.2595 350,1023.9395 C396.68,1068.5595 470.46,1064.3795 530.28,1050.2095 " fill="none" id="UpdateDeliveryUseCase-to-DeliveryEvent" style="stroke:#333333;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#333333" points="535.29,1048.9895,525.5981,1047.2379,530.4326,1050.1752,527.4954,1055.0097,535.29,1048.9895" style="stroke:#333333;stroke-width:1.0;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="55" x="375" y="1020.5332">«create»</text></g><!--MD5=[deb4b8546e6b2bd1b5cf2f9f78e34aa6]
+link DeleteDeliveryUseCase to DeliveryEvent--><g id="link_DeleteDeliveryUseCase_DeliveryEvent"><path codeLine="91" d="M309.09,1081.5295 C355.64,1087.4295 407.78,1089.5195 455,1080.9395 C480.16,1076.3695 506.41,1068.3495 530.65,1059.4595 " fill="none" id="DeleteDeliveryUseCase-to-DeliveryEvent" style="stroke:#333333;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#333333" points="535.47,1057.6795,525.6408,1057.0582,530.7819,1059.4179,528.4222,1064.5591,535.47,1057.6795" style="stroke:#333333;stroke-width:1.0;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="55" x="375" y="1077.5332">«create»</text></g><!--MD5=[8622c3aafb9c40f548c8cb58932373b0]
+link ProcessDeliveryEventUseCase to DeliveryEvent--><g id="link_ProcessDeliveryEventUseCase_DeliveryEvent"><path codeLine="92" d="M318.17,1157.9595 C362.8,1144.9895 411.53,1129.0695 455,1110.9395 C480.16,1100.4495 506.38,1087.2995 530.59,1074.1695 " fill="none" id="ProcessDeliveryEventUseCase-to-DeliveryEvent" style="stroke:#333333;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#333333" points="535.08,1071.7195,525.2616,1072.4929,530.6845,1074.1027,529.0748,1079.5257,535.08,1071.7195" style="stroke:#333333;stroke-width:1.0;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="57" x="374" y="1107.5332">consome</text></g><!--MD5=[18ffe0f48b10f71c0fad0957f847c0ea]
+link CreateDeliveryUseCase to DeliveryWriter--><g id="link_CreateDeliveryUseCase_DeliveryWriter"><path codeLine="94" d="M309.08,559.2195 C321.9,549.9995 333.32,539.0195 342,525.9395 C354.42,507.2195 343.05,345.2995 350,323.9395 C377.95,238.0195 389.81,207.9295 463,154.9395 C491.58,134.2495 529.11,122.8495 561.16,116.5895 " fill="none" id="CreateDeliveryUseCase-to-DeliveryWriter" style="stroke:#333333;stroke-width:1.0;"/><polygon fill="#333333" points="566.25,115.6195,556.6638,113.36,561.3369,116.5478,558.1492,121.2209,566.25,115.6195" style="stroke:#333333;stroke-width:1.0;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="5" x="553.2977" y="129.9914">1</text></g><!--MD5=[df02ad236eeb1d719544414ed4eeb909]
+link CreateDeliveryUseCase to DeliveryEventPublisher--><g id="link_CreateDeliveryUseCase_DeliveryEventPublisher"><path codeLine="95" d="M309.14,633.1795 C360.39,649.2795 415.62,674.5595 455,713.9395 C462.06,720.9995 455.62,728.2095 463,734.9395 C482.26,752.4995 507.68,763.4295 532.77,770.2095 " fill="none" id="CreateDeliveryUseCase-to-DeliveryEventPublisher" style="stroke:#333333;stroke-width:1.0;"/><polygon fill="#333333" points="537.79,771.5095,530.0838,765.3764,532.9504,770.2532,528.0737,773.1198,537.79,771.5095" style="stroke:#333333;stroke-width:1.0;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="5" x="525.0296" y="783.9774">1</text></g><!--MD5=[b594ea01624e6b28213b582232349ce3]
+link SearchDeliveriesUseCase to DeliveryReader--><g id="link_SearchDeliveriesUseCase_DeliveryReader"><path codeLine="96" d="M314.84,506.1095 C362,520.2095 414.71,535.8595 463,549.9395 C493.81,558.9295 527.92,568.6795 557.1,576.9495 " fill="none" id="SearchDeliveriesUseCase-to-DeliveryReader" style="stroke:#333333;stroke-width:1.0;"/><polygon fill="#333333" points="562.11,578.3695,554.5378,572.0717,557.2986,577.0091,552.3612,579.7699,562.11,578.3695" style="stroke:#333333;stroke-width:1.0;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="5" x="549.5205" y="589.7973">1</text></g><!--MD5=[8cd993b4c3ec5b81c2028892d5845d56]
+link UpdateDeliveryUseCase to DeliveryUpdater--><g id="link_UpdateDeliveryUseCase_DeliveryUpdater"><path codeLine="97" d="M309.24,722.9495 C322.92,719.5395 336.68,716.4495 350,713.9395 C418.41,701.0295 497.59,694.7295 553.91,691.6995 " fill="none" id="UpdateDeliveryUseCase-to-DeliveryUpdater" style="stroke:#333333;stroke-width:1.0;"/><polygon fill="#333333" points="558.94,691.4295,549.7459,687.8983,553.9466,691.687,550.158,695.8877,558.94,691.4295" style="stroke:#333333;stroke-width:1.0;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="5" x="546.0038" y="705.1608">1</text></g><!--MD5=[832ce4b61240d055aa2ef59c7c2e156a]
+link UpdateDeliveryUseCase to DeliveryEventPublisher--><g id="link_UpdateDeliveryUseCase_DeliveryEventPublisher"><path codeLine="98" d="M309.35,742.6195 C355.69,737.7595 407.63,735.5295 455,740.9395 C480.56,743.8595 507.83,749.1195 532.99,754.8895 " fill="none" id="UpdateDeliveryUseCase-to-DeliveryEventPublisher" style="stroke:#333333;stroke-width:1.0;"/><polygon fill="#333333" points="537.99,756.0495,530.1415,750.0996,533.1222,754.9074,528.3143,757.8881,537.99,756.0495" style="stroke:#333333;stroke-width:1.0;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="5" x="524.954" y="767.184">1</text></g><!--MD5=[fe3fedf03689e591db9ce6dc2b12d301]
+link DeleteDeliveryUseCase to DeliveryRemover--><g id="link_DeleteDeliveryUseCase_DeliveryRemover"><path codeLine="99" d="M309.08,1101.5495 C321.47,1110.1895 332.79,1120.2495 342,1131.9395 C352.95,1145.8395 336.29,1159.7595 350,1170.9395 C405.8,1216.4595 490.87,1204.8995 552.21,1187.2995 " fill="none" id="DeleteDeliveryUseCase-to-DeliveryRemover" style="stroke:#333333;stroke-width:1.0;"/><polygon fill="#333333" points="557.32,1185.7995,547.56,1184.4795,552.52,1187.1995,549.8,1192.1595,557.32,1185.7995" style="stroke:#333333;stroke-width:1.0;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="5" x="544.6702" y="1201.9789">1</text></g><!--MD5=[2cb243b0acec7f4bc38552233077d6c5]
+link DeleteDeliveryUseCase to DeliveryEventPublisher--><g id="link_DeleteDeliveryUseCase_DeliveryEventPublisher"><path codeLine="100" d="M309.4,1003.7495 C321.9,994.8195 333.16,984.3095 342,971.9395 C360.98,945.3895 332.76,926.6595 350,898.9395 C381.45,848.3695 408.62,851.1995 463,826.9395 C484.93,817.1595 509.45,808.9695 532.73,802.3395 " fill="none" id="DeleteDeliveryUseCase-to-DeliveryEventPublisher" style="stroke:#333333;stroke-width:1.0;"/><polygon fill="#333333" points="537.68,800.9495,527.9323,799.5414,532.8676,802.3061,530.1029,807.2413,537.68,800.9495" style="stroke:#333333;stroke-width:1.0;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="5" x="524.9105" y="815.8554">1</text></g><!--MD5=[6f1650ec571d7fad04e935128f368f4d]
+link ProcessDeliveryEventUseCase to AlertNotifier--><g id="link_ProcessDeliveryEventUseCase_AlertNotifier"><path codeLine="101" d="M318.07,1214.8795 C328.88,1216.2695 339.61,1217.6395 350,1218.9395 C425.23,1228.3295 512.03,1238.1595 568.35,1244.4095 " fill="none" id="ProcessDeliveryEventUseCase-to-AlertNotifier" style="stroke:#333333;stroke-width:1.0;"/><polygon fill="#333333" points="573.37,1244.9595,564.8715,1239.982,568.4011,1244.4026,563.9805,1247.9322,573.37,1244.9595" style="stroke:#333333;stroke-width:1.0;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="5" x="560.5588" y="1257.8126">1</text></g><!--MD5=[8b12cfb682cf285e26cb11f831ed3251]
+link CreateDeliveryUseCase to Clock--><g id="link_CreateDeliveryUseCase_Clock"><path codeLine="102" d="M309.3,655.9895 C321.57,664.5395 332.8,674.4595 342,685.9395 C352.25,698.7295 341.85,707.7195 350,721.9395 C384.09,781.4195 403.18,793.4495 463,826.9395 C502.94,849.2995 554.51,861.3995 589.28,867.4995 " fill="none" id="CreateDeliveryUseCase-to-Clock" style="stroke:#333333;stroke-width:1.0;"/><polygon fill="#333333" points="594.28,868.3495,586.0831,862.8896,589.3515,867.5066,584.7345,870.7751,594.28,868.3495" style="stroke:#333333;stroke-width:1.0;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="5" x="581.6034" y="881.6281">1</text></g><!--MD5=[24c0ec42d8845589e98d38807f022aef]
+link SayHelloUseCase to Clock--><g id="link_SayHelloUseCase_Clock"><path codeLine="103" d="M263.06,901.7195 C362.82,893.8495 517.75,881.6295 589.33,875.9895 " fill="none" id="SayHelloUseCase-to-Clock" style="stroke:#333333;stroke-width:1.0;"/><polygon fill="#333333" points="594.33,875.5895,585.0389,872.322,589.346,875.9893,585.6787,880.2964,594.33,875.5895" style="stroke:#333333;stroke-width:1.0;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="5" x="581.6637" y="872.2676">1</text></g><!--MD5=[4170e89bc034b933875084737f734ba6]
+link UpdateDeliveryUseCase to Clock--><g id="link_UpdateDeliveryUseCase_Clock"><path codeLine="104" d="M309.48,809.2495 C323.12,813.0595 336.8,816.6895 350,819.9395 C434.58,840.7395 535.34,858.1495 589.3,866.8895 " fill="none" id="UpdateDeliveryUseCase-to-Clock" style="stroke:#333333;stroke-width:1.0;"/><polygon fill="#333333" points="594.38,867.7095,586.1347,862.3229,589.4442,866.9106,584.8565,870.2201,594.38,867.7095" style="stroke:#333333;stroke-width:1.0;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="5" x="581.724" y="862.7623">1</text></g><!--MD5=[7fbb370a37ecfbe84bfefe5d24801787]
+link DeleteDeliveryUseCase to Clock--><g id="link_DeleteDeliveryUseCase_Clock"><path codeLine="105" d="M309.21,1000.5595 C321.34,992.2895 332.56,982.7995 342,971.9395 C349.93,962.8095 341.27,954.3095 350,945.9395 C384.26,913.0795 521.2,888.7295 589.23,878.3995 " fill="none" id="DeleteDeliveryUseCase-to-Clock" style="stroke:#333333;stroke-width:1.0;"/><polygon fill="#333333" points="594.4,877.6195,584.9055,875.0015,589.4555,878.3626,586.0944,882.9126,594.4,877.6195" style="stroke:#333333;stroke-width:1.0;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="5" x="581.2844" y="892.9674">1</text></g><!--MD5=[8c64beae39daff74deba51bdfce15493]
+link Delivery to DeliveryStatus--><g id="link_Delivery_DeliveryStatus"><path codeLine="107" d="M771.15,310.9395 C810.06,310.9395 851.28,310.9395 886.7,310.9395 " fill="none" id="Delivery-to-DeliveryStatus" style="stroke:#333333;stroke-width:1.0;"/><polygon fill="#333333" points="891.88,310.9395,882.88,306.9395,886.88,310.9395,882.88,314.9395,891.88,310.9395" style="stroke:#333333;stroke-width:1.0;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="37" x="813" y="307.5332">status</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="5" x="879.0494" y="324.2234">1</text></g><!--MD5=[ec9417a157ea4c4f4d69eb0cd6305455]
+link DeliveryEvent to DeliveryEventType--><g id="link_DeliveryEvent_DeliveryEventType"><path codeLine="108" d="M722.74,1015.9395 C777.01,1015.9395 844.92,1015.9395 897.27,1015.9395 " fill="none" id="DeliveryEvent-to-DeliveryEventType" style="stroke:#333333;stroke-width:1.0;"/><polygon fill="#333333" points="902.29,1015.9395,893.29,1011.9395,897.29,1015.9395,893.29,1019.9395,902.29,1015.9395" style="stroke:#333333;stroke-width:1.0;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="5" x="889.5973" y="1029.2915">1</text></g><!--MD5=[da3716f340c8d6a65b6d2149ef2a7620]
+link Delivery to ValidationError--><g id="link_Delivery_ValidationError"><path codeLine="109" d="M771.15,360.2095 C819.57,377.1095 871.58,395.2695 911.52,409.2095 " fill="none" id="Delivery-to-ValidationError" style="stroke:#333333;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#333333" points="916.33,410.8895,909.1476,404.1506,911.6085,409.2441,906.515,411.705,916.33,410.8895" style="stroke:#333333;stroke-width:1.0;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="59" x="802" y="368.5332">«throws»</text></g><!--MD5=[2d25f58fcd892f17a5a0a67e2f38dd75]
+reverse link DomainError to ValidationError--><g id="link_DomainError_ValidationError"><path codeLine="110" d="M705.63,492.4895 C768.54,478.8195 857.05,459.5695 916.24,446.6995 " fill="none" id="DomainError-backto-ValidationError" style="stroke:#333333;stroke-width:1.0;"/><polygon fill="none" points="706.8,499.3995,685.77,496.8095,703.82,485.7195,706.8,499.3995" style="stroke:#333333;stroke-width:1.0;"/></g><!--MD5=[66539ae3479bdaf52c1282cc9c6e0dbd]
+reverse link DomainError to NotFoundError--><g id="link_DomainError_NotFoundError"><path codeLine="111" d="M706.04,510.4595 C768.92,511.7195 857.17,513.4895 916.24,514.6695 " fill="none" id="DomainError-backto-NotFoundError" style="stroke:#333333;stroke-width:1.0;"/><polygon fill="none" points="705.62,517.4595,685.77,510.0595,705.9,503.4595,705.62,517.4595" style="stroke:#333333;stroke-width:1.0;"/></g><!--MD5=[80d662de9c94d2fbd262e4d739f39ca4]
+reverse link ValidationError to InvalidIdentifierError--><g id="link_ValidationError_InvalidIdentifierError"><path codeLine="112" d="M1064.63,432.9395 C1085.8,432.9395 1108.52,432.9395 1129.6,432.9395 " fill="none" id="ValidationError-backto-InvalidIdentifierError" style="stroke:#333333;stroke-width:1.0;"/><polygon fill="none" points="1064.52,439.9395,1044.52,432.9395,1064.52,425.9395,1064.52,439.9395" style="stroke:#333333;stroke-width:1.0;"/></g><!--MD5=[4ca68c38bde42f503e5f84254e4b493e]
+@startuml uml-classes-1-dominio
+!include _uml.iuml
+title C4 Nível 4 / UML — Diagrama de Classes 1/2: Fatias verticais (casos de uso) e Domínio
+left to right direction
+
+package "features (fatias verticais)" {
+  class CreateDeliveryUseCase <<UseCase>> {
+    - deliveryWriter : DeliveryWriter
+    - eventPublisher : DeliveryEventPublisher
+    - clock : Clock
+    + execute(input) : Promise<Delivery>
+  }
+  class SearchDeliveriesUseCase <<UseCase>> {
+    - deliveryReader : DeliveryReader
+    + execute(filters) : Promise<SearchResult>
+  }
+  class UpdateDeliveryUseCase <<UseCase>> {
+    - deliveryUpdater : DeliveryUpdater
+    - eventPublisher : DeliveryEventPublisher
+    - clock : Clock
+    + execute(id, input) : Promise<Delivery>
+  }
+  class DeleteDeliveryUseCase <<UseCase>> {
+    - deliveryRemover : DeliveryRemover
+    - eventPublisher : DeliveryEventPublisher
+    - clock : Clock
+    + execute(id) : Promise<DeleteResult>
+  }
+  class ProcessDeliveryEventUseCase <<UseCase>> {
+    - alertNotifier : AlertNotifier
+    + execute(event) : Promise<ProcessResult>
+  }
+  class SayHelloUseCase <<UseCase>> {
+    - clock : Clock
+    + execute(input) : Greeting
+  }
+}
+
+package "domain" {
+  class Delivery <<Entity>> {
+    + id : string
+    + code : string
+    + customer : string
+    + destination : string
+    + driver : string
+    + status : string
+    + eta : string
+    + progress : number
+    + createdAt : Date
+    + updatedAt : Date
+    + {static} create(props, now) : Delivery
+    + {static} validateChanges(props, now) : Changes
+    + toPrimitives() : object
+  }
+  enum DeliveryStatus <<ValueObject>> {
+    PENDING = "Pendente"
+    IN_ROUTE = "Em rota"
+    DELAYED = "Atrasada"
+    DELIVERED = "Entregue"
+  }
+  class DeliveryEvent <<DomainEvent>> {
+    + type : DeliveryEventType
+    + version : number
+    + source : string
+    + aggregateId : string
+    + occurredAt : string
+    + data : object
+  }
+  enum DeliveryEventType {
+    DeliveryCreated
+    DeliveryUpdated
+    DeliveryDeleted
+  }
+  abstract class DomainError
+  class ValidationError
+  class InvalidIdentifierError
+  class NotFoundError
+
+  interface DeliveryWriter <<port>>
+  interface DeliveryReader <<port>>
+  interface DeliveryUpdater <<port>>
+  interface DeliveryRemover <<port>>
+  interface DeliveryEventPublisher <<port>>
+  interface AlertNotifier <<port>>
+  interface Clock <<port>>
+}
+
+CreateDeliveryUseCase ..> Delivery : <<create>>
+UpdateDeliveryUseCase ..> Delivery : valida alterações
+CreateDeliveryUseCase ..> DeliveryEvent : <<create>>
+UpdateDeliveryUseCase ..> DeliveryEvent : <<create>>
+DeleteDeliveryUseCase ..> DeliveryEvent : <<create>>
+ProcessDeliveryEventUseCase ..> DeliveryEvent : consome
+
+CreateDeliveryUseCase - -> "1" DeliveryWriter
+CreateDeliveryUseCase - -> "1" DeliveryEventPublisher
+SearchDeliveriesUseCase - -> "1" DeliveryReader
+UpdateDeliveryUseCase - -> "1" DeliveryUpdater
+UpdateDeliveryUseCase - -> "1" DeliveryEventPublisher
+DeleteDeliveryUseCase - -> "1" DeliveryRemover
+DeleteDeliveryUseCase - -> "1" DeliveryEventPublisher
+ProcessDeliveryEventUseCase - -> "1" AlertNotifier
+CreateDeliveryUseCase - -> "1" Clock
+SayHelloUseCase - -> "1" Clock
+UpdateDeliveryUseCase - -> "1" Clock
+DeleteDeliveryUseCase - -> "1" Clock
+
+Delivery - -> "1" DeliveryStatus : status
+DeliveryEvent - -> "1" DeliveryEventType
+Delivery ..> ValidationError : <<throws>>
+DomainError <|- - ValidationError
+DomainError <|- - NotFoundError
+ValidationError <|- - InvalidIdentifierError
+@enduml
+
+@startuml uml-classes-1-dominio
+skinparam defaultFontName "DejaVu Sans"
+skinparam shadowing false
+hide footbox
+skinparam classAttributeIconSize 0
+skinparam packageStyle rectangle
+skinparam class {
+  BackgroundColor #F4F8FD
+  BorderColor #1A4E8A
+  ArrowColor #333333
+  StereotypeFontColor #1A4E8A
+}
+skinparam package {
+  BorderColor #8AA2C2
+  FontColor #0B2545
+}
+skinparam componentStyle uml2
+skinparam component {
+  BackgroundColor #F4F8FD
+  BorderColor #1A4E8A
+}
+skinparam interface {
+  BackgroundColor #FFFFFF
+  BorderColor #1A4E8A
+}
+skinparam sequence {
+  ParticipantBackgroundColor #F4F8FD
+  ParticipantBorderColor #1A4E8A
+  LifeLineBorderColor #8AA2C2
+  ArrowColor #333333
+}
+skinparam note {
+  BackgroundColor #FFF8E1
+  BorderColor #C9A227
+}
+title C4 Nível 4 / UML — Diagrama de Classes 1/2: Fatias verticais (casos de uso) e Domínio
+left to right direction
+
+package "features (fatias verticais)" {
+  class CreateDeliveryUseCase <<UseCase>> {
+    - deliveryWriter : DeliveryWriter
+    - eventPublisher : DeliveryEventPublisher
+    - clock : Clock
+    + execute(input) : Promise<Delivery>
+  }
+  class SearchDeliveriesUseCase <<UseCase>> {
+    - deliveryReader : DeliveryReader
+    + execute(filters) : Promise<SearchResult>
+  }
+  class UpdateDeliveryUseCase <<UseCase>> {
+    - deliveryUpdater : DeliveryUpdater
+    - eventPublisher : DeliveryEventPublisher
+    - clock : Clock
+    + execute(id, input) : Promise<Delivery>
+  }
+  class DeleteDeliveryUseCase <<UseCase>> {
+    - deliveryRemover : DeliveryRemover
+    - eventPublisher : DeliveryEventPublisher
+    - clock : Clock
+    + execute(id) : Promise<DeleteResult>
+  }
+  class ProcessDeliveryEventUseCase <<UseCase>> {
+    - alertNotifier : AlertNotifier
+    + execute(event) : Promise<ProcessResult>
+  }
+  class SayHelloUseCase <<UseCase>> {
+    - clock : Clock
+    + execute(input) : Greeting
+  }
+}
+
+package "domain" {
+  class Delivery <<Entity>> {
+    + id : string
+    + code : string
+    + customer : string
+    + destination : string
+    + driver : string
+    + status : string
+    + eta : string
+    + progress : number
+    + createdAt : Date
+    + updatedAt : Date
+    + {static} create(props, now) : Delivery
+    + {static} validateChanges(props, now) : Changes
+    + toPrimitives() : object
+  }
+  enum DeliveryStatus <<ValueObject>> {
+    PENDING = "Pendente"
+    IN_ROUTE = "Em rota"
+    DELAYED = "Atrasada"
+    DELIVERED = "Entregue"
+  }
+  class DeliveryEvent <<DomainEvent>> {
+    + type : DeliveryEventType
+    + version : number
+    + source : string
+    + aggregateId : string
+    + occurredAt : string
+    + data : object
+  }
+  enum DeliveryEventType {
+    DeliveryCreated
+    DeliveryUpdated
+    DeliveryDeleted
+  }
+  abstract class DomainError
+  class ValidationError
+  class InvalidIdentifierError
+  class NotFoundError
+
+  interface DeliveryWriter <<port>>
+  interface DeliveryReader <<port>>
+  interface DeliveryUpdater <<port>>
+  interface DeliveryRemover <<port>>
+  interface DeliveryEventPublisher <<port>>
+  interface AlertNotifier <<port>>
+  interface Clock <<port>>
+}
+
+CreateDeliveryUseCase ..> Delivery : <<create>>
+UpdateDeliveryUseCase ..> Delivery : valida alterações
+CreateDeliveryUseCase ..> DeliveryEvent : <<create>>
+UpdateDeliveryUseCase ..> DeliveryEvent : <<create>>
+DeleteDeliveryUseCase ..> DeliveryEvent : <<create>>
+ProcessDeliveryEventUseCase ..> DeliveryEvent : consome
+
+CreateDeliveryUseCase - -> "1" DeliveryWriter
+CreateDeliveryUseCase - -> "1" DeliveryEventPublisher
+SearchDeliveriesUseCase - -> "1" DeliveryReader
+UpdateDeliveryUseCase - -> "1" DeliveryUpdater
+UpdateDeliveryUseCase - -> "1" DeliveryEventPublisher
+DeleteDeliveryUseCase - -> "1" DeliveryRemover
+DeleteDeliveryUseCase - -> "1" DeliveryEventPublisher
+ProcessDeliveryEventUseCase - -> "1" AlertNotifier
+CreateDeliveryUseCase - -> "1" Clock
+SayHelloUseCase - -> "1" Clock
+UpdateDeliveryUseCase - -> "1" Clock
+DeleteDeliveryUseCase - -> "1" Clock
+
+Delivery - -> "1" DeliveryStatus : status
+DeliveryEvent - -> "1" DeliveryEventType
+Delivery ..> ValidationError : <<throws>>
+DomainError <|- - ValidationError
+DomainError <|- - NotFoundError
+ValidationError <|- - InvalidIdentifierError
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 14:01:30 BRT 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

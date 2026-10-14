@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="534px" preserveAspectRatio="none" style="width:1657px;height:534px;background:#FFFFFF;" version="1.1" viewBox="0 0 1657 534" width="1657px" zoomAndPan="magnify"><defs/><g><rect fill="none" height="26.9395" id="_title" style="stroke:none;stroke-width:1.0;" width="678" x="491" y="10"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="668" x="496" y="28.5625">C4 Nível 4 / UML — Sequência 3: Rastreamento e desvio de rota (RF-02, RF-05 — arquitetura-alvo)</text><rect fill="none" height="136.6475" style="stroke:#8AA2C2;stroke-width:1.5;" width="1235" x="416" y="271.7363"/><line style="stroke:#8AA2C2;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="48" x2="48" y1="122.8184" y2="527.5723"/><line style="stroke:#8AA2C2;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="181.5" x2="181.5" y1="122.8184" y2="527.5723"/><line style="stroke:#8AA2C2;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="468" x2="468" y1="122.8184" y2="527.5723"/><line style="stroke:#8AA2C2;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="669" x2="669" y1="122.8184" y2="527.5723"/><line style="stroke:#8AA2C2;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="798" x2="798" y1="122.8184" y2="527.5723"/><line style="stroke:#8AA2C2;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="920" x2="920" y1="122.8184" y2="527.5723"/><line style="stroke:#8AA2C2;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1056.5" x2="1056.5" y1="122.8184" y2="527.5723"/><line style="stroke:#8AA2C2;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1354" x2="1354" y1="122.8184" y2="527.5723"/><line style="stroke:#8AA2C2;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1591" x2="1591" y1="122.8184" y2="527.5723"/><rect fill="#F4F8FD" height="47.8789" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="86" x="5" y="73.9395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="72" x="12" y="94.502">Rastreador</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="54" x="21" y="111.4414">GPS/IoT</text><path d="M129.5,95.8789 L234.5,95.8789 C239.5,95.8789 239.5,109.3486 239.5,109.3486 C239.5,109.3486 239.5,122.8184 234.5,122.8184 L129.5,122.8184 C124.5,122.8184 124.5,109.3486 124.5,109.3486 C124.5,109.3486 124.5,95.8789 129.5,95.8789 " fill="#E2E2F0" style="stroke:#181818;stroke-width:0.5;"/><path d="M234.5,95.8789 C229.5,95.8789 229.5,109.3486 229.5,109.3486 C229.5,122.8184 234.5,122.8184 234.5,122.8184 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="95" x="129.5" y="114.4414">Azure IoT Hub</text><rect fill="#F4F8FD" height="47.8789" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="84" x="426" y="73.9395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="70" x="433" y="94.502">Serviço de</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="69" x="433.5" y="111.4414">Telemetria</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="92" x="620" y="102.502">Telemetria DB</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="85" x="623.5" y="119.4414">(Cosmos DB)</text><path d="M651,52.9395 C651,42.9395 669,42.9395 669,42.9395 C669,42.9395 687,42.9395 687,52.9395 L687,78.9395 C687,88.9395 669,88.9395 669,88.9395 C669,88.9395 651,88.9395 651,78.9395 L651,52.9395 " fill="#E2E2F0" style="stroke:#181818;stroke-width:1.5;"/><path d="M651,52.9395 C651,62.9395 669,62.9395 669,62.9395 C669,62.9395 687,62.9395 687,52.9395 " fill="none" style="stroke:#181818;stroke-width:1.5;"/><path d="M733,95.8789 L863,95.8789 C868,95.8789 868,109.3486 868,109.3486 C868,109.3486 868,122.8184 863,122.8184 L733,122.8184 C728,122.8184 728,109.3486 728,109.3486 C728,109.3486 728,95.8789 733,95.8789 " fill="#E2E2F0" style="stroke:#181818;stroke-width:0.5;"/><path d="M863,95.8789 C858,95.8789 858,109.3486 858,109.3486 C858,122.8184 863,122.8184 863,122.8184 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="120" x="733" y="114.4414">Azure Service Bus</text><rect fill="#F4F8FD" height="47.8789" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="84" x="878" y="73.9395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="70" x="885" y="94.502">Serviço de</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="46" x="897" y="111.4414">Alertas</text><rect fill="#F4F8FD" height="47.8789" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="91" x="1011.5" y="73.9395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="70" x="1022" y="94.502">Serviço de</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="77" x="1018.5" y="111.4414">Indicadores</text><rect fill="#F4F8FD" height="47.8789" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="96" x="1306" y="73.9395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="70" x="1319" y="94.502">Serviço de</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="82" x="1313" y="111.4414">Notificações</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="94" x="1541" y="119.4414">Gerente / SAC</text><ellipse cx="1591" cy="54.3789" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M1591,62.3789 L1591,89.3789 M1578,70.3789 L1604,70.3789 M1591,89.3789 L1578,104.3789 M1591,89.3789 L1604,104.3789 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><polygon fill="#333333" points="170,150.5479,180,154.5479,170,158.5479,174,154.5479" style="stroke:#333333;stroke-width:1.0;"/><line style="stroke:#333333;stroke-width:1.0;" x1="48" x2="176" y1="154.5479" y2="154.5479"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="6" x="55" y="149.4121">1</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="100" x="65" y="149.4121">posição (MQTT)</text><polygon fill="#333333" points="456,180.2773,466,184.2773,456,188.2773,460,184.2773" style="stroke:#333333;stroke-width:1.0;"/><line style="stroke:#333333;stroke-width:1.0;" x1="182" x2="462" y1="184.2773" y2="184.2773"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="8" x="189" y="179.1416">2</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="250" x="201" y="179.1416">lote de mensagens (gatilho Event Hubs)</text><polygon fill="#333333" points="657,210.0068,667,214.0068,657,218.0068,661,214.0068" style="stroke:#333333;stroke-width:1.0;"/><line style="stroke:#333333;stroke-width:1.0;" x1="468" x2="663" y1="214.0068" y2="214.0068"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="8" x="475" y="208.8711">3</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="86" x="487" y="208.8711">grava posição</text><line style="stroke:#333333;stroke-width:1.0;" x1="468" x2="510" y1="243.7363" y2="243.7363"/><line style="stroke:#333333;stroke-width:1.0;" x1="510" x2="510" y1="243.7363" y2="256.7363"/><line style="stroke:#333333;stroke-width:1.0;" x1="469" x2="510" y1="256.7363" y2="256.7363"/><polygon fill="#333333" points="479,252.7363,469,256.7363,479,260.7363,475,256.7363" style="stroke:#333333;stroke-width:1.0;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="475" y="238.6006">4</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="174" x="488" y="238.6006">compara com rota planejada</text><path d="M416,271.7363 L478,271.7363 L478,279.4658 L468,289.4658 L416,289.4658 L416,271.7363 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"/><rect fill="none" height="136.6475" style="stroke:#8AA2C2;stroke-width:1.5;" width="1235" x="416" y="271.7363"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="17" x="431" y="285.3301">alt</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="135" x="493" y="284.3926">[fora do corredor da rota]</text><polygon fill="#333333" points="786,307.1953,796,311.1953,786,315.1953,790,311.1953" style="stroke:#333333;stroke-width:1.0;"/><line style="stroke:#333333;stroke-width:1.0;" x1="468" x2="792" y1="311.1953" y2="311.1953"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="8" x="475" y="306.0596">5</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="198" x="487" y="306.0596">publish RouteDeviationDetected</text><polygon fill="#333333" points="908,336.9248,918,340.9248,908,344.9248,912,340.9248" style="stroke:#333333;stroke-width:1.0;"/><line style="stroke:#333333;stroke-width:1.0;" x1="798" x2="914" y1="340.9248" y2="340.9248"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="8" x="805" y="335.7891">6</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="43" x="817" y="335.7891">evento</text><polygon fill="#333333" points="1342,366.6543,1352,370.6543,1342,374.6543,1346,370.6543" style="stroke:#333333;stroke-width:1.0;"/><line style="stroke:#333333;stroke-width:1.0;" x1="920" x2="1348" y1="370.6543" y2="370.6543"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="8" x="927" y="365.5186">7</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="119" x="939" y="365.5186">envia push / e-mail</text><polygon fill="#333333" points="1579,396.3838,1589,400.3838,1579,404.3838,1583,400.3838" style="stroke:#333333;stroke-width:1.0;"/><line style="stroke:#333333;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="1354" x2="1585" y1="400.3838" y2="400.3838"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="8" x="1361" y="395.248">8</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="201" x="1373" y="395.248">"Veículo ABC-1234 saiu da rota"</text><polygon fill="#333333" points="786,433.1133,796,437.1133,786,441.1133,790,437.1133" style="stroke:#333333;stroke-width:1.0;"/><line style="stroke:#333333;stroke-width:1.0;" x1="468" x2="792" y1="437.1133" y2="437.1133"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="8" x="475" y="431.9775">9</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="155" x="487" y="431.9775">publish PositionReceived</text><polygon fill="#333333" points="1045,462.8428,1055,466.8428,1045,470.8428,1049,466.8428" style="stroke:#333333;stroke-width:1.0;"/><line style="stroke:#333333;stroke-width:1.0;" x1="798" x2="1051" y1="466.8428" y2="466.8428"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="15" x="805" y="461.707">10</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="216" x="824" y="461.707">evento (assinatura de indicadores)</text><line style="stroke:#333333;stroke-width:1.0;" x1="1057" x2="1099" y1="496.5723" y2="496.5723"/><line style="stroke:#333333;stroke-width:1.0;" x1="1099" x2="1099" y1="496.5723" y2="509.5723"/><line style="stroke:#333333;stroke-width:1.0;" x1="1058" x2="1099" y1="509.5723" y2="509.5723"/><polygon fill="#333333" points="1068,505.5723,1058,509.5723,1068,513.5723,1064,509.5723" style="stroke:#333333;stroke-width:1.0;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="12" x="1064" y="491.4365">11</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="267" x="1080" y="491.4365">atualiza projeção de tempo de rota (RF-06)</text><!--MD5=[5d77541c44a903b8d13ea0f445a4c1c6]
+@startuml uml-seq-3-telemetria
+!include _uml.iuml
+title C4 Nível 4 / UML — Sequência 3: Rastreamento e desvio de rota (RF-02, RF-05 — arquitetura-alvo)
+autonumber
+participant "Rastreador\nGPS/IoT" as GPS
+queue "Azure IoT Hub" as IOT
+participant "Serviço de\nTelemetria" as T
+database "Telemetria DB\n(Cosmos DB)" as TDB
+queue "Azure Service Bus" as SB
+participant "Serviço de\nAlertas" as A
+participant "Serviço de\nIndicadores" as I
+participant "Serviço de\nNotificações" as NS
+actor "Gerente / SAC" as G
+
+GPS -> IOT : posição (MQTT)
+IOT -> T : lote de mensagens (gatilho Event Hubs)
+T -> TDB : grava posição
+T -> T : compara com rota planejada
+alt fora do corredor da rota
+  T -> SB : publish RouteDeviationDetected
+  SB -> A : evento
+  A -> NS : envia push / e-mail
+  NS - -> G : "Veículo ABC-1234 saiu da rota"
+end
+T -> SB : publish PositionReceived
+SB -> I : evento (assinatura de indicadores)
+I -> I : atualiza projeção de tempo de rota (RF-06)
+@enduml
+
+@startuml uml-seq-3-telemetria
+skinparam defaultFontName "DejaVu Sans"
+skinparam shadowing false
+hide footbox
+skinparam classAttributeIconSize 0
+skinparam packageStyle rectangle
+skinparam class {
+  BackgroundColor #F4F8FD
+  BorderColor #1A4E8A
+  ArrowColor #333333
+  StereotypeFontColor #1A4E8A
+}
+skinparam package {
+  BorderColor #8AA2C2
+  FontColor #0B2545
+}
+skinparam componentStyle uml2
+skinparam component {
+  BackgroundColor #F4F8FD
+  BorderColor #1A4E8A
+}
+skinparam interface {
+  BackgroundColor #FFFFFF
+  BorderColor #1A4E8A
+}
+skinparam sequence {
+  ParticipantBackgroundColor #F4F8FD
+  ParticipantBorderColor #1A4E8A
+  LifeLineBorderColor #8AA2C2
+  ArrowColor #333333
+}
+skinparam note {
+  BackgroundColor #FFF8E1
+  BorderColor #C9A227
+}
+title C4 Nível 4 / UML — Sequência 3: Rastreamento e desvio de rota (RF-02, RF-05 — arquitetura-alvo)
+autonumber
+participant "Rastreador\nGPS/IoT" as GPS
+queue "Azure IoT Hub" as IOT
+participant "Serviço de\nTelemetria" as T
+database "Telemetria DB\n(Cosmos DB)" as TDB
+queue "Azure Service Bus" as SB
+participant "Serviço de\nAlertas" as A
+participant "Serviço de\nIndicadores" as I
+participant "Serviço de\nNotificações" as NS
+actor "Gerente / SAC" as G
+
+GPS -> IOT : posição (MQTT)
+IOT -> T : lote de mensagens (gatilho Event Hubs)
+T -> TDB : grava posição
+T -> T : compara com rota planejada
+alt fora do corredor da rota
+  T -> SB : publish RouteDeviationDetected
+  SB -> A : evento
+  A -> NS : envia push / e-mail
+  NS - -> G : "Veículo ABC-1234 saiu da rota"
+end
+T -> SB : publish PositionReceived
+SB -> I : evento (assinatura de indicadores)
+I -> I : atualiza projeção de tempo de rota (RF-06)
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 14:01:30 BRT 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

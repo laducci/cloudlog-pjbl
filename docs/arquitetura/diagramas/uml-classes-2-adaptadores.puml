@@ -1,0 +1,93 @@
+@startuml uml-classes-2-adaptadores
+!include _uml.iuml
+title C4 Nível 4 / UML — Diagrama de Classes 2/2: Portas e Adaptadores (DIP / LSP / ISP)
+
+package "domain.ports" {
+  interface DeliveryWriter <<port>> {
+    + insert(delivery) : Promise<object>
+  }
+  interface DeliveryReader <<port>> {
+    + search(criteria) : Promise<object[]>
+  }
+  interface DeliveryUpdater <<port>> {
+    + update(id, changes) : Promise<object>
+  }
+  interface DeliveryRemover <<port>> {
+    + remove(id) : Promise<boolean>
+  }
+  interface DeliveryEventPublisher <<port>> {
+    + publish(event) : Promise<void>
+  }
+  interface AlertNotifier <<port>> {
+    + notify(alert) : Promise<void>
+  }
+  interface Clock <<port>> {
+    + now() : Date
+  }
+}
+
+package "infrastructure" {
+  class MongoDeliveryRepository <<Adapter>> {
+    - connection : MongoConnection
+    + insert(delivery)
+    + search(criteria)
+    + update(id, changes)
+    + remove(id)
+    - toObjectId(id) : ObjectId
+  }
+  class InMemoryDeliveryRepository <<Adapter>> {
+    - items : object[]
+    + insert(delivery)
+    + search(criteria)
+    + update(id, changes)
+    + remove(id)
+  }
+  class MongoConnection {
+    - uri : string
+    - client : MongoClient
+    + {static} fromEnvironment(env) : MongoConnection
+    + getCollection() : Promise<Collection>
+  }
+  class ServiceBusDeliveryEventPublisher <<Adapter>> {
+    - connectionString : string
+    - queueName : string
+    - sender : ServiceBusSender
+    + publish(event)
+  }
+  class LoggingEventPublisher <<Adapter>> {
+    + publish(event)
+  }
+  class InMemoryEventPublisher <<Adapter>> {
+    + events : object[]
+    + publish(event)
+  }
+  class LogAlertNotifier <<Adapter>> {
+    + sent : object[]
+    + notify(alert)
+  }
+  class SystemClock <<Adapter>> {
+    + now() : Date
+  }
+}
+
+
+DeliveryEventPublisher -[hidden]right- AlertNotifier
+DeliveryWriter -[hidden]down- DeliveryEventPublisher
+MongoDeliveryRepository -[hidden]down- ServiceBusDeliveryEventPublisher
+InMemoryDeliveryRepository -[hidden]down- LoggingEventPublisher
+MongoDeliveryRepository ..up|> DeliveryWriter
+MongoDeliveryRepository ..up|> DeliveryReader
+MongoDeliveryRepository ..up|> DeliveryUpdater
+MongoDeliveryRepository ..up|> DeliveryRemover
+InMemoryDeliveryRepository ..up|> DeliveryWriter
+InMemoryDeliveryRepository ..up|> DeliveryReader
+InMemoryDeliveryRepository ..up|> DeliveryUpdater
+InMemoryDeliveryRepository ..up|> DeliveryRemover
+ServiceBusDeliveryEventPublisher ..up|> DeliveryEventPublisher
+LoggingEventPublisher ..up|> DeliveryEventPublisher
+InMemoryEventPublisher ..up|> DeliveryEventPublisher
+LogAlertNotifier ..up|> AlertNotifier
+SystemClock ..up|> Clock
+MongoDeliveryRepository *-- "1" MongoConnection
+
+@enduml

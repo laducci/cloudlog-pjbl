@@ -1,0 +1,28 @@
+@startuml uml-seq-3-telemetria
+!include _uml.iuml
+title C4 Nível 4 / UML — Sequência 3: Rastreamento e desvio de rota (RF-02, RF-05 — arquitetura-alvo)
+autonumber
+participant "Rastreador\nGPS/IoT" as GPS
+queue "Azure IoT Hub" as IOT
+participant "Serviço de\nTelemetria" as T
+database "Telemetria DB\n(Cosmos DB)" as TDB
+queue "Azure Service Bus" as SB
+participant "Serviço de\nAlertas" as A
+participant "Serviço de\nIndicadores" as I
+participant "Serviço de\nNotificações" as NS
+actor "Gerente / SAC" as G
+
+GPS -> IOT : posição (MQTT)
+IOT -> T : lote de mensagens (gatilho Event Hubs)
+T -> TDB : grava posição
+T -> T : compara com rota planejada
+alt fora do corredor da rota
+  T -> SB : publish RouteDeviationDetected
+  SB -> A : evento
+  A -> NS : envia push / e-mail
+  NS --> G : "Veículo ABC-1234 saiu da rota"
+end
+T -> SB : publish PositionReceived
+SB -> I : evento (assinatura de indicadores)
+I -> I : atualiza projeção de tempo de rota (RF-06)
+@enduml

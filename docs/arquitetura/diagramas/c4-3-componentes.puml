@@ -1,0 +1,41 @@
+@startuml c4-3-componentes
+!include <C4/C4_Component>
+!include _style.iuml
+LAYOUT_TOP_DOWN()
+title CloudLog — C4 Nível 3: Componentes do Serviço de Entregas (código entregue: api/src)
+
+Container_Ext(bff, "BFF Web / Frontend", "HTTPS/JSON", "Hoje o frontend chama /api diretamente; na arquitetura-alvo passa pelo API Gateway e BFF.")
+ContainerDb(mongo, "Entregas DB", "MongoDB Atlas", "Coleção deliveries")
+ContainerQueue(bus, "Barramento de Eventos", "Azure Service Bus", "Fila cloudlog-delivery-events")
+System_Ext(notif, "Serviço de Notificações", "push / e-mail / SMS")
+
+Container_Boundary(api, "Serviço de Entregas — Azure Functions (Node.js, modelo v4)") {
+  Component(fnHttp, "HTTP Functions", "features/*/*.function.js", "createDelivery (POST), searchDeliveries (GET), updateDelivery (PUT), deleteDelivery (DELETE), helloCloudLog (GET).")
+  Component(handlers, "Handlers HTTP", "features/*/*.handler.js + shared/http", "Leem a requisição, chamam o caso de uso e traduzem erros em status HTTP.")
+  Component(useCases, "Casos de Uso (fatias verticais)", "features/*/*UseCase.js", "Create, Search, Update, Delete Delivery; publicam eventos após persistir.")
+  Component(domain, "Domínio", "domain/delivery + domain/errors", "Entidade Delivery, DeliveryStatus, DeliveryEvents e erros de domínio.")
+  Component(ports, "Portas", "domain/ports/deliveryPorts.js", "DeliveryWriter, DeliveryReader, DeliveryUpdater, DeliveryRemover, DeliveryEventPublisher, AlertNotifier, Clock.")
+  Component(repo, "MongoDeliveryRepository", "infrastructure/persistence/mongo", "Implementa as portas de persistência.")
+  Component(publisher, "ServiceBusDeliveryEventPublisher", "infrastructure/messaging", "Implementa DeliveryEventPublisher.")
+  Component(root, "Composition Root", "bootstrap/container.js", "Instancia adaptadores e injeta nos casos de uso.")
+}
+Container(svcAlertas, "Serviço de Alertas", "Azure Functions (ServiceBusQueueTrigger)", "Mesmo código api/, implantado separadamente: fatia processDeliveryEvent + LogAlertNotifier (RF-05).", $tags="impl")
+
+Rel(bff, fnHttp, "Chama", "HTTPS/JSON")
+Rel(fnHttp, handlers, "Delega")
+Rel(handlers, useCases, "Executa")
+Rel(useCases, domain, "Usa regras")
+Rel(useCases, ports, "Depende de (abstrações)")
+Rel_U(repo, ports, "Implementa")
+Rel_U(publisher, ports, "Implementa")
+Rel(root, repo, "Instancia")
+Rel(root, publisher, "Instancia")
+Rel(fnHttp, root, "Obtém casos de uso")
+Rel(repo, mongo, "Lê/grava", "MongoDB driver/TLS")
+Rel(publisher, bus, "Publica eventos", "AMQP", $tags="async")
+Rel_R(bus, svcAlertas, "Dispara", "ServiceBusQueueTrigger", $tags="async")
+Rel_U(svcAlertas, notif, "Envia alerta (evolução)", "HTTPS")
+
+Lay_R(mongo, bus)
+SHOW_LEGEND()
+@enduml
