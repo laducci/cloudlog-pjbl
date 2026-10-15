@@ -8,10 +8,18 @@ skinparam entity {
 }
 
 package "Entregas DB — MongoDB Atlas (Serviço de Entregas)" #EEF6EE {
-  entity "MOTORISTA" as MOT {
+  entity "USUARIO" as USU {
     * id : ObjectId <<PK>>
     --
+    * idp_subject : string <<unique>>
     * nome : string
+    * email : string
+    * perfil : GERENTE | SAC | MOTORISTA
+    * status : string
+  }
+  entity "MOTORISTA" as MOT {
+    * id_usuario : ObjectId <<PK, FK>>
+    --
     * cnh : string
     * telefone : string
     * ativo : boolean
@@ -86,7 +94,9 @@ package "Alertas DB — Table Storage" #FBEFEF {
     * RowKey : id <<PK>>
     --
     * entrega_id : string <<ref. lógica>>
+    rota_id : string <<ref. lógica>>
     * tipo : ATRASO | DESVIO
+    * severidade : string
     * mensagem : string
     lido : boolean
   }
@@ -103,6 +113,7 @@ package "Indicadores DB — Azure SQL" #EEF2F6 {
   }
 }
 
+USU ||--o| MOT : é
 MOT ||--o{ ALO : possui
 VEI ||--o{ ALO : alocado em
 MOT ||--o{ ROT : executa

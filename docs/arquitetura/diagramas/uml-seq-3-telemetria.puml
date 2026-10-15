@@ -1,6 +1,6 @@
 @startuml uml-seq-3-telemetria
 !include _uml.iuml
-title C4 Nível 4 / UML — Sequência 3: Rastreamento e desvio de rota (RF-02, RF-05 — arquitetura-alvo)
+title C4 Nível 4 / UML — Sequência 4: Rastreamento e desvio de rota (RF-02, RF-05 — arquitetura-alvo)
 autonumber
 participant "Rastreador\nGPS/IoT" as GPS
 queue "Azure IoT Hub" as IOT

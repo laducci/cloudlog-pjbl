@@ -2,7 +2,7 @@
 
 Integrantes: Camilla Augusta Uber · João Davi · Laura Guillarducci
 
-- PDF completo (arc42, C4 níveis 1–4, UML, DER, Software Architecture Canvas): [`CloudLog_Arquitetura_arc42_Completa.pdf`](CloudLog_Arquitetura_arc42_Completa.pdf)
+- PDF completo (arc42, C4 níveis 1–4, UML, DER, Software Architecture Canvas): [`cloudlog_completa.pdf`](cloudlog_completa.pdf)
 - Diagramas como código (PlantUML / C4-PlantUML) e imagens: [`diagramas/`](diagramas/)
 - C4 níveis 1 a 3 em Structurizr DSL: [`structurizr/workspace.dsl`](structurizr/workspace.dsl)
 

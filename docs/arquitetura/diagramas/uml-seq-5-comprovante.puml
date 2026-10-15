@@ -1,0 +1,35 @@
+@startuml uml-seq-5-comprovante
+!include _uml.iuml
+title C4 Nível 4 / UML — Sequência 3: Conclusão de entrega com comprovante digital (RF-04 — arquitetura-alvo)
+autonumber
+actor Motorista as M
+participant "App do\nMotorista" as APP
+participant "API Gateway\n(APIM)" as GW
+participant "BFF Mobile" as BFF
+participant "Serviço de\nComprovantes" as PS
+database "Blob Storage" as BLOB
+queue "Azure Service Bus" as SB
+participant "Serviço de\nEntregas" as ES
+database "MongoDB Atlas" as DB
+
+M -> APP : seleciona entrega, tira foto e coleta assinatura
+APP -> GW : POST /mobile/proofs (JWT)
+GW -> GW : valida token e perfil Motorista
+GW -> BFF : encaminha
+BFF -> PS : solicita URLs de upload (entregaId)
+PS --> BFF : URLs SAS (validade curta)
+BFF --> APP : URLs SAS
+APP -> BLOB : PUT foto e assinatura (direto, sem passar pela API)
+APP -> GW : POST /mobile/proofs/{id}/confirm
+GW -> BFF : encaminha
+BFF -> PS : confirma comprovante
+PS -> PS : valida arquivos e metadados
+PS -> SB : publish ProofSubmitted
+PS --> BFF : 201 Created
+BFF --> APP : comprovante registrado
+APP --> M : confirmação
+... assíncrono ...
+SB -> ES : ProofSubmitted
+ES -> DB : status = "Entregue", progress = 100
+ES -> SB : publish DeliveryUpdated
+@enduml

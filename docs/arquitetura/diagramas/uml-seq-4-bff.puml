@@ -1,6 +1,6 @@
 @startuml uml-seq-4-bff
 !include _uml.iuml
-title C4 Nível 4 / UML — Sequência 4: Painel operacional via API Gateway + BFF (RF-06 — arquitetura-alvo)
+title C4 Nível 4 / UML — Sequência 5: Painel operacional via API Gateway + BFF (RF-06 — arquitetura-alvo)
 autonumber
 actor "Gerente de Logística" as G
 participant "MFE Operação" as UI
