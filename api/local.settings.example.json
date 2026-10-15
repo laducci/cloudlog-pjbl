@@ -7,7 +7,6 @@
     "MONGODB_ATLAS_DATABASE": "cloudlog",
     "MONGODB_ATLAS_COLLECTION": "deliveries",
     "SERVICEBUS_CONNECTION": "",
-    "SERVICEBUS_QUEUE": "cloudlog-delivery-events",
-    "SERVICEBUS_CONSUMER_ENABLED": "false"
+    "SERVICEBUS_QUEUE": "cloudlog-delivery-events"
   }
 }

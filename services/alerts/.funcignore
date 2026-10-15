@@ -1,0 +1,7 @@
+tests
+src
+*.ts
+!dist/**
+local.settings.json
+tsconfig*.json
+vitest.config.ts
