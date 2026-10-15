@@ -1,0 +1,25 @@
+{
+  "name": "cloudlog-bff-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CloudLog — BFF Web (Azure Functions, TypeScript, Vertical Slice + Clean Architecture)",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prestart": "npm run build",
+    "start": "func start",
+    "test": "vitest run",
+    "test:arch": "vitest run tests/architecture",
+    "test:unit": "vitest run tests/unit"
+  },
+  "dependencies": {
+    "@azure/functions": "^4.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "archunit": "^2.5.4",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  }
+}

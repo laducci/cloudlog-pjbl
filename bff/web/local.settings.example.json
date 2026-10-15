@@ -1,0 +1,9 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "",
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "DELIVERY_SERVICE_URL": "https://polite-mushroom-0b05fa610.3.azurestaticapps.net",
+    "ALERTS_SERVICE_URL": ""
+  }
+}

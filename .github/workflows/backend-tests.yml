@@ -1,25 +1,34 @@
-name: Backend — testes unitários e de arquitetura
+name: Backend — testes unitários e de arquitetura (ArchUnitTS)
 
 on:
   push:
     branches: ["**"]
-    paths: ["api/**", ".github/workflows/backend-tests.yml"]
+    paths: ["api/**", "services/**", "bff/**", ".github/workflows/backend-tests.yml"]
   pull_request:
-    paths: ["api/**"]
+    paths: ["api/**", "services/**", "bff/**"]
 
 jobs:
   test:
+    name: ${{ matrix.project }}
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        project: [api, services/alerts, bff/web]
     defaults:
       run:
-        working-directory: api
+        working-directory: ${{ matrix.project }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
-          cache-dependency-path: api/package-lock.json
+          cache-dependency-path: ${{ matrix.project }}/package-lock.json
       - run: npm ci
-      - run: npm run test:arch
-      - run: npm run test:unit
+      - run: npm run typecheck
+      - run: npm run build
+      - name: Testes de arquitetura (ArchUnitTS)
+        run: npm run test:arch
+      - name: Testes unitários
+        run: npm run test:unit

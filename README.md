@@ -71,13 +71,26 @@ Na Function App, registre como configurações de ambiente:
 
 Em CORS, autorize apenas a URL publicada do Azure Static Web Apps e, durante testes locais, `http://localhost:5173`. No frontend publicado, defina `VITE_API_BASE_URL` com a URL da Function App e `VITE_USE_MOCKS=false` antes do build.
 
-## Arquitetura do backend (Vertical Slice + Clean Architecture + SOLID)
+## Projetos backend (TypeScript · Vertical Slice + Clean Architecture · ArchUnitTS)
 
-Na branch `refactor/vertical-slice-clean-architecture`, o `api/` está organizado em fatias verticais (`api/src/features/<funcionalidade>/`), cada uma com seu caso de uso, handler HTTP e registro da Azure Function. O núcleo (`api/src/domain/`) concentra entidade, regras e portas; `api/src/infrastructure/` traz os adaptadores (MongoDB Atlas, memória, relógio); `api/src/bootstrap/container.js` faz a injeção de dependência.
+| Projeto | Pasta | Papel | Rotas / gatilhos |
+|---|---|---|---|
+| Serviço de Entregas | `api/` | Microsserviço (publicado no Azure Static Web Apps) | `GET/POST /api/deliveries`, `PUT/DELETE /api/deliveries/{id}`, `GET /api/hello` |
+| Serviço de Alertas | `services/alerts/` | Microsserviço (Function App própria) | ServiceBusQueueTrigger `processDeliveryEvent`, `GET /api/alerts` |
+| BFF Web | `bff/web/` | Backend for Frontend do painel | `GET /api/web/dashboard`, `GET /api/web/deliveries` |
 
-- Documentação e diagramas (Mermaid + PNG): [`docs/backend/ARQUITETURA_BACKEND.md`](docs/backend/ARQUITETURA_BACKEND.md)
-- Prompts de IAG usados na refatoração: [`docs/backend/PROMPTS_BACKEND.md`](docs/backend/PROMPTS_BACKEND.md)
-- Testes: `cd api && npm test` (unitários + testes de arquitetura)
+Cada projeto segue a mesma organização: `src/domain` (entidades e portas), `src/features/<fatia>` (UseCase + handler + function), `src/infrastructure` (adaptadores), `src/shared/http` e `src/bootstrap/container.ts` (Composition Root).
+
+Testes (em cada pasta de projeto):
+
+```bash
+npm install
+npm run test:arch   # testes de arquitetura com ArchUnitTS (archunit)
+npm run test:unit   # testes unitários (Vitest)
+npm test            # todos
+```
+
+O workflow `.github/workflows/backend-tests.yml` executa typecheck, build e os testes dos três projetos a cada push.
 
 ## Eventos (Arquitetura Orientada a Eventos)
 
@@ -85,13 +98,15 @@ Inserir, alterar e excluir entregas publicam os eventos `DeliveryCreated`, `Deli
 
 - Com `SERVICEBUS_CONNECTION` (e opcionalmente `SERVICEBUS_QUEUE`, padrão `cloudlog-delivery-events`), os eventos vão para uma fila do Azure Service Bus.
 - Sem essa configuração, os eventos apenas são registrados em log; a API continua funcionando.
-- O consumidor `processDeliveryEvent` (ServiceBusQueueTrigger) gera alertas de entrega atrasada (RF-05). Ele roda numa Function App dedicada com `SERVICEBUS_CONSUMER_ENABLED=true`, porque o Static Web Apps aceita apenas gatilhos HTTP.
+- O consumidor `processDeliveryEvent` agora fica no microsserviço `services/alerts`, que grava os alertas no seu próprio banco (Azure Table Storage, ou memória sem configuração) e os expõe em `GET /api/alerts` para o BFF.
 
 ## Estrutura
 
 - `src/`: frontend React.
 - `api/`: cinco Azure Functions; quatro formam o CRUD exigido.
-- `api/tests/`: testes unitários e de arquitetura (`node:test`).
+- `services/alerts/`: microsserviço de alertas.
+- `bff/web/`: BFF Web.
+- `*/tests/`: testes unitários (Vitest) e de arquitetura (ArchUnitTS).
 - `docs/`: roteiro e modelos para as três entregas.
 - `GRUPO.md`: integrantes e link do GitHub.
 - `Prompt.md`: prompt de IAG exigido.

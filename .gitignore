@@ -8,3 +8,4 @@ api/local.settings.json
 *.log
 work/
 outputs/*.zip
+**/local.settings.json
