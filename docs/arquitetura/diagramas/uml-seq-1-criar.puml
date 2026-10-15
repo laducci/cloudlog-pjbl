@@ -1,0 +1,43 @@
+@startuml uml-seq-1-criar
+!include _uml.iuml
+title C4 Nível 4 / UML — Sequência 1: Inserir entrega (RF-03) com publicação de evento (código entregue)
+autonumber
+actor "Gerente de Logística" as G
+participant "MFE Entregas\n(React)" as UI
+box "Serviço de Entregas — Azure Functions" #EEF4FC
+participant "createDelivery\n.function" as FN
+participant "createDelivery\n.handler" as H
+participant "CreateDelivery\nUseCase" as UC
+participant "Delivery\n<<Entity>>" as E
+participant "MongoDelivery\nRepository" as R
+participant "ServiceBusDelivery\nEventPublisher" as P
+end box
+database "MongoDB Atlas" as DB
+queue "Azure Service Bus" as SB
+
+G -> UI : preenche formulário e salva
+UI -> FN : POST /api/deliveries (JSON)
+FN -> H : handler(request)
+H -> H : readJsonBody(request)
+H -> UC : execute(payload)
+UC -> E : Delivery.create(props, now)
+alt dados inválidos
+  E --> UC : ValidationError
+  UC --> H : ValidationError
+  H --> FN : 400 { message }
+else dados válidos
+  E --> UC : delivery
+  UC -> R : insert(delivery)
+  R -> DB : insertOne()
+  DB --> R : insertedId
+  R --> UC : delivery + _id
+  UC -> P : publish(DeliveryCreated)
+  P -> SB : sendMessages(subject=DeliveryCreated)
+  SB --> P : ack
+  UC --> H : delivery
+  H --> FN : 201 Created (JSON)
+end
+FN --> UI : resposta HTTP
+UI --> G : exibe entrega na tabela
+note over UI, FN : Na arquitetura-alvo a chamada passa por\nAPI Gateway e BFF Web (ver Sequência 4).
+@enduml

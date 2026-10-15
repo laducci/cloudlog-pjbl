@@ -1,0 +1,114 @@
+@startuml uml-classes-1-dominio
+!include _uml.iuml
+title C4 Nível 4 / UML — Diagrama de Classes 1/2: Fatias verticais (casos de uso) e Domínio
+left to right direction
+
+package "features (fatias verticais)" {
+  class CreateDeliveryUseCase <<UseCase>> {
+    - deliveryWriter : DeliveryWriter
+    - eventPublisher : DeliveryEventPublisher
+    - clock : Clock
+    + execute(input) : Promise<Delivery>
+  }
+  class SearchDeliveriesUseCase <<UseCase>> {
+    - deliveryReader : DeliveryReader
+    + execute(filters) : Promise<SearchResult>
+  }
+  class UpdateDeliveryUseCase <<UseCase>> {
+    - deliveryUpdater : DeliveryUpdater
+    - eventPublisher : DeliveryEventPublisher
+    - clock : Clock
+    + execute(id, input) : Promise<Delivery>
+  }
+  class DeleteDeliveryUseCase <<UseCase>> {
+    - deliveryRemover : DeliveryRemover
+    - eventPublisher : DeliveryEventPublisher
+    - clock : Clock
+    + execute(id) : Promise<DeleteResult>
+  }
+  class ProcessDeliveryEventUseCase <<UseCase>> {
+    - alertNotifier : AlertNotifier
+    + execute(event) : Promise<ProcessResult>
+  }
+  class SayHelloUseCase <<UseCase>> {
+    - clock : Clock
+    + execute(input) : Greeting
+  }
+}
+
+package "domain" {
+  class Delivery <<Entity>> {
+    + id : string
+    + code : string
+    + customer : string
+    + destination : string
+    + driver : string
+    + status : string
+    + eta : string
+    + progress : number
+    + createdAt : Date
+    + updatedAt : Date
+    + {static} create(props, now) : Delivery
+    + {static} validateChanges(props, now) : Changes
+    + toPrimitives() : object
+  }
+  enum DeliveryStatus <<ValueObject>> {
+    PENDING = "Pendente"
+    IN_ROUTE = "Em rota"
+    DELAYED = "Atrasada"
+    DELIVERED = "Entregue"
+  }
+  class DeliveryEvent <<DomainEvent>> {
+    + type : DeliveryEventType
+    + version : number
+    + source : string
+    + aggregateId : string
+    + occurredAt : string
+    + data : object
+  }
+  enum DeliveryEventType {
+    DeliveryCreated
+    DeliveryUpdated
+    DeliveryDeleted
+  }
+  abstract class DomainError
+  class ValidationError
+  class InvalidIdentifierError
+  class NotFoundError
+
+  interface DeliveryWriter <<port>>
+  interface DeliveryReader <<port>>
+  interface DeliveryUpdater <<port>>
+  interface DeliveryRemover <<port>>
+  interface DeliveryEventPublisher <<port>>
+  interface AlertNotifier <<port>>
+  interface Clock <<port>>
+}
+
+CreateDeliveryUseCase ..> Delivery : <<create>>
+UpdateDeliveryUseCase ..> Delivery : valida alterações
+CreateDeliveryUseCase ..> DeliveryEvent : <<create>>
+UpdateDeliveryUseCase ..> DeliveryEvent : <<create>>
+DeleteDeliveryUseCase ..> DeliveryEvent : <<create>>
+ProcessDeliveryEventUseCase ..> DeliveryEvent : consome
+
+CreateDeliveryUseCase --> "1" DeliveryWriter
+CreateDeliveryUseCase --> "1" DeliveryEventPublisher
+SearchDeliveriesUseCase --> "1" DeliveryReader
+UpdateDeliveryUseCase --> "1" DeliveryUpdater
+UpdateDeliveryUseCase --> "1" DeliveryEventPublisher
+DeleteDeliveryUseCase --> "1" DeliveryRemover
+DeleteDeliveryUseCase --> "1" DeliveryEventPublisher
+ProcessDeliveryEventUseCase --> "1" AlertNotifier
+CreateDeliveryUseCase --> "1" Clock
+SayHelloUseCase --> "1" Clock
+UpdateDeliveryUseCase --> "1" Clock
+DeleteDeliveryUseCase --> "1" Clock
+
+Delivery --> "1" DeliveryStatus : status
+DeliveryEvent --> "1" DeliveryEventType
+Delivery ..> ValidationError : <<throws>>
+DomainError <|-- ValidationError
+DomainError <|-- NotFoundError
+ValidationError <|-- InvalidIdentifierError
+@enduml

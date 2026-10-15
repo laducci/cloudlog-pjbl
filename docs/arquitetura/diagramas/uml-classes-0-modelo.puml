@@ -1,0 +1,80 @@
+@startuml uml-classes-0-modelo
+!include _uml.iuml
+title C4 Nível 4 / UML — Modelo de Domínio do CloudLog (visão conceitual)
+left to right direction
+
+abstract class Usuario {
+  - id : UUID
+  - nome : String
+  - email : String
+  - perfil : Perfil
+  + autenticar()
+}
+class GerenteLogistica {
+  - matricula : String
+  + criarRota()
+}
+class Motorista {
+  - cnh : String
+  + atualizarEntrega()
+}
+class AtendenteSAC {
+  + consultarEntrega()
+}
+class Veiculo {
+  - id : UUID
+  - placa : String
+  - status : StatusVeiculo
+}
+class Rota {
+  - id : UUID
+  - dataPlanejada : Date
+  - status : StatusRota
+}
+class Entrega {
+  - id : UUID
+  - codigo : String
+  - cliente : String
+  - destino : String
+  - previsao : String
+  - progresso : int
+  - status : StatusEntrega
+}
+class ComprovanteEntrega {
+  - id : UUID
+  - fotoUrl : String
+  - assinaturaUrl : String
+  - dataHora : DateTime
+}
+class EventoTelemetria {
+  - id : UUID
+  - latitude : Decimal
+  - longitude : Decimal
+  - dataHora : DateTime
+}
+class Alerta {
+  - id : UUID
+  - tipo : TipoAlerta
+  - mensagem : String
+  - dataHora : DateTime
+}
+enum StatusEntrega {
+  PENDENTE
+  EM_ROTA
+  ATRASADA
+  ENTREGUE
+}
+
+Usuario <|-- GerenteLogistica
+Usuario <|-- Motorista
+Usuario <|-- AtendenteSAC
+GerenteLogistica "1" -- "0..*" Rota : planeja
+Motorista "1" -- "0..*" Rota : executa
+Motorista "0..1" -- "0..1" Veiculo : conduz
+Rota "1" *-- "1..*" Entrega : contém
+Entrega "1" -- "0..1" ComprovanteEntrega : possui
+Veiculo "1" -- "0..*" EventoTelemetria : gera
+Entrega "1" -- "0..*" Alerta : pode gerar
+Rota "1" -- "0..*" Alerta : pode gerar
+Entrega --> StatusEntrega
+@enduml

@@ -1,0 +1,34 @@
+skinparam defaultFontName "DejaVu Sans"
+skinparam shadowing false
+hide footbox
+skinparam classAttributeIconSize 0
+skinparam packageStyle rectangle
+skinparam class {
+  BackgroundColor #F4F8FD
+  BorderColor #1A4E8A
+  ArrowColor #333333
+  StereotypeFontColor #1A4E8A
+}
+skinparam package {
+  BorderColor #8AA2C2
+  FontColor #0B2545
+}
+skinparam componentStyle uml2
+skinparam component {
+  BackgroundColor #F4F8FD
+  BorderColor #1A4E8A
+}
+skinparam interface {
+  BackgroundColor #FFFFFF
+  BorderColor #1A4E8A
+}
+skinparam sequence {
+  ParticipantBackgroundColor #F4F8FD
+  ParticipantBorderColor #1A4E8A
+  LifeLineBorderColor #8AA2C2
+  ArrowColor #333333
+}
+skinparam note {
+  BackgroundColor #FFF8E1
+  BorderColor #C9A227
+}

@@ -8,6 +8,8 @@
  *  DeliveryUpdater  -> update(id, changes): Promise<deliveryPrimitives | null>
  *  DeliveryRemover  -> remove(id): Promise<boolean>
  *  Clock            -> now(): Date
+ *  DeliveryEventPublisher -> publish(event): Promise<void>   (EDA)
+ *  AlertNotifier    -> notify(alert): Promise<void>          (RF-05)
  */
 const Ports = Object.freeze({
   DeliveryWriter: ["insert"],
@@ -15,6 +17,8 @@ const Ports = Object.freeze({
   DeliveryUpdater: ["update"],
   DeliveryRemover: ["remove"],
   Clock: ["now"],
+  DeliveryEventPublisher: ["publish"],
+  AlertNotifier: ["notify"],
 });
 
 /**

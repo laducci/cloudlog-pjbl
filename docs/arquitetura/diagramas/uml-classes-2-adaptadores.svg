@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="728px" preserveAspectRatio="none" style="width:1334px;height:728px;background:#FFFFFF;" version="1.1" viewBox="0 0 1334 728" width="1334px" zoomAndPan="magnify"><defs/><g><rect fill="none" height="26.9395" id="_title" style="stroke:none;stroke-width:1.0;" width="572" x="374.365" y="5"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="562" x="379.365" y="23.5625">C4 Nível 4 / UML — Diagrama de Classes 2/2: Portas e Adaptadores (DIP / LSP / ISP)</text><!--MD5=[bdf627956f4f84446a6fe865eff567b4]
+cluster domain.ports--><g id="cluster_domain.ports"><rect fill="none" height="259" rx="2.5" ry="2.5" style="stroke:#8AA2C2;stroke-width:1.5;" width="1273" x="55.73" y="44.9395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="94" x="645.23" y="60.502">domain.ports</text></g><!--MD5=[77349be1bd27b81b697a0f9b3aded3c8]
+cluster infrastructure--><g id="cluster_infrastructure"><rect fill="none" height="395" rx="2.5" ry="2.5" style="stroke:#8AA2C2;stroke-width:1.5;" width="1065" x="116.73" y="327.9395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="97" x="600.73" y="343.502">infrastructure</text></g><!--MD5=[52c9b32ee99912b086cb723720fb3076]
+class DeliveryWriter--><g id="elem_DeliveryWriter"><rect codeLine="5" fill="#F4F8FD" height="73.8477" id="DeliveryWriter" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="242" x="208.73" y="79.9395"/><ellipse cx="278.98" cy="100.3936" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M274.9019,96.1592 L274.9019,94.0029 L282.2925,94.0029 L282.2925,96.1592 L279.8238,96.1592 L279.8238,104.2373 L282.2925,104.2373 L282.2925,106.3936 L274.9019,106.3936 L274.9019,104.2373 L277.3706,104.2373 L277.3706,96.1592 L274.9019,96.1592 Z " fill="#000000"/><text fill="#1A4E8A" font-family="DejaVu Sans" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="40" x="325.98" y="96.0781">«port»</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="93" x="299.48" y="112.4707">DeliveryWriter</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="209.73" x2="449.73" y1="120.8477" y2="120.8477"/><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="209.73" x2="449.73" y1="128.8477" y2="128.8477"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="230" x="214.73" y="146.4102">+insert(delivery) : Promise&lt;object&gt;</text></g><!--MD5=[caf4615fc7253167220d095f14d0ec32]
+class DeliveryReader--><g id="elem_DeliveryReader"><rect codeLine="8" fill="#F4F8FD" height="73.8477" id="DeliveryReader" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="253" x="747.23" y="79.9395"/><ellipse cx="818.98" cy="100.3936" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M814.9019,96.1592 L814.9019,94.0029 L822.2925,94.0029 L822.2925,96.1592 L819.8238,96.1592 L819.8238,104.2373 L822.2925,104.2373 L822.2925,106.3936 L814.9019,106.3936 L814.9019,104.2373 L817.3706,104.2373 L817.3706,96.1592 L814.9019,96.1592 Z " fill="#000000"/><text fill="#1A4E8A" font-family="DejaVu Sans" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="40" x="869.98" y="96.0781">«port»</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="101" x="839.48" y="112.4707">DeliveryReader</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="748.23" x2="999.23" y1="120.8477" y2="120.8477"/><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="748.23" x2="999.23" y1="128.8477" y2="128.8477"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="241" x="753.23" y="146.4102">+search(criteria) : Promise&lt;object[]&gt;</text></g><!--MD5=[2dcb34b35c79d7d10f2ecedebbfd7df1]
+class DeliveryUpdater--><g id="elem_DeliveryUpdater"><rect codeLine="11" fill="#F4F8FD" height="73.8477" id="DeliveryUpdater" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="277" x="1035.23" y="79.9395"/><ellipse cx="1115.48" cy="100.3936" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1111.4019,96.1592 L1111.4019,94.0029 L1118.7925,94.0029 L1118.7925,96.1592 L1116.3238,96.1592 L1116.3238,104.2373 L1118.7925,104.2373 L1118.7925,106.3936 L1111.4019,106.3936 L1111.4019,104.2373 L1113.8706,104.2373 L1113.8706,96.1592 L1111.4019,96.1592 Z " fill="#000000"/><text fill="#1A4E8A" font-family="DejaVu Sans" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="40" x="1169.98" y="96.0781">«port»</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="108" x="1135.98" y="112.4707">DeliveryUpdater</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="1036.23" x2="1311.23" y1="120.8477" y2="120.8477"/><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="1036.23" x2="1311.23" y1="128.8477" y2="128.8477"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="265" x="1041.23" y="146.4102">+update(id, changes) : Promise&lt;object&gt;</text></g><!--MD5=[9b64d325db1510046aaaa59f7631dd38]
+class DeliveryRemover--><g id="elem_DeliveryRemover"><rect codeLine="14" fill="#F4F8FD" height="73.8477" id="DeliveryRemover" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="226" x="485.73" y="79.9395"/><ellipse cx="538.98" cy="100.3936" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M534.9019,96.1592 L534.9019,94.0029 L542.2925,94.0029 L542.2925,96.1592 L539.8238,96.1592 L539.8238,104.2373 L542.2925,104.2373 L542.2925,106.3936 L534.9019,106.3936 L534.9019,104.2373 L537.3706,104.2373 L537.3706,96.1592 L534.9019,96.1592 Z " fill="#000000"/><text fill="#1A4E8A" font-family="DejaVu Sans" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="40" x="594.98" y="96.0781">«port»</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="111" x="559.48" y="112.4707">DeliveryRemover</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="486.73" x2="710.73" y1="120.8477" y2="120.8477"/><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="486.73" x2="710.73" y1="128.8477" y2="128.8477"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="214" x="491.73" y="146.4102">+remove(id) : Promise&lt;boolean&gt;</text></g><!--MD5=[b6f102cb2a906d5bc5761d3cf12ab922]
+class DeliveryEventPublisher--><g id="elem_DeliveryEventPublisher"><rect codeLine="17" fill="#F4F8FD" height="73.8477" id="DeliveryEventPublisher" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="225" x="72.23" y="213.9395"/><ellipse cx="106.58" cy="234.3936" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M102.5019,230.1592 L102.5019,228.0029 L109.8925,228.0029 L109.8925,230.1592 L107.4238,230.1592 L107.4238,238.2373 L109.8925,238.2373 L109.8925,240.3936 L102.5019,240.3936 L102.5019,238.2373 L104.9706,238.2373 L104.9706,230.1592 L102.5019,230.1592 Z " fill="#000000"/><text fill="#1A4E8A" font-family="DejaVu Sans" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="40" x="179.88" y="230.0781">«port»</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="150" x="124.88" y="246.4707">DeliveryEventPublisher</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="73.23" x2="296.23" y1="254.8477" y2="254.8477"/><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="73.23" x2="296.23" y1="262.8477" y2="262.8477"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="213" x="78.23" y="280.4102">+publish(event) : Promise&lt;void&gt;</text></g><!--MD5=[e7ffe7ebabe9e44ea24abac34082c337]
+class AlertNotifier--><g id="elem_AlertNotifier"><rect codeLine="20" fill="#F4F8FD" height="73.8477" id="AlertNotifier" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="207" x="332.23" y="213.9395"/><ellipse cx="391.98" cy="234.3936" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M387.9019,230.1592 L387.9019,228.0029 L395.2925,228.0029 L395.2925,230.1592 L392.8237,230.1592 L392.8237,238.2373 L395.2925,238.2373 L395.2925,240.3936 L387.9019,240.3936 L387.9019,238.2373 L390.3706,238.2373 L390.3706,230.1592 L387.9019,230.1592 Z " fill="#000000"/><text fill="#1A4E8A" font-family="DejaVu Sans" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="40" x="431.98" y="230.0781">«port»</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="79" x="412.48" y="246.4707">AlertNotifier</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="333.23" x2="538.23" y1="254.8477" y2="254.8477"/><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="333.23" x2="538.23" y1="262.8477" y2="262.8477"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="195" x="338.23" y="280.4102">+notify(alert) : Promise&lt;void&gt;</text></g><!--MD5=[c053a105bcf153d42bf1c80326010135]
+class Clock--><g id="elem_Clock"><rect codeLine="23" fill="#F4F8FD" height="73.8477" id="Clock" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="101" x="72.23" y="79.9395"/><ellipse cx="101.63" cy="100.3936" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M97.5519,96.1592 L97.5519,94.0029 L104.9425,94.0029 L104.9425,96.1592 L102.4738,96.1592 L102.4738,104.2373 L104.9425,104.2373 L104.9425,106.3936 L97.5519,106.3936 L97.5519,104.2373 L100.0206,104.2373 L100.0206,96.1592 L97.5519,96.1592 Z " fill="#000000"/><text fill="#1A4E8A" font-family="DejaVu Sans" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="40" x="117.33" y="96.0781">«port»</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="37" x="118.83" y="112.4707">Clock</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="73.23" x2="172.23" y1="120.8477" y2="120.8477"/><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="73.23" x2="172.23" y1="128.8477" y2="128.8477"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="89" x="78.23" y="146.4102">+now() : Date</text></g><!--MD5=[2ae6abe62280b44258cbd71b5c345a83]
+class MongoDeliveryRepository--><g id="elem_MongoDeliveryRepository"><rect codeLine="29" fill="#F4F8FD" height="158.5449" id="MongoDeliveryRepository" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="222" x="943.73" y="362.9395"/><ellipse cx="968.18" cy="383.3936" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M971.1488,389.0342 Q970.5706,389.3311 969.93,389.4717 Q969.2894,389.6279 968.5863,389.6279 Q966.0863,389.6279 964.7581,387.9873 Q963.4456,386.3311 963.4456,383.2061 Q963.4456,380.0811 964.7581,378.4248 Q966.0863,376.7686 968.5863,376.7686 Q969.2894,376.7686 969.93,376.9248 Q970.5863,377.0811 971.1488,377.3779 L971.1488,380.0967 Q970.5238,379.5186 969.93,379.2529 Q969.3363,378.9717 968.7113,378.9717 Q967.3675,378.9717 966.68,380.0498 Q965.9925,381.1123 965.9925,383.2061 Q965.9925,385.2998 966.68,386.3779 Q967.3675,387.4404 968.7113,387.4404 Q969.3363,387.4404 969.93,387.1748 Q970.5238,386.8936 971.1488,386.3154 L971.1488,389.0342 Z " fill="#000000"/><text fill="#1A4E8A" font-family="DejaVu Sans" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="64" x="1036.78" y="379.0781">«Adapter»</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="169" x="984.28" y="395.4707">MongoDeliveryRepository</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="944.73" x2="1164.73" y1="403.8477" y2="403.8477"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="210" x="949.73" y="421.4102">-connection : MongoConnection</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="944.73" x2="1164.73" y1="428.7871" y2="428.7871"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="107" x="949.73" y="446.3496">+insert(delivery)</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="108" x="949.73" y="463.2891">+search(criteria)</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="142" x="949.73" y="480.2285">+update(id, changes)</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="80" x="949.73" y="497.168">+remove(id)</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="167" x="949.73" y="514.1074">-toObjectId(id) : ObjectId</text></g><!--MD5=[abe18dd6eabf3826e79ceee7d06b3d7f]
+class InMemoryDeliveryRepository--><g id="elem_InMemoryDeliveryRepository"><rect codeLine="37" fill="#F4F8FD" height="141.6055" id="InMemoryDeliveryRepository" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="221" x="687.23" y="371.4395"/><ellipse cx="702.23" cy="391.8936" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M705.1988,397.5342 Q704.6206,397.8311 703.98,397.9717 Q703.3394,398.1279 702.6363,398.1279 Q700.1363,398.1279 698.8081,396.4873 Q697.4956,394.8311 697.4956,391.7061 Q697.4956,388.5811 698.8081,386.9248 Q700.1363,385.2686 702.6363,385.2686 Q703.3394,385.2686 703.98,385.4248 Q704.6363,385.5811 705.1988,385.8779 L705.1988,388.5967 Q704.5738,388.0186 703.98,387.7529 Q703.3863,387.4717 702.7613,387.4717 Q701.4175,387.4717 700.73,388.5498 Q700.0425,389.6123 700.0425,391.7061 Q700.0425,393.7998 700.73,394.8779 Q701.4175,395.9404 702.7613,395.9404 Q703.3863,395.9404 703.98,395.6748 Q704.5738,395.3936 705.1988,394.8154 L705.1988,397.5342 Z " fill="#000000"/><text fill="#1A4E8A" font-family="DejaVu Sans" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="64" x="778.73" y="387.5781">«Adapter»</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="189" x="716.23" y="403.9707">InMemoryDeliveryRepository</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="688.23" x2="907.23" y1="412.3477" y2="412.3477"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="104" x="693.23" y="429.9102">-items : object[]</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="688.23" x2="907.23" y1="437.2871" y2="437.2871"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="107" x="693.23" y="454.8496">+insert(delivery)</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="108" x="693.23" y="471.7891">+search(criteria)</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="142" x="693.23" y="488.7285">+update(id, changes)</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="80" x="693.23" y="505.668">+remove(id)</text></g><!--MD5=[5d8bc7edd7cc9e33024c689af1da8699]
+class MongoConnection--><g id="elem_MongoConnection"><rect codeLine="44" fill="#F4F8FD" height="115.7578" id="MongoConnection" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="298" x="867.73" y="586.4395"/><ellipse cx="952.48" cy="602.4395" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M955.4488,608.0801 Q954.8706,608.377 954.23,608.5176 Q953.5894,608.6738 952.8863,608.6738 Q950.3863,608.6738 949.0581,607.0332 Q947.7456,605.377 947.7456,602.252 Q947.7456,599.127 949.0581,597.4707 Q950.3863,595.8145 952.8863,595.8145 Q953.5894,595.8145 954.23,595.9707 Q954.8863,596.127 955.4488,596.4238 L955.4488,599.1426 Q954.8238,598.5645 954.23,598.2988 Q953.6363,598.0176 953.0113,598.0176 Q951.6675,598.0176 950.98,599.0957 Q950.2925,600.1582 950.2925,602.252 Q950.2925,604.3457 950.98,605.4238 Q951.6675,606.4863 953.0113,606.4863 Q953.6363,606.4863 954.23,606.2207 Q954.8238,605.9395 955.4488,605.3613 L955.4488,608.0801 Z " fill="#000000"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="120" x="972.98" y="607.5322">MongoConnection</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="868.73" x2="1164.73" y1="618.4395" y2="618.4395"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="71" x="873.73" y="636.002">-uri : string</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="136" x="873.73" y="652.9414">-client : MongoClient</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="868.73" x2="1164.73" y1="660.3184" y2="660.3184"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="286" x="873.73" y="677.8809">+fromEnvironment(env) : MongoConnection</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="251" x="873.73" y="694.8203">+getCollection() : Promise&lt;Collection&gt;</text></g><!--MD5=[215f291dfe13633f6506b81d728c539d]
+class ServiceBusDeliveryEventPublisher--><g id="elem_ServiceBusDeliveryEventPublisher"><rect codeLine="50" fill="#F4F8FD" height="124.666" id="ServiceBusDeliveryEventPublisher" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="255" x="521.23" y="581.9395"/><ellipse cx="536.23" cy="602.3936" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M539.1988,608.0342 Q538.6206,608.3311 537.98,608.4717 Q537.3394,608.6279 536.6363,608.6279 Q534.1363,608.6279 532.8081,606.9873 Q531.4956,605.3311 531.4956,602.2061 Q531.4956,599.0811 532.8081,597.4248 Q534.1363,595.7686 536.6363,595.7686 Q537.3394,595.7686 537.98,595.9248 Q538.6363,596.0811 539.1988,596.3779 L539.1988,599.0967 Q538.5738,598.5186 537.98,598.2529 Q537.3863,597.9717 536.7613,597.9717 Q535.4175,597.9717 534.73,599.0498 Q534.0425,600.1123 534.0425,602.2061 Q534.0425,604.2998 534.73,605.3779 Q535.4175,606.4404 536.7613,606.4404 Q537.3863,606.4404 537.98,606.1748 Q538.5738,605.8936 539.1988,605.3154 L539.1988,608.0342 Z " fill="#000000"/><text fill="#1A4E8A" font-family="DejaVu Sans" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="64" x="629.73" y="598.0781">«Adapter»</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="223" x="550.23" y="614.4707">ServiceBusDeliveryEventPublisher</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="522.23" x2="775.23" y1="622.8477" y2="622.8477"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="166" x="527.23" y="640.4102">-connectionString : string</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="135" x="527.23" y="657.3496">-queueName : string</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="183" x="527.23" y="674.2891">-sender : ServiceBusSender</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="522.23" x2="775.23" y1="681.666" y2="681.666"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="103" x="527.23" y="699.2285">+publish(event)</text></g><!--MD5=[bb9c48c7e8a42e6d3cd710e40b8b4565]
+class LoggingEventPublisher--><g id="elem_LoggingEventPublisher"><rect codeLine="56" fill="#F4F8FD" height="73.8477" id="LoggingEventPublisher" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="183" x="190.23" y="607.4395"/><ellipse cx="205.23" cy="627.8936" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M208.1988,633.5342 Q207.6206,633.8311 206.98,633.9717 Q206.3394,634.1279 205.6363,634.1279 Q203.1363,634.1279 201.8081,632.4873 Q200.4956,630.8311 200.4956,627.7061 Q200.4956,624.5811 201.8081,622.9248 Q203.1363,621.2686 205.6363,621.2686 Q206.3394,621.2686 206.98,621.4248 Q207.6363,621.5811 208.1988,621.8779 L208.1988,624.5967 Q207.5738,624.0186 206.98,623.7529 Q206.3863,623.4717 205.7613,623.4717 Q204.4175,623.4717 203.73,624.5498 Q203.0425,625.6123 203.0425,627.7061 Q203.0425,629.7998 203.73,630.8779 Q204.4175,631.9404 205.7613,631.9404 Q206.3863,631.9404 206.98,631.6748 Q207.5738,631.3936 208.1988,630.8154 L208.1988,633.5342 Z " fill="#000000"/><text fill="#1A4E8A" font-family="DejaVu Sans" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="64" x="262.73" y="623.5781">«Adapter»</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="151" x="219.23" y="639.9707">LoggingEventPublisher</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="191.23" x2="372.23" y1="648.3477" y2="648.3477"/><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="191.23" x2="372.23" y1="656.3477" y2="656.3477"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="103" x="196.23" y="673.9102">+publish(event)</text></g><!--MD5=[a6fe1af7305a22e0fcb8e610468985d8]
+class InMemoryEventPublisher--><g id="elem_InMemoryEventPublisher"><rect codeLine="59" fill="#F4F8FD" height="90.7871" id="InMemoryEventPublisher" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="195" x="132.23" y="396.9395"/><ellipse cx="147.23" cy="417.3936" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M150.1988,423.0342 Q149.6206,423.3311 148.98,423.4717 Q148.3394,423.6279 147.6363,423.6279 Q145.1363,423.6279 143.8081,421.9873 Q142.4956,420.3311 142.4956,417.2061 Q142.4956,414.0811 143.8081,412.4248 Q145.1363,410.7686 147.6363,410.7686 Q148.3394,410.7686 148.98,410.9248 Q149.6363,411.0811 150.1988,411.3779 L150.1988,414.0967 Q149.5738,413.5186 148.98,413.2529 Q148.3863,412.9717 147.7613,412.9717 Q146.4175,412.9717 145.73,414.0498 Q145.0425,415.1123 145.0425,417.2061 Q145.0425,419.2998 145.73,420.3779 Q146.4175,421.4404 147.7613,421.4404 Q148.3863,421.4404 148.98,421.1748 Q149.5738,420.8936 150.1988,420.3154 L150.1988,423.0342 Z " fill="#000000"/><text fill="#1A4E8A" font-family="DejaVu Sans" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="64" x="210.73" y="413.0781">«Adapter»</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="163" x="161.23" y="429.4707">InMemoryEventPublisher</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="133.23" x2="326.23" y1="437.8477" y2="437.8477"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="116" x="138.23" y="455.4102">+events : object[]</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="133.23" x2="326.23" y1="462.7871" y2="462.7871"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="103" x="138.23" y="480.3496">+publish(event)</text></g><!--MD5=[7659f1ab280b4c1007d1d30411da866b]
+class LogAlertNotifier--><g id="elem_LogAlertNotifier"><rect codeLine="63" fill="#F4F8FD" height="90.7871" id="LogAlertNotifier" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="136" x="362.73" y="396.9395"/><ellipse cx="377.73" cy="417.3936" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M380.6987,423.0342 Q380.1206,423.3311 379.48,423.4717 Q378.8394,423.6279 378.1362,423.6279 Q375.6362,423.6279 374.3081,421.9873 Q372.9956,420.3311 372.9956,417.2061 Q372.9956,414.0811 374.3081,412.4248 Q375.6362,410.7686 378.1362,410.7686 Q378.8394,410.7686 379.48,410.9248 Q380.1362,411.0811 380.6987,411.3779 L380.6987,414.0967 Q380.0737,413.5186 379.48,413.2529 Q378.8862,412.9717 378.2612,412.9717 Q376.9175,412.9717 376.23,414.0498 Q375.5425,415.1123 375.5425,417.2061 Q375.5425,419.2998 376.23,420.3779 Q376.9175,421.4404 378.2612,421.4404 Q378.8862,421.4404 379.48,421.1748 Q380.0737,420.8936 380.6987,420.3154 L380.6987,423.0342 Z " fill="#000000"/><text fill="#1A4E8A" font-family="DejaVu Sans" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="64" x="411.73" y="413.0781">«Adapter»</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="104" x="391.73" y="429.4707">LogAlertNotifier</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="363.73" x2="497.73" y1="437.8477" y2="437.8477"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="100" x="368.73" y="455.4102">+sent : object[]</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="363.73" x2="497.73" y1="462.7871" y2="462.7871"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="85" x="368.73" y="480.3496">+notify(alert)</text></g><!--MD5=[9fc2c4ab4a88498e88e31e134ea89c3c]
+class SystemClock--><g id="elem_SystemClock"><rect codeLine="67" fill="#F4F8FD" height="73.8477" id="SystemClock" rx="2.5" ry="2.5" style="stroke:#1A4E8A;stroke-width:0.5;" width="118" x="533.73" y="405.4395"/><ellipse cx="548.73" cy="425.8936" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M551.6988,431.5342 Q551.1206,431.8311 550.48,431.9717 Q549.8394,432.1279 549.1363,432.1279 Q546.6363,432.1279 545.3081,430.4873 Q543.9956,428.8311 543.9956,425.7061 Q543.9956,422.5811 545.3081,420.9248 Q546.6363,419.2686 549.1363,419.2686 Q549.8394,419.2686 550.48,419.4248 Q551.1363,419.5811 551.6988,419.8779 L551.6988,422.5967 Q551.0738,422.0186 550.48,421.7529 Q549.8863,421.4717 549.2613,421.4717 Q547.9175,421.4717 547.23,422.5498 Q546.5425,423.6123 546.5425,425.7061 Q546.5425,427.7998 547.23,428.8779 Q547.9175,429.9404 549.2613,429.9404 Q549.8863,429.9404 550.48,429.6748 Q551.0738,429.3936 551.6988,428.8154 L551.6988,431.5342 Z " fill="#000000"/><text fill="#1A4E8A" font-family="DejaVu Sans" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="64" x="573.73" y="421.5781">«Adapter»</text><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="86" x="562.73" y="437.9707">SystemClock</text><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="534.73" x2="650.73" y1="446.3477" y2="446.3477"/><line style="stroke:#1A4E8A;stroke-width:0.5;" x1="534.73" x2="650.73" y1="454.3477" y2="454.3477"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="14" lengthAdjust="spacing" textLength="89" x="539.73" y="471.9102">+now() : Date</text></g><!--MD5=[49d15a8757467cf30ebb98c712d14707]
+link DeliveryEventPublisher to AlertNotifier--><!--MD5=[241975fdd5c490b9a75a1ed0dae37bb5]
+link DeliveryWriter to DeliveryEventPublisher--><!--MD5=[757634543e501b5091c2a3e28b9328d7]
+link MongoDeliveryRepository to ServiceBusDeliveryEventPublisher--><!--MD5=[db59fa16e38f0e3b034c60686b40acb9]
+link InMemoryDeliveryRepository to LoggingEventPublisher--><!--MD5=[009c048795fd5eec58ca3f6fa0fb2321]
+reverse link DeliveryWriter to MongoDeliveryRepository--><g id="link_DeliveryWriter_MongoDeliveryRepository"><path codeLine="77" d="M470.32,155.3795 C558.8,179.1195 660.07,206.6795 680.73,213.9395 C694.73,218.8495 913.34,311.7895 925.73,319.9395 C944.5,332.2795 963.05,347.4695 979.98,362.8695 " fill="none" id="DeliveryWriter-backto-MongoDeliveryRepository" style="stroke:#333333;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="468.3,162.0895,450.79,150.1495,471.93,148.5595,468.3,162.0895" style="stroke:#333333;stroke-width:1.0;"/></g><!--MD5=[3894d10e53072174599729c86389f4f1]
+reverse link DeliveryReader to MongoDeliveryRepository--><g id="link_DeliveryReader_MongoDeliveryRepository"><path codeLine="78" d="M943.51,167.0295 C959.16,180.7295 974.45,196.6495 985.73,213.9395 C1015.01,258.7795 1032.33,316.6095 1042.3,362.7395 " fill="none" id="DeliveryReader-backto-MongoDeliveryRepository" style="stroke:#333333;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="938.83,172.2395,927.88,154.0995,947.75,161.4495,938.83,172.2395" style="stroke:#333333;stroke-width:1.0;"/></g><!--MD5=[b2e0b6b00a5c17844d8836914d7394ba]
+reverse link DeliveryUpdater to MongoDeliveryRepository--><g id="link_DeliveryUpdater_MongoDeliveryRepository"><path codeLine="79" d="M1164.75,174.0195 C1157.4,213.4495 1145.33,266.9895 1127.73,311.9395 C1121.1,328.8795 1112.59,346.3195 1103.73,362.6795 " fill="none" id="DeliveryUpdater-backto-MongoDeliveryRepository" style="stroke:#333333;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="1157.87,172.7195,1168.26,154.2495,1171.65,175.1695,1157.87,172.7195" style="stroke:#333333;stroke-width:1.0;"/></g><!--MD5=[682178e958b13c648cbaa6fdb09abb0f]
+reverse link DeliveryRemover to MongoDeliveryRepository--><g id="link_DeliveryRemover_MongoDeliveryRepository"><path codeLine="80" d="M731.45,155.9495 C814.34,180.0695 906.84,207.8495 914.73,213.9395 C928.55,224.5995 974.51,301.3495 1010.04,362.7995 " fill="none" id="DeliveryRemover-backto-MongoDeliveryRepository" style="stroke:#333333;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="729.28,162.6095,712.02,150.3095,733.18,149.1595,729.28,162.6095" style="stroke:#333333;stroke-width:1.0;"/></g><!--MD5=[e72aee66be71886fa0bd849f75c9b0c4]
+reverse link DeliveryWriter to InMemoryDeliveryRepository--><g id="link_DeliveryWriter_InMemoryDeliveryRepository"><path codeLine="81" d="M470.52,156.0595 C531.06,174.1895 593.65,195.8195 618.73,213.9395 C662.76,245.7495 658.3,269.1395 691.73,311.9395 C706.94,331.3995 723.73,352.2195 739.38,371.3395 " fill="none" id="DeliveryWriter-backto-InMemoryDeliveryRepository" style="stroke:#333333;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="468.19,162.6695,450.99,150.2995,472.15,149.2395,468.19,162.6695" style="stroke:#333333;stroke-width:1.0;"/></g><!--MD5=[c436641af315434e08e522b72cb85b5c]
+reverse link DeliveryReader to InMemoryDeliveryRepository--><g id="link_DeliveryReader_InMemoryDeliveryRepository"><path codeLine="82" d="M860.59,173.8995 C847.73,228.6095 828.13,312.0695 814.23,371.2095 " fill="none" id="DeliveryReader-backto-InMemoryDeliveryRepository" style="stroke:#333333;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="853.85,171.9795,865.24,154.1095,867.48,175.1795,853.85,171.9795" style="stroke:#333333;stroke-width:1.0;"/></g><!--MD5=[9fd1ede8cc3caaf2f799019c09c9729e]
+reverse link DeliveryUpdater to InMemoryDeliveryRepository--><g id="link_DeliveryUpdater_InMemoryDeliveryRepository"><path codeLine="83" d="M1111.5,166.8495 C1060.94,207.0595 988.21,265.9695 926.73,319.9395 C908.24,336.1795 888.7,354.1295 870.59,371.1495 " fill="none" id="DeliveryUpdater-backto-InMemoryDeliveryRepository" style="stroke:#333333;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="1107.39,161.1695,1127.41,154.2295,1116.09,172.1395,1107.39,161.1695" style="stroke:#333333;stroke-width:1.0;"/></g><!--MD5=[07bbcfb66d49bcb5b2978a2d6c9c688f]
+reverse link DeliveryRemover to InMemoryDeliveryRepository--><g id="link_DeliveryRemover_InMemoryDeliveryRepository"><path codeLine="84" d="M656.79,168.4395 C670.65,182.2895 684.63,197.9195 695.73,213.9395 C729.51,262.6795 756.35,324.4095 774,371.2595 " fill="none" id="DeliveryRemover-backto-InMemoryDeliveryRepository" style="stroke:#333333;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="651.52,173.0895,641.93,154.1895,661.21,162.9895,651.52,173.0895" style="stroke:#333333;stroke-width:1.0;"/></g><!--MD5=[80296901f504c38cebf981bae08fcb11]
+reverse link DeliveryEventPublisher to ServiceBusDeliveryEventPublisher--><g id="link_DeliveryEventPublisher_ServiceBusDeliveryEventPublisher"><path codeLine="85" d="M123.86,303.6995 C120.26,308.8395 117.13,314.2695 114.73,319.9395 C79.78,402.6295 58.4,452.0395 114.73,521.9395 C193.51,619.6795 268.34,554.0495 390.73,581.9395 C433.27,591.6295 479.67,602.5795 521.23,612.5095 " fill="none" id="DeliveryEventPublisher-backto-ServiceBusDeliveryEventPublisher" style="stroke:#333333;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="118.49,299.1995,136.66,288.2995,129.26,308.1495,118.49,299.1995" style="stroke:#333333;stroke-width:1.0;"/></g><!--MD5=[04dcd12776dfb72dd0f499c199b2c908]
+reverse link DeliveryEventPublisher to LoggingEventPublisher--><g id="link_DeliveryEventPublisher_LoggingEventPublisher"><path codeLine="86" d="M68.37,300.7495 C62.37,306.4795 57.05,312.8595 52.73,319.9395 C6,396.5895 6.46,445.0095 52.73,521.9395 C82.54,571.4995 140.12,601.9195 190.09,619.9295 " fill="none" id="DeliveryEventPublisher-backto-LoggingEventPublisher" style="stroke:#333333;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="64.01,295.2695,83.96,288.1395,72.81,306.1595,64.01,295.2695" style="stroke:#333333;stroke-width:1.0;"/></g><!--MD5=[269238011d8ed2f110dc9408bc0085a3]
+reverse link DeliveryEventPublisher to InMemoryEventPublisher--><g id="link_DeliveryEventPublisher_InMemoryEventPublisher"><path codeLine="87" d="M197.94,307.5395 C204.69,335.9695 212.8,370.1095 219.13,396.7995 " fill="none" id="DeliveryEventPublisher-backto-InMemoryEventPublisher" style="stroke:#333333;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="191.11,309.1095,193.3,288.0295,204.74,305.8695,191.11,309.1095" style="stroke:#333333;stroke-width:1.0;"/></g><!--MD5=[7c6dfebc996a249e4fbb192259db9329]
+reverse link AlertNotifier to LogAlertNotifier--><g id="link_AlertNotifier_LogAlertNotifier"><path codeLine="88" d="M434.24,308.3695 C433.5,336.6295 432.61,370.3695 431.91,396.7995 " fill="none" id="AlertNotifier-backto-LogAlertNotifier" style="stroke:#333333;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="427.26,307.8395,434.78,288.0295,441.25,308.2095,427.26,307.8395" style="stroke:#333333;stroke-width:1.0;"/></g><!--MD5=[febf733aa7999513a5e0fd8e68458a1e]
+reverse link Clock to SystemClock--><g id="link_Clock_SystemClock"><path codeLine="89" d="M193.11,152.7895 C354.82,198.0095 445.25,101.7895 556.73,213.9395 C607.05,264.5595 604.7,355.1995 598.67,405.4295 " fill="none" id="Clock-backto-SystemClock" style="stroke:#333333;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="190.6,159.3295,173.56,146.7295,194.74,145.9595,190.6,159.3295" style="stroke:#333333;stroke-width:1.0;"/></g><!--MD5=[41b0720bf04ad02c3095c46c0dcaca94]
+reverse link MongoDeliveryRepository to MongoConnection--><g id="link_MongoDeliveryRepository_MongoConnection"><path codeLine="90" d="M1037.31,535.1295 C1034,552.5895 1030.61,570.3895 1027.57,586.3795 " fill="none" id="MongoDeliveryRepository-backto-MongoConnection" style="stroke:#333333;stroke-width:1.0;"/><polygon fill="#333333" points="1039.77,522.1995,1034.7196,527.3466,1037.5283,533.9882,1042.5787,528.8411,1039.77,522.1995" style="stroke:#333333;stroke-width:1.0;"/><text fill="#000000" font-family="&quot;DejaVu Sans&quot;" font-size="13" lengthAdjust="spacing" textLength="5" x="1023.6907" y="575.2289">1</text></g><!--MD5=[cd869241ce125889b2766d87f1236816]
+@startuml uml-classes-2-adaptadores
+!include _uml.iuml
+title C4 Nível 4 / UML — Diagrama de Classes 2/2: Portas e Adaptadores (DIP / LSP / ISP)
+
+package "domain.ports" {
+  interface DeliveryWriter <<port>> {
+    + insert(delivery) : Promise<object>
+  }
+  interface DeliveryReader <<port>> {
+    + search(criteria) : Promise<object[]>
+  }
+  interface DeliveryUpdater <<port>> {
+    + update(id, changes) : Promise<object>
+  }
+  interface DeliveryRemover <<port>> {
+    + remove(id) : Promise<boolean>
+  }
+  interface DeliveryEventPublisher <<port>> {
+    + publish(event) : Promise<void>
+  }
+  interface AlertNotifier <<port>> {
+    + notify(alert) : Promise<void>
+  }
+  interface Clock <<port>> {
+    + now() : Date
+  }
+}
+
+package "infrastructure" {
+  class MongoDeliveryRepository <<Adapter>> {
+    - connection : MongoConnection
+    + insert(delivery)
+    + search(criteria)
+    + update(id, changes)
+    + remove(id)
+    - toObjectId(id) : ObjectId
+  }
+  class InMemoryDeliveryRepository <<Adapter>> {
+    - items : object[]
+    + insert(delivery)
+    + search(criteria)
+    + update(id, changes)
+    + remove(id)
+  }
+  class MongoConnection {
+    - uri : string
+    - client : MongoClient
+    + {static} fromEnvironment(env) : MongoConnection
+    + getCollection() : Promise<Collection>
+  }
+  class ServiceBusDeliveryEventPublisher <<Adapter>> {
+    - connectionString : string
+    - queueName : string
+    - sender : ServiceBusSender
+    + publish(event)
+  }
+  class LoggingEventPublisher <<Adapter>> {
+    + publish(event)
+  }
+  class InMemoryEventPublisher <<Adapter>> {
+    + events : object[]
+    + publish(event)
+  }
+  class LogAlertNotifier <<Adapter>> {
+    + sent : object[]
+    + notify(alert)
+  }
+  class SystemClock <<Adapter>> {
+    + now() : Date
+  }
+}
+
+
+DeliveryEventPublisher -[hidden]right- AlertNotifier
+DeliveryWriter -[hidden]down- DeliveryEventPublisher
+MongoDeliveryRepository -[hidden]down- ServiceBusDeliveryEventPublisher
+InMemoryDeliveryRepository -[hidden]down- LoggingEventPublisher
+MongoDeliveryRepository ..up|> DeliveryWriter
+MongoDeliveryRepository ..up|> DeliveryReader
+MongoDeliveryRepository ..up|> DeliveryUpdater
+MongoDeliveryRepository ..up|> DeliveryRemover
+InMemoryDeliveryRepository ..up|> DeliveryWriter
+InMemoryDeliveryRepository ..up|> DeliveryReader
+InMemoryDeliveryRepository ..up|> DeliveryUpdater
+InMemoryDeliveryRepository ..up|> DeliveryRemover
+ServiceBusDeliveryEventPublisher ..up|> DeliveryEventPublisher
+LoggingEventPublisher ..up|> DeliveryEventPublisher
+InMemoryEventPublisher ..up|> DeliveryEventPublisher
+LogAlertNotifier ..up|> AlertNotifier
+SystemClock ..up|> Clock
+MongoDeliveryRepository *- - "1" MongoConnection
+
+@enduml
+
+@startuml uml-classes-2-adaptadores
+skinparam defaultFontName "DejaVu Sans"
+skinparam shadowing false
+hide footbox
+skinparam classAttributeIconSize 0
+skinparam packageStyle rectangle
+skinparam class {
+  BackgroundColor #F4F8FD
+  BorderColor #1A4E8A
+  ArrowColor #333333
+  StereotypeFontColor #1A4E8A
+}
+skinparam package {
+  BorderColor #8AA2C2
+  FontColor #0B2545
+}
+skinparam componentStyle uml2
+skinparam component {
+  BackgroundColor #F4F8FD
+  BorderColor #1A4E8A
+}
+skinparam interface {
+  BackgroundColor #FFFFFF
+  BorderColor #1A4E8A
+}
+skinparam sequence {
+  ParticipantBackgroundColor #F4F8FD
+  ParticipantBorderColor #1A4E8A
+  LifeLineBorderColor #8AA2C2
+  ArrowColor #333333
+}
+skinparam note {
+  BackgroundColor #FFF8E1
+  BorderColor #C9A227
+}
+title C4 Nível 4 / UML — Diagrama de Classes 2/2: Portas e Adaptadores (DIP / LSP / ISP)
+
+package "domain.ports" {
+  interface DeliveryWriter <<port>> {
+    + insert(delivery) : Promise<object>
+  }
+  interface DeliveryReader <<port>> {
+    + search(criteria) : Promise<object[]>
+  }
+  interface DeliveryUpdater <<port>> {
+    + update(id, changes) : Promise<object>
+  }
+  interface DeliveryRemover <<port>> {
+    + remove(id) : Promise<boolean>
+  }
+  interface DeliveryEventPublisher <<port>> {
+    + publish(event) : Promise<void>
+  }
+  interface AlertNotifier <<port>> {
+    + notify(alert) : Promise<void>
+  }
+  interface Clock <<port>> {
+    + now() : Date
+  }
+}
+
+package "infrastructure" {
+  class MongoDeliveryRepository <<Adapter>> {
+    - connection : MongoConnection
+    + insert(delivery)
+    + search(criteria)
+    + update(id, changes)
+    + remove(id)
+    - toObjectId(id) : ObjectId
+  }
+  class InMemoryDeliveryRepository <<Adapter>> {
+    - items : object[]
+    + insert(delivery)
+    + search(criteria)
+    + update(id, changes)
+    + remove(id)
+  }
+  class MongoConnection {
+    - uri : string
+    - client : MongoClient
+    + {static} fromEnvironment(env) : MongoConnection
+    + getCollection() : Promise<Collection>
+  }
+  class ServiceBusDeliveryEventPublisher <<Adapter>> {
+    - connectionString : string
+    - queueName : string
+    - sender : ServiceBusSender
+    + publish(event)
+  }
+  class LoggingEventPublisher <<Adapter>> {
+    + publish(event)
+  }
+  class InMemoryEventPublisher <<Adapter>> {
+    + events : object[]
+    + publish(event)
+  }
+  class LogAlertNotifier <<Adapter>> {
+    + sent : object[]
+    + notify(alert)
+  }
+  class SystemClock <<Adapter>> {
+    + now() : Date
+  }
+}
+
+
+DeliveryEventPublisher -[hidden]right- AlertNotifier
+DeliveryWriter -[hidden]down- DeliveryEventPublisher
+MongoDeliveryRepository -[hidden]down- ServiceBusDeliveryEventPublisher
+InMemoryDeliveryRepository -[hidden]down- LoggingEventPublisher
+MongoDeliveryRepository ..up|> DeliveryWriter
+MongoDeliveryRepository ..up|> DeliveryReader
+MongoDeliveryRepository ..up|> DeliveryUpdater
+MongoDeliveryRepository ..up|> DeliveryRemover
+InMemoryDeliveryRepository ..up|> DeliveryWriter
+InMemoryDeliveryRepository ..up|> DeliveryReader
+InMemoryDeliveryRepository ..up|> DeliveryUpdater
+InMemoryDeliveryRepository ..up|> DeliveryRemover
+ServiceBusDeliveryEventPublisher ..up|> DeliveryEventPublisher
+LoggingEventPublisher ..up|> DeliveryEventPublisher
+InMemoryEventPublisher ..up|> DeliveryEventPublisher
+LogAlertNotifier ..up|> AlertNotifier
+SystemClock ..up|> Clock
+MongoDeliveryRepository *- - "1" MongoConnection
+
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 14:01:30 BRT 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

@@ -1,0 +1,4 @@
+AddElementTag("impl", $bgColor="#438DD5", $fontColor="#FFFFFF", $legendText="implementado no código entregue")
+AddElementTag("plan", $bgColor="#B7D3F2", $fontColor="#0B2545", $borderColor="#5B8AC4", $legendText="arquitetura-alvo (planejado)")
+AddRelTag("async", $textColor="#7A3E9D", $lineColor="#7A3E9D", $lineStyle = DashedLine(), $legendText="assíncrono (evento/mensagem)")
+skinparam defaultFontName "DejaVu Sans"

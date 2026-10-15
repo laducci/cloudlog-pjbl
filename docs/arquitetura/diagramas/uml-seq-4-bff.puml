@@ -1,0 +1,31 @@
+@startuml uml-seq-4-bff
+!include _uml.iuml
+title C4 Nível 4 / UML — Sequência 5: Painel operacional via API Gateway + BFF (RF-06 — arquitetura-alvo)
+autonumber
+actor "Gerente de Logística" as G
+participant "MFE Operação" as UI
+participant "API Gateway\n(APIM)" as GW
+participant "BFF Web" as BFF
+participant "Serviço de\nEntregas" as E
+participant "Serviço de\nTelemetria" as T
+participant "Serviço de\nIndicadores" as I
+
+G -> UI : abre o painel
+UI -> GW : GET /web/dashboard (JWT)
+GW -> GW : valida JWT e perfil (RBAC)
+GW -> BFF : GET /dashboard
+par chamadas paralelas
+  BFF -> E : GET /api/deliveries?status=Em rota
+  E --> BFF : entregas
+else
+  BFF -> T : GET /positions/latest
+  T --> BFF : posições
+else
+  BFF -> I : GET /kpis?periodo=hoje
+  I --> BFF : indicadores
+end
+BFF -> BFF : agrega e formata para a Web
+BFF --> GW : DashboardView (1 resposta)
+GW --> UI : 200 OK
+UI --> G : cards, mapa e alertas
+@enduml

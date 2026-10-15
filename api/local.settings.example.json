@@ -5,6 +5,9 @@
     "FUNCTIONS_WORKER_RUNTIME": "node",
     "MONGODB_ATLAS_URI": "mongodb+srv://USUARIO:SENHA@cluster.mongodb.net/?retryWrites=true&w=majority",
     "MONGODB_ATLAS_DATABASE": "cloudlog",
-    "MONGODB_ATLAS_COLLECTION": "deliveries"
+    "MONGODB_ATLAS_COLLECTION": "deliveries",
+    "SERVICEBUS_CONNECTION": "",
+    "SERVICEBUS_QUEUE": "cloudlog-delivery-events",
+    "SERVICEBUS_CONSUMER_ENABLED": "false"
   }
 }

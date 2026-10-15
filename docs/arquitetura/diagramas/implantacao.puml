@@ -1,0 +1,51 @@
+@startuml implantacao
+!include _uml.iuml
+title Visão de Implantação (UML Deployment) — Microsoft Azure + MongoDB Atlas
+skinparam node {
+  BackgroundColor #F4F8FD
+  BorderColor #1A4E8A
+}
+
+node "Navegador\n(Gerente / SAC)" as browser <<device>>
+node "Smartphone\n(Motorista)" as phone <<device>> #EDEDED
+
+cloud "GitHub" as gh {
+  node "GitHub Actions\n(CI/CD: testes + build + deploy)" as ci <<execution environment>>
+}
+
+cloud "Microsoft Azure — assinatura Azure for Students" as azure {
+  node "Azure Static Web Apps\npolite-mushroom-0b05fa610" as swa <<PaaS>> {
+    artifact "Frontend React (dist/)" as front
+    node "Managed Functions (Node.js)" as managed <<serverless>> {
+      artifact "api/ — Serviço de Entregas\n(HTTP: /api/deliveries, /api/hello)" as apiArt
+    }
+  }
+  node "Function App (plano Consumption)\nprocessDeliveryEvent" as fapp <<serverless, configurável>> {
+    artifact "api/ com SERVICEBUS_CONSUMER_ENABLED=true" as consumerArt
+  }
+  node "Service Bus Namespace (Basic)" as sbns <<PaaS, configurável>> {
+    artifact "fila cloudlog-delivery-events" as queue
+  }
+  node "API Management (Consumption)" as apim <<planejado>> #EDEDED
+  node "Function Apps BFF Web / BFF Mobile" as bffs <<planejado>> #EDEDED
+  node "IoT Hub · Cosmos DB · Blob Storage\nTable Storage · Azure SQL" as others <<planejado>> #EDEDED
+  node "Application Insights" as ai <<PaaS>>
+}
+
+cloud "MongoDB Atlas" as atlas {
+  database "Cluster M0 arquiteturacloud\nDB cloudlog / coleção deliveries" as mongo
+}
+
+browser --> swa : HTTPS
+phone --> apim : HTTPS
+browser ..> apim : HTTPS (alvo)
+apim ..> bffs
+bffs ..> managed
+ci --> swa : deploy (push na main)
+managed --> mongo : TLS 27017
+managed --> sbns : AMQP/TLS 5671
+sbns --> fapp : ServiceBusQueueTrigger
+managed --> ai : logs/métricas
+fapp --> ai : logs/métricas
+bffs ..> others
+@enduml

@@ -1,0 +1,44 @@
+@startuml uml-pacotes-clean
+!include _uml.iuml
+title Clean Architecture + Vertical Slice — Diagrama de Pacotes e Regra de Dependência (api/src)
+
+package "Frameworks & Drivers" as FD #F0F0F0 {
+  rectangle "features/*/*.function.js" as FN
+  rectangle "bootstrap (Composition Root)" as BOOT
+  rectangle "@azure/functions · mongodb · @azure/service-bus" as LIBS
+}
+package "Interface Adapters" as IA #E3EEFB {
+  rectangle "features/*/*.handler.js" as HD
+  rectangle "shared/http" as SH
+  rectangle "infrastructure (persistence · messaging · notifications · time)" as INF
+}
+package "Application (Use Cases)" as APP #CFE2F8 {
+  rectangle "features/*/*UseCase.js" as UC
+}
+package "Entities (Domain)" as DOM #B7D3F2 {
+  rectangle "domain (Delivery · DeliveryStatus · DeliveryEvents · errors · ports)" as D
+}
+
+FN --> HD
+FN --> BOOT
+HD --> UC
+HD --> SH
+SH --> D
+UC --> D
+INF --> D
+BOOT --> INF
+BOOT --> UC
+
+note right of DOM
+  Regra de dependência: as setas apontam sempre
+  para dentro. O domínio não depende de nenhum
+  pacote externo (verificado por teste de arquitetura).
+end note
+
+note bottom of FD
+  Vertical Slice: cada funcionalidade é uma pasta em features/
+  (createDelivery, searchDeliveries, updateDelivery, deleteDelivery,
+  hello, processDeliveryEvent) contendo function + handler + use case.
+  Fatias não importam umas às outras.
+end note
+@enduml

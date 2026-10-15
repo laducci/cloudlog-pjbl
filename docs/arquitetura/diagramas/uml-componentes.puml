@@ -1,0 +1,41 @@
+@startuml uml-componentes
+!include _uml.iuml
+title C4 Nível 4 / UML — Diagrama de Componentes do Serviço de Entregas (interfaces fornecidas e requeridas)
+left to right direction
+
+actor "Frontend / BFF" as client
+database "MongoDB Atlas\ncloudlog.deliveries" as mongo
+queue "Azure Service Bus\ncloudlog-delivery-events" as bus
+
+package "Código api/ — Serviço de Entregas (HTTP) e Serviço de Alertas (fila)" {
+  interface "HTTP /api/deliveries\n/api/hello" as IHttp
+  component "[features] createDelivery\nsearchDeliveries\nupdateDelivery\ndeleteDelivery\nhello" as Slices <<vertical slices>>
+  component "[shared/http]\nHttpAdapterKit" as SharedHttp
+  component "[domain]\nDeliveryDomain" as Domain <<core>>
+  interface "DeliveryWriter · Reader · Updater · Remover" as IRepo
+  interface "DeliveryEventPublisher" as IPub
+  interface "AlertNotifier" as IAlert
+  interface "Clock" as IClock
+  component "[infrastructure]\nMongoDeliveryRepository" as Mongo <<adapter>>
+  component "[infrastructure]\nServiceBusDeliveryEventPublisher" as Pub <<adapter>>
+  component "[infrastructure]\nSystemClock" as Clock <<adapter>>
+  component "[features] processDeliveryEvent\n(ServiceBusQueueTrigger)" as Consumer <<vertical slice>>
+  component "[infrastructure]\nLogAlertNotifier" as Alert <<adapter>>
+}
+
+client --> IHttp
+IHttp -- Slices
+Slices .> SharedHttp : <<use>>
+Slices .> Domain : <<use>>
+Slices ..> IRepo : <<require>>
+Slices ..> IPub : <<require>>
+Slices ..> IClock : <<require>>
+IRepo -- Mongo
+IPub -- Pub
+IClock -- Clock
+Mongo --> mongo : TLS
+Pub --> bus : AMQP
+bus --> Consumer : trigger
+Consumer ..> IAlert : <<require>>
+IAlert -- Alert
+@enduml

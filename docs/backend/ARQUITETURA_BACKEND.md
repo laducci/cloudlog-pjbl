@@ -4,6 +4,8 @@
 **Branch:** `refactor/vertical-slice-clean-architecture`
 **Escopo:** `api/` — Azure Functions (Node.js, modelo v4) + MongoDB Atlas
 
+> A documentação completa e atualizada (com eventos/EDA, C4 níveis 1–4 e arc42) está em [`docs/arquitetura`](../arquitetura/README.md).
+
 ## 1. Visão geral
 
 O backend foi reorganizado em **fatias verticais** (uma pasta por funcionalidade), e cada fatia segue as camadas da **Clean Architecture**. O contrato HTTP consumido pelo frontend não mudou (mesmas rotas, status e formato de JSON).
